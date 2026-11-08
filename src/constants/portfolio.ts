@@ -5,7 +5,7 @@ export const PERSONAL_DATA: PersonalInfo = {
   title: "Fresher Full-Stack Developer",
   subtitle: "Sinh viên năm cuối CNTT đam mê xây dựng hệ thống web toàn diện với Next.js, NestJS, Java Spring Boot & tích hợp AI.",
   status: "🟢 Sẵn sàng cống hiến",
-  location: "Phường Hoàng Liệt, Quận Hoàng Mai, Hà Nội",
+  location: "Hà Nội",
   email: "datga27@gmail.com",
   phone: "0337562201",
   birthDate: "22/01/2004",
