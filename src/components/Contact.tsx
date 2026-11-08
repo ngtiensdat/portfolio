@@ -32,7 +32,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-20 scroll-mt-24 sm:scroll-mt-28 bg-slate-50/60 dark:bg-[#060e0a] relative">
+    <section id="contact" className="py-16 sm:py-20 scroll-mt-4 sm:scroll-mt-6 bg-slate-50/60 dark:bg-[#060e0a] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading - Split Header (Editorial & Asymmetric) */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 border-b border-slate-200/80 dark:border-slate-800/80 pb-6 max-w-6xl mx-auto">

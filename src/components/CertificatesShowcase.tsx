@@ -49,7 +49,7 @@ export default function CertificatesShowcase() {
   };
 
   return (
-    <section id="certificates" className="py-16 sm:py-20 scroll-mt-24 sm:scroll-mt-28 relative">
+    <section id="certificates" className="py-16 sm:py-20 scroll-mt-4 sm:scroll-mt-6 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading - Split Header (Editorial & Asymmetric) */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8 border-b border-slate-200/80 dark:border-slate-800/80 pb-6">
