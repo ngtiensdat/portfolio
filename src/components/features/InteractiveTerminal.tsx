@@ -165,7 +165,7 @@ export function InteractiveTerminal() {
             <p>• Email: <a href="mailto:datga27@gmail.com" className="text-emerald-400 hover:underline">datga27@gmail.com</a></p>
             <p>• Facebook: <a href="https://www.facebook.com/ngtiensdat" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline">facebook.com/ngtiensdat</a></p>
             <p>• GitHub: <a href="https://github.com/ngtiensdat" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline">github.com/ngtiensdat</a></p>
-            <p>• Địa chỉ: Hoàng Liệt, Hoàng Mai, Hà Nội</p>
+            <p>• Địa chỉ: Hoàng Mai, Hà Nội</p>
           </div>
         );
         break;
@@ -282,11 +282,10 @@ export function InteractiveTerminal() {
               e.preventDefault();
               executeCommand(cmd);
             }}
-            className={`px-2 py-0.5 rounded text-[10px] font-bold transition-all cursor-pointer ${
-              cmd === "sudo hire"
+            className={`px-2 py-0.5 rounded text-[10px] font-bold transition-all cursor-pointer ${cmd === "sudo hire"
                 ? "bg-rose-950/70 hover:bg-rose-900 text-rose-300 border border-rose-700/60 shadow-xs"
                 : "bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700"
-            }`}
+              }`}
           >
             {cmd}
           </button>
