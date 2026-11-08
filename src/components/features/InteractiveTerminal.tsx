@@ -244,6 +244,7 @@ export function InteractiveTerminal() {
 
         <button
           type="button"
+          suppressHydrationWarning
           onClick={() => setHistory([])}
           title="Xóa màn hình (Clear)"
           className="text-slate-500 hover:text-slate-300 transition-colors p-1 cursor-pointer"
@@ -278,6 +279,7 @@ export function InteractiveTerminal() {
           <button
             key={cmd}
             type="button"
+            suppressHydrationWarning
             onClick={(e) => {
               e.preventDefault();
               executeCommand(cmd);

@@ -33,7 +33,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-20 scroll-mt-8 sm:scroll-mt-10 bg-slate-50/60 dark:bg-[#060e0a] relative">
+    <section id="contact" className="py-16 sm:py-20 scroll-mt-24 sm:scroll-mt-28 bg-slate-50/60 dark:bg-[#060e0a] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-14">
@@ -90,6 +90,8 @@ export default function Contact() {
                     </div>
                   </a>
                   <button
+                    type="button"
+                    suppressHydrationWarning
                     onClick={() => handleCopy(facebookUrl, "facebook")}
                     title="Sao chép link Facebook"
                     className="p-2 text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-colors cursor-pointer shrink-0"
@@ -121,6 +123,8 @@ export default function Contact() {
                     </div>
                   </a>
                   <button
+                    type="button"
+                    suppressHydrationWarning
                     onClick={() => handleCopy(personal.email, "email")}
                     title="Sao chép email"
                     className="p-2 text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 rounded-lg transition-colors cursor-pointer shrink-0"
@@ -152,6 +156,8 @@ export default function Contact() {
                     </div>
                   </a>
                   <button
+                    type="button"
+                    suppressHydrationWarning
                     onClick={() => handleCopy(personal.phone, "phone")}
                     title="Sao chép số điện thoại"
                     className="p-2 text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 rounded-lg transition-colors cursor-pointer shrink-0"
@@ -185,6 +191,8 @@ export default function Contact() {
                     </div>
                   </a>
                   <button
+                    type="button"
+                    suppressHydrationWarning
                     onClick={() => handleCopy(githubUrl, "github")}
                     title="Sao chép link GitHub"
                     className="p-2 text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 rounded-lg transition-colors cursor-pointer shrink-0"
@@ -339,6 +347,8 @@ export default function Contact() {
                     </p>
                     <div className="pt-1 flex flex-wrap items-center justify-center sm:justify-start gap-2">
                       <button
+                        type="button"
+                        suppressHydrationWarning
                         onClick={() => handleCopy(facebookUrl, "fb-profile")}
                         className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 transition-colors cursor-pointer"
                       >

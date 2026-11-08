@@ -49,7 +49,7 @@ export default function CertificatesShowcase() {
   };
 
   return (
-    <section id="certificates" className="py-16 sm:py-20 scroll-mt-8 sm:scroll-mt-10 relative">
+    <section id="certificates" className="py-16 sm:py-20 scroll-mt-24 sm:scroll-mt-28 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
@@ -70,6 +70,8 @@ export default function CertificatesShowcase() {
         <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
           {categories.map((cat) => (
             <button
+              type="button"
+              suppressHydrationWarning
               key={cat}
               onClick={() => setSelectedCategory(cat)}
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
@@ -174,6 +176,8 @@ export default function CertificatesShowcase() {
               {/* Action Buttons */}
               <div className="mt-5 pt-3.5 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-3">
                 <button
+                  type="button"
+                  suppressHydrationWarning
                   onClick={() => setActivePdfCert(cert)}
                   className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-bold shadow-sm shadow-emerald-500/20 transition-all cursor-pointer"
                 >
@@ -223,6 +227,8 @@ export default function CertificatesShowcase() {
                 </a>
               )}
               <button
+                type="button"
+                suppressHydrationWarning
                 onClick={() => setActivePdfCert(null)}
                 className="p-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
               >

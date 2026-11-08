@@ -31,7 +31,7 @@ export default function Projects() {
   });
 
   return (
-    <section id="projects" className="py-16 sm:py-20 scroll-mt-8 sm:scroll-mt-10 bg-slate-50/60 dark:bg-slate-900/40 relative">
+    <section id="projects" className="py-16 sm:py-20 scroll-mt-24 sm:scroll-mt-28 bg-slate-50/60 dark:bg-slate-900/40 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-10">
@@ -53,6 +53,8 @@ export default function Projects() {
           <div className="flex flex-wrap items-center justify-center gap-2">
             {categories.map((cat) => (
               <button
+                type="button"
+                suppressHydrationWarning
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
@@ -78,6 +80,8 @@ export default function Projects() {
             />
             {searchQuery && (
               <button
+                type="button"
+                suppressHydrationWarning
                 onClick={() => setSearchQuery("")}
                 aria-label="Clear search"
                 className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
@@ -98,6 +102,8 @@ export default function Projects() {
               Thử tìm kiếm với từ khóa khác như &quot;React&quot;, &quot;Next.js&quot;, hoặc chọn tab &quot;Tất cả&quot;.
             </p>
             <button
+              type="button"
+              suppressHydrationWarning
               onClick={() => {
                 setSelectedCategory("Tất cả");
                 setSearchQuery("");
@@ -189,6 +195,8 @@ export default function Projects() {
                         <ArrowRight className="w-3.5 h-3.5" />
                       </Link>
                       <button
+                        type="button"
+                        suppressHydrationWarning
                         onClick={() => setActiveProject(project)}
                         className="inline-flex items-center gap-1 text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white px-2 py-1.5 transition-colors cursor-pointer"
                         title="Xem nhanh trong modal"

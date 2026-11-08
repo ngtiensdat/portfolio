@@ -2,25 +2,20 @@
 
 import { useState, useEffect } from "react";
 import { portfolioData } from "@/data/portfolioData";
-import { Moon, Sun, Menu, X, FileText, Search } from "lucide-react";
+import { Moon, Sun, Menu, X, FileText } from "lucide-react";
 import Link from "next/link";
 import { FlipAvatar } from "./effects/FlipAvatar";
 
 export default function Navbar() {
-  const [mounted, setMounted] = useState(false);
-  const [theme, setTheme] = useState<"light" | "dark">("dark");
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
-    const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
-    const initialTheme = savedTheme === "light" ? "light" : "dark";
-    setTheme(initialTheme);
-    if (initialTheme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light") {
       document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.add("dark");
     }
 
     const handleScroll = () => {
@@ -32,19 +27,14 @@ export default function Navbar() {
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-
-    if (newTheme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
+    const isDark = document.documentElement.classList.contains("dark");
+    if (isDark) {
       document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
     }
-  };
-
-  const openCommandPalette = () => {
-    window.dispatchEvent(new KeyboardEvent("keydown", { key: "k", ctrlKey: true }));
   };
 
   const navLinks = [
@@ -58,9 +48,9 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 dark:bg-[#060e0a]/95 backdrop-blur-xl border-b border-slate-200/80 dark:border-emerald-500/15 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 dark:bg-[#060e0a]/95 backdrop-blur-md border-b border-slate-200/80 dark:border-emerald-500/15 ${
         isScrolled
-          ? "py-3 shadow-md shadow-slate-900/5 dark:shadow-emerald-950/25"
+          ? "py-3 shadow-md shadow-slate-900/5 dark:shadow-emerald-950/25 bg-white dark:bg-[#060e0a]"
           : "py-4 shadow-xs"
       }`}
     >
@@ -101,33 +91,17 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Actions: Command Palette Button + Theme Toggle + CV Button */}
+          {/* Actions: Theme Toggle + CV Button */}
           <div className="hidden md:flex items-center gap-2.5">
-            {/* Quick Command Palette Button */}
             <button
-              onClick={openCommandPalette}
-              className="flex items-center gap-2 px-3 py-1.5 text-xs font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/70 hover:bg-slate-200 dark:hover:bg-slate-700/80 rounded-xl border border-slate-200/80 dark:border-slate-700/60 transition-colors cursor-pointer"
-              title="Mở thanh tìm kiếm lệnh nhanh (Ctrl + K)"
-            >
-              <Search className="w-3.5 h-3.5" />
-              <span>Tìm kiếm...</span>
-              <kbd className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-400">
-                Ctrl K
-              </kbd>
-            </button>
-
-            <button
+              type="button"
+              suppressHydrationWarning
               onClick={toggleTheme}
-              aria-label="Toggle theme"
-              className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer w-9 h-9 flex items-center justify-center"
+              aria-label="Chuyển chế độ sáng / tối"
+              className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer w-9 h-9 flex items-center justify-center shrink-0"
             >
-              {!mounted ? (
-                <span className="w-4 h-4 inline-block" />
-              ) : theme === "dark" ? (
-                <Sun className="w-4 h-4 text-amber-400" />
-              ) : (
-                <Moon className="w-4 h-4 text-slate-600" />
-              )}
+              <Sun className="w-4 h-4 text-amber-400 hidden dark:block" />
+              <Moon className="w-4 h-4 text-slate-600 block dark:hidden" />
             </button>
 
             <Link
@@ -135,35 +109,26 @@ export default function Navbar() {
               className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 rounded-xl shadow-md shadow-emerald-500/20 hover:shadow-emerald-500/35 transition-all hover:-translate-y-0.5"
             >
               <FileText className="w-4 h-4" />
-              <span>Xem / Tải CV</span>
+              <span>Xem CV</span>
             </Link>
           </div>
 
           {/* Mobile menu trigger */}
           <div className="flex md:hidden items-center gap-2">
             <button
-              onClick={openCommandPalette}
-              aria-label="Tìm kiếm"
-              className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700"
-            >
-              <Search className="w-4 h-4" />
-            </button>
-
-            <button
+              type="button"
+              suppressHydrationWarning
               onClick={toggleTheme}
-              aria-label="Toggle theme"
-              className="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 cursor-pointer w-8 h-8 flex items-center justify-center"
+              aria-label="Chuyển chế độ sáng / tối"
+              className="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 cursor-pointer w-8 h-8 flex items-center justify-center shrink-0"
             >
-              {!mounted ? (
-                <span className="w-4 h-4 inline-block" />
-              ) : theme === "dark" ? (
-                <Sun className="w-4 h-4 text-amber-400" />
-              ) : (
-                <Moon className="w-4 h-4 text-slate-600" />
-              )}
+              <Sun className="w-4 h-4 text-amber-400 hidden dark:block" />
+              <Moon className="w-4 h-4 text-slate-600 block dark:hidden" />
             </button>
 
             <button
+              type="button"
+              suppressHydrationWarning
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Open menu"
               className="p-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 cursor-pointer"
@@ -186,25 +151,14 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <div className="pt-2 border-t border-slate-200 dark:border-slate-800 space-y-2">
-              <button
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  openCommandPalette();
-                }}
-                className="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-semibold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 rounded-xl"
-              >
-                <Search className="w-4 h-4" />
-                <span>Tìm kiếm lệnh nhanh (Ctrl + K)</span>
-              </button>
-
+            <div className="pt-2 border-t border-slate-200 dark:border-slate-800">
               <Link
                 href="/cv"
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center gap-2 w-full py-2.5 text-sm font-semibold text-slate-950 bg-emerald-400 hover:bg-emerald-300 rounded-xl font-bold transition-colors"
               >
                 <FileText className="w-4 h-4" />
-                <span>Xem & In CV (PDF)</span>
+                <span>Xem &amp; In CV (PDF)</span>
               </Link>
             </div>
           </div>

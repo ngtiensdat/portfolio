@@ -253,6 +253,8 @@ export default function ProjectCaseStudy({
                 <span>Mã nguồn GitHub</span>
               </a>
               <button
+                type="button"
+                suppressHydrationWarning
                 onClick={handleShareLink}
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700/60 transition-colors cursor-pointer"
                 title="Sao chép liên kết dự án"
@@ -318,6 +320,8 @@ export default function ProjectCaseStudy({
               <div className="flex flex-wrap gap-1.5">
                 {galleryCategories.map((cat) => (
                   <button
+                    type="button"
+                    suppressHydrationWarning
                     key={cat}
                     onClick={() => {
                       setSelectedGalleryCategory(cat);
@@ -356,6 +360,8 @@ export default function ProjectCaseStudy({
                 </p>
               </div>
               <button
+                type="button"
+                suppressHydrationWarning
                 onClick={() => setIsLightboxOpen(true)}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 hover:bg-white/30 backdrop-blur-md text-xs font-semibold transition-colors cursor-pointer shrink-0"
               >
@@ -370,6 +376,8 @@ export default function ProjectCaseStudy({
             <div className="mt-4 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
               {filteredGallery.map((img, idx) => (
                 <button
+                  type="button"
+                  suppressHydrationWarning
                   key={idx}
                   onClick={() => setSelectedGalleryIdx(idx)}
                   className={`relative aspect-[16/10] rounded-xl overflow-hidden border-2 transition-all cursor-pointer ${
@@ -401,6 +409,8 @@ export default function ProjectCaseStudy({
               {activeImage.caption}
             </p>
             <button
+              type="button"
+              suppressHydrationWarning
               onClick={() => setIsLightboxOpen(false)}
               className="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
             >
@@ -625,6 +635,8 @@ export default function ProjectCaseStudy({
                         </span>
                       </div>
                       <button
+                        type="button"
+                        suppressHydrationWarning
                         onClick={() =>
                           handleCopyCode(deepDive.codeSnippet!.code, idx)
                         }

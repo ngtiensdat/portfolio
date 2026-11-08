@@ -31,7 +31,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-16 sm:py-20 scroll-mt-8 sm:scroll-mt-10 bg-slate-50/60 dark:bg-slate-900/40 relative">
+    <section id="about" className="py-16 sm:py-20 scroll-mt-24 sm:scroll-mt-28 bg-slate-50/60 dark:bg-slate-900/40 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">

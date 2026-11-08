@@ -268,6 +268,8 @@ export function CommandPalette() {
             className="flex-1 bg-transparent text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none font-medium"
           />
           <button
+            type="button"
+            suppressHydrationWarning
             onClick={() => setIsOpen(false)}
             aria-label="Đóng thanh tìm kiếm"
             className="p-1 rounded-md text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 cursor-pointer"

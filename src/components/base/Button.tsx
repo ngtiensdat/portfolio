@@ -32,6 +32,8 @@ export function Button({
 
   return (
     <button
+      type={props.type || "button"}
+      suppressHydrationWarning
       className={`inline-flex items-center justify-center gap-2 transition-all cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
       {...props}
     >

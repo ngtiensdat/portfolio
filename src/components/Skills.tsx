@@ -23,7 +23,7 @@ export default function Skills() {
       : portfolioData.skills.filter((c) => c.title === activeCategory);
 
   return (
-    <section id="skills" className="py-16 sm:py-20 scroll-mt-8 sm:scroll-mt-10 relative">
+    <section id="skills" className="py-16 sm:py-20 scroll-mt-24 sm:scroll-mt-28 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
@@ -40,6 +40,8 @@ export default function Skills() {
         <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
           {categories.map((cat) => (
             <button
+              type="button"
+              suppressHydrationWarning
               key={cat}
               onClick={() => setActiveCategory(cat)}
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
