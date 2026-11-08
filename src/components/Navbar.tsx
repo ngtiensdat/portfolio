@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { portfolioData } from "@/data/portfolioData";
-import { Moon, Sun, Menu, X, FileText } from "lucide-react";
+import { Moon, Sun, Menu, X, FileText, Search } from "lucide-react";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -40,6 +40,10 @@ export default function Navbar() {
     } else {
       document.documentElement.classList.remove("dark");
     }
+  };
+
+  const openCommandPalette = () => {
+    window.dispatchEvent(new KeyboardEvent("keydown", { key: "k", ctrlKey: true }));
   };
 
   const navLinks = [
@@ -93,8 +97,21 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Actions: Theme Toggle + CV Button */}
-          <div className="hidden md:flex items-center gap-3">
+          {/* Actions: Command Palette Button + Theme Toggle + CV Button */}
+          <div className="hidden md:flex items-center gap-2.5">
+            {/* Quick Command Palette Button */}
+            <button
+              onClick={openCommandPalette}
+              className="flex items-center gap-2 px-3 py-1.5 text-xs font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/70 hover:bg-slate-200 dark:hover:bg-slate-700/80 rounded-xl border border-slate-200/80 dark:border-slate-700/60 transition-colors cursor-pointer"
+              title="Mở thanh tìm kiếm lệnh nhanh (Ctrl + K)"
+            >
+              <Search className="w-3.5 h-3.5" />
+              <span>Tìm kiếm...</span>
+              <kbd className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-400">
+                Ctrl K
+              </kbd>
+            </button>
+
             <button
               onClick={toggleTheme}
               aria-label="Toggle theme"
@@ -118,6 +135,14 @@ export default function Navbar() {
 
           {/* Mobile menu trigger */}
           <div className="flex md:hidden items-center gap-2">
+            <button
+              onClick={openCommandPalette}
+              aria-label="Tìm kiếm"
+              className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700"
+            >
+              <Search className="w-4 h-4" />
+            </button>
+
             <button
               onClick={toggleTheme}
               aria-label="Toggle theme"
@@ -153,7 +178,18 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <div className="pt-2 border-t border-slate-200 dark:border-slate-800">
+            <div className="pt-2 border-t border-slate-200 dark:border-slate-800 space-y-2">
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  openCommandPalette();
+                }}
+                className="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-semibold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 rounded-xl"
+              >
+                <Search className="w-4 h-4" />
+                <span>Tìm kiếm lệnh nhanh (Ctrl + K)</span>
+              </button>
+
               <Link
                 href="/cv"
                 onClick={() => setMobileMenuOpen(false)}

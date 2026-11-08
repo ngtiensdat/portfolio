@@ -61,3 +61,4 @@ export function ScrambleText({ text, className = "", hoverTrigger = true }: Scra
     </span>
   );
 }
+

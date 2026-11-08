@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import confetti from "canvas-confetti";
-import { Terminal, Send, Sparkles, CheckCircle2, CornerDownLeft, RotateCcw } from "lucide-react";
+import { Terminal, Send, Sparkles, CornerDownLeft, RotateCcw } from "lucide-react";
 
 interface CommandLog {
   id: string;
@@ -29,11 +29,14 @@ export function InteractiveTerminal() {
     },
   ]);
 
-  const endRef = useRef<HTMLDivElement>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
+  // Scroll ONLY the terminal container internally without affecting window scroll
   useEffect(() => {
-    endRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTop = scrollContainerRef.current.scrollHeight;
+    }
   }, [history]);
 
   const triggerConfetti = () => {
@@ -199,16 +202,20 @@ export function InteractiveTerminal() {
         </div>
 
         <button
+          type="button"
           onClick={() => setHistory([])}
           title="Xóa màn hình (Clear)"
-          className="text-slate-500 hover:text-slate-300 transition-colors p-1"
+          className="text-slate-500 hover:text-slate-300 transition-colors p-1 cursor-pointer"
         >
           <RotateCcw className="w-3.5 h-3.5" />
         </button>
       </div>
 
       {/* Terminal Output Area */}
-      <div className="p-4 sm:p-5 max-h-72 overflow-y-auto space-y-3 scrollbar-thin scrollbar-thumb-slate-800">
+      <div
+        ref={scrollContainerRef}
+        className="p-4 sm:p-5 max-h-72 overflow-y-auto space-y-3 scrollbar-thin scrollbar-thumb-slate-800"
+      >
         {history.map((item) => (
           <div key={item.id} className="space-y-1">
             <div className="flex items-center gap-2 text-slate-400 font-bold">
@@ -221,7 +228,6 @@ export function InteractiveTerminal() {
             <div className="pl-4">{item.output}</div>
           </div>
         ))}
-        <div ref={endRef} />
       </div>
 
       {/* Quick Command Chips */}
@@ -230,7 +236,11 @@ export function InteractiveTerminal() {
         {quickCommands.map((cmd) => (
           <button
             key={cmd}
-            onClick={() => executeCommand(cmd)}
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              executeCommand(cmd);
+            }}
             className={`px-2 py-0.5 rounded text-[10px] font-bold transition-all cursor-pointer ${
               cmd === "sudo hire"
                 ? "bg-rose-950/70 hover:bg-rose-900 text-rose-300 border border-rose-700/60 shadow-xs"
