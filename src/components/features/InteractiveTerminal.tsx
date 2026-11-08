@@ -77,7 +77,7 @@ export function InteractiveTerminal() {
             <p className="text-emerald-400 font-bold">Nguyễn Tiến Đạt — Fresher Full-Stack Developer</p>
             <p>• Sinh viên năm cuối CNTT - Đại học Phenikaa (GPA: 3.0 / 4.0).</p>
             <p>• Đã làm 4 dự án thực chiến (Next.js, TypeScript, NestJS, Spring Boot, LangChain AI).</p>
-            <p>• 4 Chứng chỉ Coursera chuyên ngành + TOEIC 580 (ETS) + OJT OneConnect.</p>
+            <p>• 4 Chứng chỉ Coursera chuyên ngành + TOEIC 580 + OJT OneConnect.</p>
           </div>
         );
         break;
@@ -89,7 +89,7 @@ export function InteractiveTerminal() {
             <p>• TypeScript / Next.js / React: <span className="text-emerald-400">[██████████] 90%</span></p>
             <p>• NestJS / Node.js: <span className="text-emerald-400">[█████████░] 85%</span></p>
             <p>• Java Spring Boot / Security: <span className="text-emerald-400">[████████░░] 80%</span></p>
-            <p>• AI RAG (LangChain / OpenAI): <span className="text-emerald-400">[████████░░] 80%</span></p>
+            <p>• AI RAG: LangChain & OpenAI: <span className="text-emerald-400">[████████░░] 80%</span></p>
             <p>• PostgreSQL / Prisma ORM: <span className="text-emerald-400">[█████████░] 85%</span></p>
             <p>• WebSocket / Kafka / Docker: <span className="text-emerald-400">[███████░░░] 75%</span></p>
           </div>
@@ -101,7 +101,7 @@ export function InteractiveTerminal() {
           <div className="space-y-2 text-xs text-slate-300">
             <p className="text-emerald-400 font-bold">4 Dự án thực chiến nổi bật (bấm để xem kiến trúc & code):</p>
             <div>
-              <p className="font-semibold text-emerald-300">1. FOOD AI Social Network (AI RAG, Next.js, NestJS)</p>
+              <p className="font-semibold text-emerald-300">1. FOOD AI Social Network - AI RAG, Next.js, NestJS</p>
               <div className="flex gap-3 text-[11px] mt-0.5">
                 <Link href="/projects/food-ai" className="text-teal-400 hover:underline">
                   📄 Xem Case Study & Code
@@ -112,15 +112,15 @@ export function InteractiveTerminal() {
               </div>
             </div>
             <div>
-              <p className="font-semibold text-emerald-300">2. Payment Hub Middleware (Spring Boot, RBAC, Kafka, MinIO)</p>
+              <p className="font-semibold text-emerald-300">2. Payment Hub Middleware - Spring Boot, RBAC, Kafka, MinIO</p>
               <div className="text-[11px] mt-0.5">
                 <Link href="/projects/payment-hub" className="text-teal-400 hover:underline">
-                  📄 Xem Case Study (Xuất 1M+ Records, Maker-Checker)
+                  📄 Xem Case Study: Xuất 1M+ Records, Maker-Checker
                 </Link>
               </div>
             </div>
             <div>
-              <p className="font-semibold text-emerald-300">3. Learn English Web (TOEIC/IELTS, Realtime WebSocket)</p>
+              <p className="font-semibold text-emerald-300">3. Learn English Web - TOEIC/IELTS, Realtime WebSocket</p>
               <div className="flex gap-3 text-[11px] mt-0.5">
                 <Link href="/projects/learn-english" className="text-teal-400 hover:underline">
                   📄 Xem Case Study & Code
@@ -131,10 +131,10 @@ export function InteractiveTerminal() {
               </div>
             </div>
             <div>
-              <p className="font-semibold text-emerald-300">4. Interactive Portfolio (Next.js 16, 3D Parallax, Terminal)</p>
+              <p className="font-semibold text-emerald-300">4. Interactive Portfolio - Next.js 16, 3D Parallax, Terminal</p>
               <div className="text-[11px] mt-0.5">
                 <Link href="/projects/portfolio-frontend" className="text-teal-400 hover:underline">
-                  📄 Xem Case Study (Frontend Design & Tech Stack)
+                  📄 Xem Case Study: Thiết kế Frontend & Tech Stack
                 </Link>
               </div>
             </div>
@@ -146,12 +146,12 @@ export function InteractiveTerminal() {
       case "certs":
         output = (
           <div className="space-y-1.5 text-xs text-slate-300">
-            <p className="text-emerald-400 font-bold">Chứng chỉ chuyên môn (Coursera & Quốc tế):</p>
-            <p>• <a href="/degrees_coursera/Architecting Solutions on AWS.pdf" target="_blank" className="text-teal-300 hover:underline font-medium">Architecting Solutions on AWS</a> (AWS)</p>
-            <p>• <a href="/degrees_coursera/Agile Project Management.pdf" target="_blank" className="text-teal-300 hover:underline font-medium">Agile Project Management</a> (Google)</p>
+            <p className="text-emerald-400 font-bold">Chứng chỉ chuyên môn:</p>
+            <p>• <a href="/degrees_coursera/Architecting Solutions on AWS.pdf" target="_blank" className="text-teal-300 hover:underline font-medium">Architecting Solutions on AWS</a> - AWS</p>
+            <p>• <a href="/degrees_coursera/Agile Project Management.pdf" target="_blank" className="text-teal-300 hover:underline font-medium">Agile Project Management</a> - Google</p>
             <p>• <a href="/degrees_coursera/Software Security for Web Applications.pdf" target="_blank" className="text-teal-300 hover:underline font-medium">Software Security for Web Applications</a></p>
             <p>• <a href="/degrees_coursera/Master Full-Stack Web Development with Laravel & PHP.pdf" target="_blank" className="text-teal-300 hover:underline font-medium">Full-Stack Web Dev with Laravel & PHP</a></p>
-            <p>• <span className="text-slate-300">TOEIC 580/990 (ETS) & Chứng nhận OJT OneConnect</span></p>
+            <p>• <a href="/degrees_coursera/TOIEC.pdf" target="_blank" className="text-teal-300 hover:underline font-medium">TOEIC 580/990</a> &amp; <a href="/degrees_coursera/Chung_chi_IOC.pdf" target="_blank" className="text-teal-300 hover:underline font-medium">Chứng nhận OJT OneConnect</a></p>
             <p className="text-[11px] text-emerald-400 mt-1">👉 Cuộn xuống mục &quot;Chứng chỉ chuyên môn&quot; để xem PDF trực tiếp!</p>
           </div>
         );
@@ -181,7 +181,7 @@ export function InteractiveTerminal() {
               <span>[ACCESS GRANTED] Lệnh tuyển dụng thành công!</span>
             </p>
             <p className="leading-relaxed">
-              Cảm ơn bạn! Đạt rất hào hứng được trao đổi về cơ hội việc làm cùng đội ngũ của bạn.
+              Cảm ơn anh chị! Em rất hào hứng được trao đổi về cơ hội việc làm cùng đội ngũ của anh chị ạ.
             </p>
             <div className="pt-1">
               <a

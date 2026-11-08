@@ -86,7 +86,7 @@ export default function About() {
               {[
                 "TypeScript, Next.js 16 & NestJS",
                 "Java Spring Boot & Angular",
-                "Tích hợp AI: LangChain (RAG) & OpenAI",
+                "Tích hợp AI: LangChain RAG & OpenAI",
                 "Quy trình Agile/Scrum & Git/GitFlow",
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-2.5 text-sm font-medium text-slate-700 dark:text-slate-200">

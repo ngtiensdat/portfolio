@@ -16,7 +16,7 @@ export default function Hero() {
     { name: "Java Spring Boot" },
     { name: "Angular" },
     { name: "PostgreSQL" },
-    { name: "LangChain (RAG / AI)" },
+    { name: "LangChain RAG & AI" },
     { name: "WebSocket" },
     { name: "Kafka" },
     { name: "Docker" },
