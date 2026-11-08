@@ -15,14 +15,14 @@ export const PERSONAL_DATA: PersonalInfo = {
   twitter: "https://twitter.com",
   resumeUrl: "#resume",
   stats: [
+    { label: "Kinh nghiệm Thực tế", value: "~1 Năm" },
     { label: "Dự án Nổi bật", value: "4" },
-    { label: "Chứng chỉ Quốc tế", value: "6" },
     { label: "GPA Đại học", value: "3.0 / 4.0" },
     { label: "Chứng chỉ TOEIC", value: "580" },
   ],
   aboutText: [
     "Em hiện là sinh viên năm cuối đang làm đồ án chuyên ngành Lập trình Web - Khoa Hệ thống thông tin, Đại học Phenikaa.",
-    "Em đã trực tiếp tham gia phát triển 4 dự án phần mềm và web tương tác: từ hệ thống Full-Stack (Next.js, NestJS, Java Spring Boot, Oracle, Kafka, pgvector RAG AI) đến thiết kế giao diện Frontend hiện đại (Next.js 16, Tailwind CSS v4, 3D Tilt Parallax, Design System). Em có kinh nghiệm xây dựng RESTful API, hệ thống phân quyền RBAC, giao tiếp thời gian thực với WebSocket và tối ưu trải nghiệm người dùng.",
+    "Em đã tích lũy khoảng 1 năm kinh nghiệm thực chiến qua các kỳ thực tập tại doanh nghiệp (Công ty Công nghệ INDA, Lạc Long Quân Software) và trực tiếp phát triển 4 dự án phần mềm: từ hệ thống Full-Stack (Next.js, NestJS, Java Spring Boot, Oracle, Kafka, pgvector RAG AI) đến lập trình giao diện Frontend (React.js, Next.js 16, Tailwind CSS). Em có kinh nghiệm xây dựng RESTful API, hệ thống phân quyền RBAC, giao tiếp thời gian thực với WebSocket và tối ưu trải nghiệm người dùng.",
     "Bên cạnh kiến thức đại học, em chủ động hoàn thành 4 chứng chỉ từ Coursera (Agile Project Management, AWS Solutions Architecture, Laravel & PHP, Web Security) và đạt chứng chỉ TOEIC 580. Mục tiêu của em là gia nhập đội ngũ phát triển sản phẩm thực tế để học hỏi, trau dồi kinh nghiệm và đóng góp vào sự phát triển chung của công ty."
   ],
 };
@@ -622,6 +622,20 @@ export const EXPERIENCES_DATA: ExperienceItem[] = [
       "Hoàn thành chương trình đào tạo thực chiến OJT OneConnect (06/2026): mô phỏng quy trình Agile–Scrum doanh nghiệp dưới sự hướng dẫn trực tiếp từ các Tech Lead.",
     ],
     skills: ["Next.js", "NestJS", "PostgreSQL", "Prisma ORM", "TypeScript", "Agile/Scrum"],
+    type: "work",
+  },
+  {
+    id: "exp-inda",
+    role: "Thực tập sinh Frontend Developer",
+    company: "Công ty Công nghệ INDA (INDA Technology)",
+    period: "06/2025 – 12/2025",
+    description: [
+      "Tham gia cùng đội ngũ phát triển dự án web hệ thống Quản lý Nhân sự (HRM - Human Resource Management) phục vụ bàn giao cho khách hàng doanh nghiệp.",
+      "Đảm nhận vai trò lập trình và thiết kế giao diện người dùng (UI) bằng React.js, TypeScript và Tailwind CSS; xây dựng các phân hệ quản lý hồ sơ nhân viên, bảng chấm công, tính lương và phân quyền người dùng.",
+      "Tích hợp RESTful API với Backend team, tối ưu hóa trải nghiệm người dùng (UX), xử lý biểu mẫu (forms) với validation chặt chẽ và thiết kế bảng biểu hiển thị dữ liệu lớn (data tables).",
+      "Làm việc theo quy trình Agile/Scrum: tham gia họp sprint, daily standup, quản lý nhánh mã nguồn bằng Git và phối hợp kiểm thử đảm bảo mốc bàn giao đúng tiến độ cam kết với khách hàng.",
+    ],
+    skills: ["React.js", "TypeScript", "Tailwind CSS", "RESTful API", "Quản lý Nhân sự (HRM)", "Agile/Scrum", "Git"],
     type: "work",
   },
   {
