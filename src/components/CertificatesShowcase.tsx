@@ -6,7 +6,6 @@ import { CertificateItem } from "@/types/portfolio";
 import {
   Award,
   ExternalLink,
-  Download,
   Eye,
   CheckCircle2,
   X,
@@ -126,12 +125,6 @@ export default function CertificatesShowcase() {
                         <span>Xem chi tiết</span>
                       </span>
                     </div>
-
-                    {/* Mini Verified Badge on corner */}
-                    <div className="absolute top-2 right-2 px-2 py-0.5 rounded-md bg-slate-900/80 backdrop-blur-xs text-[10px] font-semibold text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
-                      <CheckCircle2 className="w-3 h-3" />
-                      <span>Xác thực</span>
-                    </div>
                   </div>
                 )}
 
@@ -173,27 +166,16 @@ export default function CertificatesShowcase() {
               </div>
 
               {/* Action Buttons */}
-              <div className="mt-5 pt-3.5 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-3">
+              <div className="mt-5 pt-3.5 border-t border-slate-100 dark:border-slate-800/80 flex items-center">
                 <button
                   type="button"
                   suppressHydrationWarning
                   onClick={() => setActivePdfCert(cert)}
-                  className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-bold shadow-sm shadow-emerald-500/20 transition-all cursor-pointer"
+                  className="w-full inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-bold shadow-sm shadow-emerald-500/20 transition-all cursor-pointer"
                 >
                   <Eye className="w-3.5 h-3.5" />
                   <span>Xem chứng chỉ</span>
                 </button>
-                {cert.pdfUrl && (
-                  <a
-                    href={cert.pdfUrl}
-                    download
-                    className="inline-flex items-center gap-1 text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors"
-                    title="Tải chứng chỉ PDF về máy"
-                  >
-                    <Download className="w-3.5 h-3.5" />
-                    <span>Tải PDF</span>
-                  </a>
-                )}
               </div>
             </div>
           ))}

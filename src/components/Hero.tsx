@@ -116,15 +116,15 @@ export default function Hero() {
         </div>
 
         {/* Tech Stack Pills Banner */}
-        <div className="mt-14 pt-8 border-t border-slate-200/60 dark:border-slate-800/60 max-w-5xl mx-auto text-center">
+        <div className="mt-14 pt-8 border-t border-slate-200/60 dark:border-slate-800/60 w-full max-w-6xl mx-auto text-center">
           <p className="text-xs uppercase tracking-wider font-semibold text-slate-400 dark:text-slate-500 mb-4">
             Hộp công cụ công nghệ chủ lực
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
+          <div className="flex items-center justify-start sm:justify-center gap-1.5 sm:gap-2 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] py-1 px-2">
             {techBadges.map((badge) => (
               <span
                 key={badge.name}
-                className="px-3.5 py-1.5 text-xs sm:text-sm font-medium rounded-xl bg-slate-100 dark:bg-slate-800/70 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700/60 hover:border-emerald-500/50 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors shadow-2xs"
+                className="shrink-0 px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-[13px] font-medium rounded-xl bg-slate-100 dark:bg-slate-800/70 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700/60 hover:border-emerald-500/50 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors shadow-2xs whitespace-nowrap"
               >
                 {badge.name}
               </span>
