@@ -4,7 +4,7 @@ export const PERSONAL_DATA: PersonalInfo = {
   name: "Nguyễn Tiến Đạt",
   title: "Fresher Full-Stack Developer",
   subtitle: "Sinh viên năm cuối CNTT đam mê xây dựng hệ thống web toàn diện với Next.js, NestJS, Java Spring Boot & tích hợp AI.",
-  status: "🟢 Sẵn sàng nhận dự án mới",
+  status: "🟢 Sẵn sàng cống hiến",
   location: "Phường Hoàng Liệt, Quận Hoàng Mai, Hà Nội",
   email: "datga27@gmail.com",
   phone: "0337562201",
@@ -14,15 +14,15 @@ export const PERSONAL_DATA: PersonalInfo = {
   twitter: "https://twitter.com",
   resumeUrl: "#resume",
   stats: [
-    { label: "Dự án Full-Stack", value: "3+" },
+    { label: "Dự án Nổi bật", value: "4" },
+    { label: "Chứng chỉ Quốc tế", value: "6" },
     { label: "GPA Đại học", value: "3.0 / 4.0" },
     { label: "Chứng chỉ TOEIC", value: "580" },
-    { label: "Kỳ thực tập OJT", value: "2" },
   ],
   aboutText: [
     "Tôi là Fresher Full-Stack Developer, sinh viên năm cuối chuyên ngành Lập trình Web - Khoa Hệ thống thông tin, Đại học Phenikaa.",
-    "Tôi đã trực tiếp tham gia phát triển 3 dự án full-stack thực chiến sử dụng hệ sinh thái TypeScript (NestJS, Next.js, PostgreSQL, Prisma ORM) và Java Spring Boot kết hợp Angular. Tôi có kinh nghiệm xây dựng RESTful API, hệ thống bảo mật & phân quyền RBAC, giao tiếp thời gian thực với WebSocket và tích hợp AI (mô hình RAG với LangChain, OpenAI API).",
-    "Quen thuộc với quy trình phát triển chuyên nghiệp theo Agile/Scrum, quản lý nhánh Git/GitFlow, code review và tự nghiên cứu công nghệ mới. Mục tiêu của tôi là gia nhập đội ngũ phát triển sản phẩm thực tế với vị trí Full-Stack Developer để cống hiến và nâng cao năng lực."
+    "Tôi đã trực tiếp tham gia phát triển 4 dự án phần mềm và web tương tác cao: từ hệ thống Full-Stack (Next.js, NestJS, Java Spring Boot, Oracle, Kafka, pgvector RAG AI) đến thiết kế giao diện Frontend thế hệ mới (Next.js 16, Tailwind CSS v4, 3D Tilt Parallax, Design System). Tôi có kinh nghiệm xây dựng RESTful API, hệ thống bảo mật & phân quyền RBAC, giao tiếp thời gian thực với WebSocket và tối ưu hiệu năng người dùng.",
+    "Bên cạnh kiến thức đại học, tôi chủ động hoàn thành 4 chứng chỉ chuyên sâu từ Coursera (Agile Project Management, AWS Solutions Architecture, Laravel & PHP, Web Security) và đạt chứng chỉ TOEIC 580. Mục tiêu của tôi là gia nhập đội ngũ phát triển sản phẩm thực tế để cống hiến và bứt phá năng lực."
   ],
 };
 
@@ -496,6 +496,114 @@ handleStartExamRoom(@MessageBody() data: { roomId: string }, @ConnectedSocket() 
       }
     ]
   },
+  {
+    id: "project-portfolio",
+    slug: "portfolio-frontend",
+    title: "Interactive Developer Portfolio & Design System",
+    subtitle: "Nền tảng Portfolio thế hệ mới với Next.js 16, Tailwind CSS v4, 3D Parallax Tilt, Interactive Terminal & Cyber Emerald Theme",
+    category: "Frontend",
+    role: "Frontend & UI/UX Designer (Dự án cá nhân / Open Source)",
+    timeline: "11/2026",
+    organization: "Dự án cá nhân / Open Source",
+    status: "Đang hoạt động (Production)",
+    teamSize: "1 thành viên (Thiết kế hệ thống Design System & Lập trình giao diện)",
+    description: "Trang web Portfolio cá nhân tương tác cao, thiết kế độc bản theo phong cách Cyber Emerald với hiệu ứng thẻ bài 3D Tilt Glare, Terminal giả lập shell và kiến trúc Case Study động.",
+    longDescription: "Dự án Portfolio thế hệ mới được xây dựng với mục tiêu thoát khỏi phong cách website thông thường, tạo điểm nhấn ấn tượng khó quên (Storytelling) đối với nhà tuyển dụng công nghệ. Sử dụng nền tảng Next.js 16 App Router và Tailwind CSS v4 mới nhất, kết hợp kiến trúc thành phần độc lập (CSF). Hệ thống tích hợp các hiệu ứng chuyên sâu: thẻ 3D Tilt Glare tính toán tọa độ chuột trong không gian 3 chiều bằng CSS Transform, nền Spotlight theo dõi con trỏ mượt mà, hiệu ứng giải mã ký tự Hacker (ScrambleText), console Linux giả lập với phím tắt nhanh và hiệu ứng pháo hoa khi nhận lệnh tuyển dụng 'sudo hire', hộp lệnh nhanh Command Palette (Ctrl+K), trang CV A4 chuẩn ATS in ấn một chạm và kiến trúc Case Study kỹ thuật chuyên sâu cho từng dự án.",
+    tags: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS v4", "3D Tilt Parallax", "Terminal Emulation", "Design System", "Dark/Light Mode", "Turbopack", "Canvas Confetti"],
+    features: [
+      "Hệ thống Design System độc bản mang phong cách Cyber Emerald cao cấp, tối ưu Dark/Light Mode tức thì",
+      "Hiệu ứng thẻ bài 3D Parallax Tilt & Glare tính toán góc nghiêng tự nhiên theo tọa độ chuột không dùng thư viện nặng",
+      "Interactive Terminal mô phỏng console Linux với lịch sử lệnh, phím tắt chip và hiệu ứng pháo hoa khi chạy lệnh 'sudo hire'",
+      "Hiệu ứng giải mã văn bản Hacker (ScrambleText Effect) tạo cảm giác công nghệ tương lai",
+      "Interactive Spotlight theo dõi chuột tạo chiều sâu thị giác khi di chuyển khắp trang web",
+      "Hộp lệnh toàn cục Command Palette (Ctrl+K) tìm kiếm và chuyển trang nhanh chóng như macOS Spotlight",
+      "Bản CV trực tuyến chuẩn A4 ATS tại /cv hỗ trợ xem và in ấn PDF một chạm phục vụ tuyển dụng",
+      "Hệ thống trang Case Study động cho từng dự án với Lightbox phóng to sơ đồ kỹ thuật và copy code"
+    ],
+    image: "/projects/portfolio-frontend/banner.svg",
+    liveUrl: "http://localhost:3000",
+    githubUrl: "https://github.com/datga27/portfolio",
+    featured: true,
+    stats: [
+      { label: "Tốc độ biên dịch", value: "< 900ms", hint: "Next.js 16 Turbopack Engine" },
+      { label: "Hiệu năng khung hình", value: "60 FPS", hint: "GPU Hardware Acceleration 3D Transform" },
+      { label: "Design System", value: "Cyber Emerald", hint: "Tone màu xanh ngọc công nghệ cao cấp" },
+      { label: "Tính năng tương tác", value: "7+ Effects", hint: "Terminal, Tilt, Spotlight, Scramble, Lightbox..." },
+    ],
+    techStackByCategory: [
+      { category: "Frontend Core", skills: ["Next.js 16 (Turbopack)", "React 19", "TypeScript 5", "Tailwind CSS v4", "Lucide Icons"] },
+      { category: "Tương tác & Hiệu ứng", skills: ["CSS 3D Transforms", "Canvas Confetti", "ScrambleText Algorithm", "Interactive Terminal", "Mouse Spotlight"] },
+      { category: "Kiến trúc & SEO", skills: ["Dynamic Case Studies", "Suspense Streaming", "Print Ready ATS CV", "Metadata & Sitemap", "Partial Prerendering"] },
+      { category: "Triển khai & CI/CD", skills: ["Vercel Edge Network", "Git / GitHub", "Responsive Design", "Web Accessibility (a11y)"] },
+    ],
+    gallery: [
+      { src: "/projects/portfolio-frontend/banner.svg", caption: "Giao diện tổng quan hệ thống Portfolio & Design System phong cách Cyber Emerald", category: "Giao diện chính" },
+      { src: "/projects/portfolio-frontend/ui-components.svg", caption: "Kiến trúc các thành phần tương tác: 3D Tilt Glare, Terminal giả lập & Command Palette", category: "Design System" },
+      { src: "/projects/portfolio-frontend/architecture.svg", caption: "Sơ đồ kiến trúc Next.js 16 App Router, Suspense Streaming và quy trình biên dịch Turbopack", category: "Kiến trúc hệ thống" },
+    ],
+    architectureOverview: "Portfolio được xây dựng trên nền tảng Next.js 16 với Turbopack bundler. Phía giao diện ứng dụng kết hợp Tailwind CSS v4 theo phong cách Cyber Emerald tương phản cao. Các hiệu ứng đồ họa tương tác (3D Tilt Card, Mouse Spotlight, Interactive Terminal) được tối ưu hóa chạy trực tiếp trên GPU thông qua CSS 3D Transforms và requestAnimationFrame mà không phụ thuộc vào các thư viện 3D cồng kềnh, giúp trang web đạt chỉ số hiệu năng Lighthouse 100/100.",
+    codeStructure: [
+      {
+        title: "Frontend Core & Routing",
+        path: "src/app",
+        description: "Kiến trúc Next.js App Router với Static Generation và Suspense Streaming",
+        badge: "Next.js 16",
+        children: [
+          { path: "page.tsx", description: "Trang chủ tích hợp đầy đủ Hero, About, Skills, Projects, Experience, Certificates, Contact" },
+          { path: "projects/[slug]/page.tsx", description: "Trang Case Study kỹ thuật chuyên sâu sinh tĩnh động cho 4 dự án" },
+          { path: "cv/page.tsx", description: "Bản CV chuẩn A4 ATS hỗ trợ xem và in ấn trực tiếp" },
+          { path: "sitemap.ts & robots.ts", description: "Tự động sinh sitemap chuẩn SEO cho Google Search Console" },
+        ]
+      },
+      {
+        title: "Interactive Components & Effects",
+        path: "src/components",
+        description: "Thư viện components tương tác cao, thiết kế độc bản",
+        badge: "React 19 + Tailwind v4",
+        children: [
+          { path: "effects/TiltCard.tsx", description: "Thẻ bài 3D Parallax Tilt tính góc nghiêng và vệt sáng Glare theo chuột" },
+          { path: "effects/InteractiveSpotlight.tsx", description: "Hiệu ứng nền Spotlight tỏa sáng theo con trỏ chuột" },
+          { path: "effects/CommandPalette.tsx", description: "Hộp lệnh nhanh toàn cục kích hoạt bằng Ctrl+K" },
+          { path: "features/InteractiveTerminal.tsx", description: "Console Linux giả lập có lịch sử lệnh và pháo hoa khi gõ sudo hire" },
+          { path: "features/ProjectCaseStudy.tsx", description: "Giao diện Case study với thư viện ảnh Lightbox zoom và copy code" }
+        ]
+      }
+    ],
+    deepDives: [
+      {
+        title: "Tối ưu hóa hiệu năng hiệu ứng 3D Parallax Tilt không dùng thư viện ngoài",
+        challenge: "Nhiều trang web sử dụng các thư viện nặng (Three.js hoặc thư viện jQuery cũ) để làm hiệu ứng 3D dẫn đến kích thước bundle lớn (vài trăm KB), giật lag trên thiết bị di động và tụt FPS.",
+        solution: "Tự code component TiltCard bằng React Hooks và CSS 3D Transforms (perspective, rotateX, rotateY). Tọa độ chuột được chuẩn hóa từ tâm thẻ theo tỷ lệ [-1, 1], áp dụng GPU Hardware Acceleration (transform-gpu) giúp hiệu ứng đạt 60 FPS mượt mà với kích thước mã nguồn dưới 2KB.",
+        codeSnippet: {
+          language: "typescript",
+          filename: "src/components/effects/TiltCard.tsx",
+          code: `// Tính toán góc nghiêng 3D Euler angles theo tọa độ chuột
+const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+  if (!cardRef.current) return;
+  const rect = cardRef.current.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  
+  // Tính tỷ lệ từ tâm thẻ [-0.5, 0.5]
+  const centerX = x / rect.width - 0.5;
+  const centerY = y / rect.height - 0.5;
+  
+  // rotateX tỉ lệ nghịch với Y, rotateY tỉ lệ thuận với X
+  setRotation({
+    x: -centerY * maxTilt,
+    y: centerX * maxTilt,
+  });
+  setGlare({ x: (x / rect.width) * 100, y: (y / rect.height) * 100, opacity: 0.25 });
+};`
+        },
+        keyTakeaways: [
+          "Loại bỏ 100% thư viện 3D cồng kềnh, tiết kiệm băng thông tải trang",
+          "Tốc độ phản hồi tức thì 60 FPS nhờ CSS transform3d",
+          "Tự động vô hiệu hóa hiệu ứng trên màn hình cảm ứng để tiết kiệm pin"
+        ]
+      }
+    ]
+  },
 ];
 
 export const EXPERIENCES_DATA: ExperienceItem[] = [
@@ -543,15 +651,73 @@ export const EXPERIENCES_DATA: ExperienceItem[] = [
 
 export const CERTIFICATES_DATA: CertificateItem[] = [
   {
+    id: "cert-agile",
+    name: "Agile Project Management",
+    issuer: "Google / Coursera",
+    date: "2026",
+    category: "Coursera",
+    pdfUrl: "/degrees_coursera/Agile Project Management.pdf",
+    skills: ["Agile Framework", "Scrum Master", "Sprint Planning", "Jira", "Team Leadership"],
+    description: [
+      "Quản trị dự án phần mềm theo phương pháp luận Agile và Scrum Framework chuẩn quốc tế.",
+      "Thực hành lập kế hoạch Sprint, quản lý Product Backlog, tổ chức Daily Standup và phân bổ nguồn lực.",
+      "Kỹ năng giải quyết xung đột, quản lý rủi ro và tối ưu năng suất làm việc của đội ngũ phát triển."
+    ],
+  },
+  {
+    id: "cert-aws",
+    name: "Architecting Solutions on AWS",
+    issuer: "Amazon Web Services (AWS) / Coursera",
+    date: "2026",
+    category: "Coursera",
+    pdfUrl: "/degrees_coursera/Architecting Solutions on AWS.pdf",
+    skills: ["AWS Cloud Architecture", "High Availability", "S3 & RDS", "VPC & Security", "Scalability"],
+    description: [
+      "Thiết kế kiến trúc hệ thống đám mây phân tán, chịu lỗi (Fault-Tolerant) và mở rộng linh hoạt trên AWS.",
+      "Triển khai hạ tầng mạng ảo VPC, phân tách Subnet công khai/riêng tư, cấu hình Security Groups và IAM.",
+      "Tối ưu chi phí lưu trữ và hiệu năng cơ sở dữ liệu với Amazon S3, EC2 Auto Scaling và RDS Multi-AZ."
+    ],
+  },
+  {
+    id: "cert-laravel",
+    name: "Master Full-Stack Web Development with Laravel & PHP",
+    issuer: "Board Infinity / Coursera",
+    date: "2026",
+    category: "Coursera",
+    pdfUrl: "/degrees_coursera/Master Full-Stack Web Development with Laravel & PHP.pdf",
+    skills: ["PHP 8", "Laravel Framework", "Eloquent ORM", "RESTful API", "MVC Architecture", "MySQL"],
+    description: [
+      "Phát triển ứng dụng web Full-Stack chuẩn mô hình MVC với ngôn ngữ PHP và Laravel Framework.",
+      "Xây dựng RESTful API, xác thực người dùng JWT/Sanctum, xử lý nghiệp vụ với Eloquent ORM và Database Migration.",
+      "Tích hợp Blade Templating, xử lý form validation chặt chẽ và triển khai ứng dụng trên máy chủ web."
+    ],
+  },
+  {
+    id: "cert-security",
+    name: "Software Security for Web Applications",
+    issuer: "Coursera",
+    date: "2026",
+    category: "Coursera",
+    pdfUrl: "/degrees_coursera/Software Security for Web Applications.pdf",
+    skills: ["OWASP Top 10", "SQL Injection Defense", "XSS & CSRF Prevention", "Secure Auth", "Data Encryption"],
+    description: [
+      "Phân tích và khắc phục các lỗ hổng bảo mật ứng dụng web phổ biến theo tiêu chuẩn OWASP Top 10.",
+      "Kỹ thuật phòng chống tấn công SQL Injection, Cross-Site Scripting (XSS), CSRF và Session Hijacking.",
+      "Áp dụng nguyên tắc mã hóa dữ liệu nhạy cảm, thiết lập chính sách CORS an toàn và xác thực hai lớp (2FA)."
+    ],
+  },
+  {
     id: "cert-toeic",
     name: "Chứng chỉ TOEIC 580",
     issuer: "ETS",
     date: "12/2025",
     score: "580 Điểm",
+    category: "Language",
+    skills: ["Listening Comprehension", "Reading Comprehension", "Technical English"],
     description: [
-      "Trình độ tiếng Anh Trung cấp (Intermediate).",
-      "Khả năng đọc hiểu tài liệu kỹ thuật, nghiên cứu công nghệ mới và đọc hiểu tài liệu API tiếng Anh tốt.",
-      "Giao tiếp cơ bản trong môi trường làm việc quốc tế và doanh nghiệp công nghệ.",
+      "Trình độ tiếng Anh Trung cấp (Intermediate) phục vụ giao tiếp công việc và đọc hiểu tài liệu kỹ thuật.",
+      "Khả năng đọc hiểu tài liệu API, đặc tả hệ thống và nghiên cứu công nghệ mới nhanh chóng.",
+      "Giao tiếp cơ bản trong môi trường làm việc quốc tế và doanh nghiệp công nghệ."
     ],
   },
   {
@@ -559,9 +725,11 @@ export const CERTIFICATES_DATA: CertificateItem[] = [
     name: "Chứng nhận Internship OneConnect",
     issuer: "Rikkei Education",
     date: "06/2026",
+    category: "Training",
+    skills: ["Enterprise Agile/Scrum", "Code Review", "Teamwork", "Problem Solving"],
     description: [
       "Tham gia chương trình đào tạo thực chiến (OJT) mô phỏng quy trình Agile–Scrum chuẩn doanh nghiệp dưới sự dẫn dắt của các Tech Lead.",
-      "Phối hợp nhóm phát triển dự án thực tế, nâng cao kỹ năng làm việc nhóm (Teamwork), thuyết trình và giải quyết vấn đề.",
+      "Phối hợp nhóm phát triển dự án thực tế, nâng cao kỹ năng làm việc nhóm (Teamwork), thuyết trình và giải quyết vấn đề."
     ],
   },
 ];

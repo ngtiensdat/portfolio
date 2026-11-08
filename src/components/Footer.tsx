@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           {/* Logo & Tagline */}
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-full overflow-hidden border border-blue-500/40 shadow-sm shrink-0 bg-amber-100">
+            <div className="w-9 h-9 rounded-full overflow-hidden border border-emerald-500/40 shadow-sm shrink-0 bg-emerald-950/20">
               <img
                 src="/logo.jpg"
                 alt="Nguyễn Tiến Đạt Logo"
@@ -33,9 +33,8 @@ export default function Footer() {
 
           {/* Center message */}
           <div className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
-            <span>Thiết kế & lập trình với</span>
+            <span>Rất cảm ơn anh chị đã ghé thăm !</span>
             <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500 inline" />
-            <span>bằng Next.js & Tailwind CSS</span>
           </div>
 
           {/* Back to top */}

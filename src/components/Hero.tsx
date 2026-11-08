@@ -24,9 +24,9 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
-      {/* Background Ambient Glow Orbs */}
-      <div className="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[35rem] h-[35rem] bg-gradient-to-tr from-blue-500/20 via-indigo-500/15 to-cyan-400/20 rounded-full blur-3xl pointer-events-none -z-10" />
-      <div className="absolute top-1/3 right-10 w-80 h-80 bg-purple-500/15 rounded-full blur-3xl pointer-events-none -z-10" />
+      {/* Background Ambient Glow Orbs - Cyber Emerald */}
+      <div className="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[35rem] h-[35rem] bg-gradient-to-tr from-emerald-500/20 via-teal-500/15 to-emerald-400/20 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/3 right-10 w-80 h-80 bg-teal-500/15 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
@@ -41,13 +41,13 @@ export default function Hero() {
             {/* Name with Hacker Scramble Effect */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
               Xin chào, tôi là <br />
-              <span className="bg-gradient-to-r from-blue-600 via-indigo-500 to-cyan-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-400 dark:from-emerald-400 dark:via-teal-300 dark:to-cyan-300 bg-clip-text text-transparent">
                 <ScrambleText text={personal.name} />
               </span>
             </h1>
 
             <div className="mt-4 flex items-center gap-2 text-lg sm:text-xl font-bold text-slate-700 dark:text-slate-200">
-              <Sparkles className="w-5 h-5 text-amber-500 shrink-0" />
+              <Sparkles className="w-5 h-5 text-emerald-400 shrink-0" />
               <ScrambleText text={personal.title} hoverTrigger={false} />
             </div>
 
@@ -60,7 +60,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 px-6 py-3.5 text-sm sm:text-base font-semibold text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 rounded-xl shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3.5 text-sm sm:text-base font-semibold text-white bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-500 hover:from-emerald-700 hover:to-teal-700 rounded-xl shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:-translate-y-0.5 transition-all"
               >
                 <span>Xem dự án</span>
                 <ArrowDown className="w-4 h-4" />
@@ -71,7 +71,7 @@ export default function Hero() {
                 className="inline-flex items-center gap-2 px-6 py-3.5 text-sm sm:text-base font-semibold text-slate-800 dark:text-slate-200 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/80 rounded-xl shadow-xs hover:-translate-y-0.5 transition-all"
               >
                 <span>Liên hệ phỏng vấn</span>
-                <Send className="w-4 h-4 text-blue-500" />
+                <Send className="w-4 h-4 text-emerald-500" />
               </a>
             </div>
 
@@ -82,7 +82,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="p-3 rounded-xl border border-slate-200 dark:border-slate-800 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all hover:scale-105 shadow-2xs"
+                className="p-3 rounded-xl border border-slate-200 dark:border-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all hover:scale-105 shadow-2xs"
               >
                 <GithubIcon className="w-5 h-5" />
               </a>
@@ -91,14 +91,14 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="p-3 rounded-xl border border-slate-200 dark:border-slate-800 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all hover:scale-105 shadow-2xs"
+                className="p-3 rounded-xl border border-slate-200 dark:border-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all hover:scale-105 shadow-2xs"
               >
                 <LinkedinIcon className="w-5 h-5" />
               </a>
               <a
                 href={`mailto:${personal.email}`}
                 aria-label="Email"
-                className="p-3 rounded-xl border border-slate-200 dark:border-slate-800 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all hover:scale-105 shadow-2xs"
+                className="p-3 rounded-xl border border-slate-200 dark:border-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all hover:scale-105 shadow-2xs"
               >
                 <Mail className="w-5 h-5" />
               </a>
@@ -124,7 +124,7 @@ export default function Hero() {
             {techBadges.map((badge) => (
               <span
                 key={badge.name}
-                className="px-3.5 py-1.5 text-xs sm:text-sm font-medium rounded-xl bg-slate-100 dark:bg-slate-800/70 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700/60 hover:border-blue-500/50 hover:text-blue-500 dark:hover:text-blue-400 transition-colors shadow-2xs"
+                className="px-3.5 py-1.5 text-xs sm:text-sm font-medium rounded-xl bg-slate-100 dark:bg-slate-800/70 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700/60 hover:border-emerald-500/50 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors shadow-2xs"
               >
                 {badge.name}
               </span>

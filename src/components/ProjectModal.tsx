@@ -48,11 +48,11 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         {/* Modal Header */}
         <div className="mb-4">
           <div className="flex items-center gap-2 mb-2">
-            <span className="px-3 py-1 text-xs font-semibold rounded-full bg-blue-100 dark:bg-blue-950/80 text-blue-700 dark:text-blue-300">
+            <span className="px-3 py-1 text-xs font-semibold rounded-full bg-emerald-100 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30">
               {project.category}
             </span>
             {project.featured && (
-              <span className="px-3 py-1 text-xs font-semibold rounded-full bg-amber-100 dark:bg-amber-950/80 text-amber-700 dark:text-amber-300">
+              <span className="px-3 py-1 text-xs font-semibold rounded-full bg-amber-100 dark:bg-amber-950/80 text-amber-700 dark:text-amber-300 border border-amber-500/30">
                 ★ Dự án nổi bật
               </span>
             )}
@@ -116,7 +116,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           <Link
             href={`/projects/${project.slug}`}
             onClick={onClose}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow-md shadow-blue-500/20 transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-950 bg-emerald-400 hover:bg-emerald-300 shadow-md shadow-emerald-500/20 transition-all cursor-pointer font-medium"
           >
             <span>Trang phân tích chi tiết & Mã nguồn</span>
             <ArrowRight className="w-4 h-4" />

@@ -49,7 +49,7 @@ export function CommandPalette() {
       particleCount: 100,
       spread: 70,
       origin: { y: 0.6 },
-      colors: ["#3b82f6", "#10b981", "#f59e0b", "#ec4899", "#8b5cf6"],
+      colors: ["#10b981", "#34d399", "#059669", "#f59e0b", "#06b6d4"],
     });
     setIsOpen(false);
   }, []);
@@ -71,7 +71,7 @@ export function CommandPalette() {
       id: "case-food-ai",
       label: "Chi tiết kỹ thuật & Code: FOOD AI Social Network",
       category: "Dự án",
-      icon: <Code2 className="w-4 h-4 text-cyan-500" />,
+      icon: <Code2 className="w-4 h-4 text-emerald-400" />,
       perform: () => {
         router.push("/projects/food-ai");
         setIsOpen(false);
@@ -81,7 +81,7 @@ export function CommandPalette() {
       id: "case-payment-hub",
       label: "Chi tiết kỹ thuật & Code: Payment Hub Middleware (1M+ Records, Kafka)",
       category: "Dự án",
-      icon: <Code2 className="w-4 h-4 text-indigo-500" />,
+      icon: <Code2 className="w-4 h-4 text-teal-400" />,
       perform: () => {
         router.push("/projects/payment-hub");
         setIsOpen(false);
@@ -98,17 +98,27 @@ export function CommandPalette() {
       },
     },
     {
+      id: "case-portfolio-frontend",
+      label: "Chi tiết thiết kế Frontend & Code: Interactive Developer Portfolio",
+      category: "Dự án",
+      icon: <Code2 className="w-4 h-4 text-emerald-400" />,
+      perform: () => {
+        router.push("/projects/portfolio-frontend");
+        setIsOpen(false);
+      },
+    },
+    {
       id: "proj-food-ai",
       label: "Mở Live Demo: FOOD AI Social Network",
       category: "Dự án",
-      icon: <ExternalLink className="w-4 h-4 text-blue-500" />,
+      icon: <ExternalLink className="w-4 h-4 text-emerald-400" />,
       perform: () => window.open("https://food-ai-frontend-azure.vercel.app/", "_blank"),
     },
     {
       id: "proj-learn-english",
       label: "Mở Live Demo: Learn English Web",
       category: "Dự án",
-      icon: <ExternalLink className="w-4 h-4 text-blue-500" />,
+      icon: <ExternalLink className="w-4 h-4 text-emerald-400" />,
       perform: () => window.open("https://learn-english-three-omega.vercel.app/", "_blank"),
     },
     {
@@ -134,11 +144,21 @@ export function CommandPalette() {
     },
     {
       id: "nav-projects",
-      label: "Đến mục: 3 Dự án thực chiến",
+      label: "Đến mục: 4 Dự án thực chiến",
       category: "Điều hướng",
       icon: <Code2 className="w-4 h-4 text-slate-400" />,
       perform: () => {
         window.location.hash = "#projects";
+        setIsOpen(false);
+      },
+    },
+    {
+      id: "nav-certificates",
+      label: "Đến mục: Chứng chỉ Coursera & TOEIC (Xem PDF trực tiếp)",
+      category: "Điều hướng",
+      icon: <FileText className="w-4 h-4 text-emerald-400" />,
+      perform: () => {
+        window.location.hash = "#certificates";
         setIsOpen(false);
       },
     },
@@ -153,7 +173,7 @@ export function CommandPalette() {
       id: "copy-email",
       label: "Sao chép email: datga27@gmail.com",
       category: "Liên hệ",
-      icon: <Mail className="w-4 h-4 text-blue-500" />,
+      icon: <Mail className="w-4 h-4 text-emerald-400" />,
       perform: () => handleCopy("datga27@gmail.com", "email"),
     },
     {
@@ -265,7 +285,7 @@ export function CommandPalette() {
                 onMouseEnter={() => setSelectedIndex(index)}
                 className={`flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-medium cursor-pointer transition-colors ${
                   selectedIndex === index
-                    ? "bg-blue-50 dark:bg-blue-950/70 text-blue-700 dark:text-blue-300"
+                    ? "bg-emerald-500/15 dark:bg-emerald-950/70 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20"
                     : "text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60"
                 }`}
               >

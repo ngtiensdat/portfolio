@@ -25,7 +25,7 @@ export default function CVPage() {
 
         <button
           onClick={handlePrint}
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 shadow-md shadow-blue-500/25 transition-all cursor-pointer"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-slate-950 bg-emerald-400 hover:bg-emerald-300 shadow-md shadow-emerald-500/25 transition-all cursor-pointer"
         >
           <Printer className="w-4 h-4" />
           <span>In / Xuất file PDF (Ctrl + P)</span>
@@ -41,7 +41,7 @@ export default function CVPage() {
               <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">
                 {personal.name}
               </h1>
-              <p className="text-lg font-bold text-blue-700 mt-1">
+              <p className="text-lg font-bold text-emerald-700 mt-1">
                 {personal.title}
               </p>
               <p className="text-xs text-slate-500 mt-0.5">
@@ -113,7 +113,7 @@ export default function CVPage() {
             {experiences.filter((e) => e.type === "work").map((exp) => (
               <div key={exp.id}>
                 <div className="flex items-center justify-between font-bold text-slate-900">
-                  <span className="text-xs">{exp.company} — <span className="text-blue-700 font-semibold">{exp.role}</span></span>
+                  <span className="text-xs">{exp.company} — <span className="text-emerald-700 font-semibold">{exp.role}</span></span>
                   <span className="text-[11px] text-slate-500">{exp.period}</span>
                 </div>
                 <ul className="mt-1.5 space-y-1 list-disc list-inside text-slate-700 pl-1">
@@ -143,7 +143,7 @@ export default function CVPage() {
                       href={proj.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-[11px] font-bold text-blue-700 hover:underline"
+                      className="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-700 hover:underline"
                     >
                       <ExternalLink className="w-3 h-3" />
                       <span>{proj.liveUrl.replace("https://", "")}</span>
@@ -178,7 +178,7 @@ export default function CVPage() {
               <p className="font-bold text-slate-900">Trường Đại học Phenikaa</p>
               <p className="text-slate-700">Ngành CNTT • Khoa Hệ thống thông tin • Chuyên ngành Lập trình Web</p>
               <p className="text-[11px] text-slate-500">Khoảng thời gian: 10/2022 – 12/2026</p>
-              <p className="font-semibold text-blue-800">GPA dự kiến: 3.0 / 4.0 (Xếp loại Khá)</p>
+              <p className="font-semibold text-emerald-800">GPA dự kiến: 3.0 / 4.0 (Xếp loại Khá)</p>
             </div>
           </div>
 

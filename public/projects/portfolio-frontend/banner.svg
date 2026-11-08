@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06120d" /><stop offset="50%" stop-color="#0a1913" /><stop offset="100%" stop-color="#040b08" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" /><stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f261d" /><stop offset="100%" stop-color="#071711" />
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#133628" stroke-width="0.8" opacity="0.7"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)" />
+  <rect width="1200" height="675" fill="url(#grid)" />
+
+  <!-- Center Emerald Glow -->
+  <circle cx="600" cy="300" r="280" fill="#10b981" fill-opacity="0.12" filter="blur(60px)" />
+
+  <!-- Header Mock Bar -->
+  <rect x="60" y="40" width="1080" height="60" rx="16" fill="#0f261d" fill-opacity="0.85" stroke="#1e4d3a" stroke-width="1.5"/>
+  <circle cx="95" cy="70" r="10" fill="#10b981" />
+  <text x="120" y="75" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">INTERACTIVE DEVELOPER PORTFOLIO &amp; DESIGN SYSTEM</text>
+  <rect x="940" y="55" width="180" height="30" rx="8" fill="#10b981" fill-opacity="0.2" stroke="#10b981" />
+  <text x="1030" y="75" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#34d399" text-anchor="middle">CYBER EMERALD • NEXT.JS 16</text>
+
+  <!-- Hero Body Card -->
+  <g transform="translate(150, 140)">
+    <rect width="900" height="420" rx="24" fill="url(#cardGrad)" stroke="#1e4d3a" stroke-width="2" />
+    
+    <rect x="330" y="35" width="240" height="30" rx="8" fill="#10b981" fill-opacity="0.15" stroke="#10b981" />
+    <text x="450" y="55" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#34d399" text-anchor="middle">MODERN FRONTEND SHOWCASE</text>
+
+    <text x="450" y="115" font-family="system-ui, sans-serif" font-size="34" font-weight="extrabold" fill="#ffffff" text-anchor="middle">Interactive Developer Portfolio</text>
+    <text x="450" y="150" font-family="system-ui, sans-serif" font-size="16" fill="#a7f3d0" text-anchor="middle">Next.js 16 • Tailwind CSS v4 • 3D Tilt Parallax • Interactive Terminal</text>
+
+    <!-- 3 Tech Pillars -->
+    <g transform="translate(45, 195)">
+      <rect width="250" height="170" rx="16" fill="#071711" stroke="#10b981" stroke-width="1.5" />
+      <text x="125" y="45" font-family="system-ui, sans-serif" font-size="28" text-anchor="middle">✨</text>
+      <text x="125" y="80" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#f8fafc" text-anchor="middle">3D Tilt &amp; Spotlight</text>
+      <text x="125" y="105" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Hiệu ứng thẻ bài 3D Glare</text>
+      <text x="125" y="125" font-family="system-ui, sans-serif" font-size="12" fill="#34d399" text-anchor="middle">Tính toán tọa độ chuột 3D</text>
+      <text x="125" y="145" font-family="system-ui, sans-serif" font-size="11" fill="#6ee7b7" text-anchor="middle">Nền Spotlight tỏa sáng</text>
+    </g>
+
+    <g transform="translate(325, 195)">
+      <rect width="250" height="170" rx="16" fill="#071711" stroke="#14b8a6" stroke-width="1.5" />
+      <text x="125" y="45" font-family="system-ui, sans-serif" font-size="28" text-anchor="middle">💻</text>
+      <text x="125" y="80" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#f8fafc" text-anchor="middle">Interactive Terminal</text>
+      <text x="125" y="105" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Cửa sổ console Linux giả lập</text>
+      <text x="125" y="125" font-family="system-ui, sans-serif" font-size="12" fill="#2dd4bf" text-anchor="middle">Lệnh 'sudo hire' bắn pháo hoa</text>
+      <text x="125" y="145" font-family="system-ui, sans-serif" font-size="11" fill="#5eead4" text-anchor="middle">ScrambleText Hacker</text>
+    </g>
+
+    <g transform="translate(605, 195)">
+      <rect width="250" height="170" rx="16" fill="#071711" stroke="#3b82f6" stroke-width="1.5" />
+      <text x="125" y="45" font-family="system-ui, sans-serif" font-size="28" text-anchor="middle">⚡</text>
+      <text x="125" y="80" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#f8fafc" text-anchor="middle">Next.js 16 &amp; Turbopack</text>
+      <text x="125" y="105" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Partial Prerendering (PPR)</text>
+      <text x="125" y="125" font-family="system-ui, sans-serif" font-size="12" fill="#60a5fa" text-anchor="middle">Tốc độ biên dịch siêu tốc</text>
+      <text x="125" y="145" font-family="system-ui, sans-serif" font-size="11" fill="#93c5fd" text-anchor="middle">Static Case Study Pages</text>
+    </g>
+  </g>
+
+  <!-- Bottom File Replacement Guide -->
+  <rect x="40" y="595" width="1120" height="50" rx="12" fill="#0f261d" stroke="#1e4d3a" stroke-width="1"/>
+  <text x="60" y="626" font-family="monospace" font-size="13" fill="#34d399">💡 Vị trí file ảnh:</text>
+  <text x="220" y="626" font-family="monospace" font-size="13" fill="#e2e8f0">Đường dẫn: </text>
+  <text x="320" y="626" font-family="monospace" font-size="13" font-weight="bold" fill="#facc15">e:\portfolio\public\projects\portfolio-frontend\banner.svg</text>
+</svg>

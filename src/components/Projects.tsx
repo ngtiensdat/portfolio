@@ -35,7 +35,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <p className="text-sm font-semibold tracking-wider uppercase text-blue-600 dark:text-blue-400 mb-2">
+          <p className="text-sm font-semibold tracking-wider uppercase text-emerald-600 dark:text-emerald-400 mb-2">
             Sản phẩm tiêu biểu
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
@@ -44,7 +44,7 @@ export default function Projects() {
           <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-400">
             Dưới đây là một số dự án thực tế chứng minh năng lực thiết kế, tư duy code và giải quyết vấn đề.
           </p>
-          <div className="w-16 h-1 bg-gradient-to-r from-blue-600 to-cyan-500 mx-auto mt-4 rounded-full" />
+          <div className="w-16 h-1 bg-gradient-to-r from-emerald-500 to-teal-400 mx-auto mt-4 rounded-full" />
         </div>
 
         {/* Filter Controls: Category Buttons + Live Search Bar */}
@@ -57,7 +57,7 @@ export default function Projects() {
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                   selectedCategory === cat
-                    ? "bg-blue-600 text-white shadow-md shadow-blue-500/20"
+                    ? "bg-emerald-600 text-white shadow-md shadow-emerald-500/20"
                     : "bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200/80 dark:border-slate-700/60 hover:bg-slate-100 dark:hover:bg-slate-700/80"
                 }`}
               >
@@ -74,7 +74,7 @@ export default function Projects() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Tìm theo tên, công nghệ..."
-              className="w-full pl-9 pr-8 py-2 rounded-xl text-xs sm:text-sm bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full pl-9 pr-8 py-2 rounded-xl text-xs sm:text-sm bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500"
             />
             {searchQuery && (
               <button
@@ -102,7 +102,7 @@ export default function Projects() {
                 setSelectedCategory("Tất cả");
                 setSearchQuery("");
               }}
-              className="mt-4 px-4 py-2 text-xs font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 rounded-xl hover:bg-blue-100 transition-colors"
+              className="mt-4 px-4 py-2 text-xs font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 rounded-xl hover:bg-emerald-100 transition-colors"
             >
               Đặt lại bộ lọc
             </button>
@@ -113,7 +113,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {filteredProjects.map((project) => (
             <TiltCard key={project.id} className="rounded-3xl">
-              <div className="group flex flex-col h-full rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-2xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden">
+              <div className="group flex flex-col h-full rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-2xl hover:border-emerald-500/50 transition-all duration-300 overflow-hidden">
                 {/* Project Image & Overlay - Clickable to Case Study Page */}
                 <Link
                   href={`/projects/${project.slug}`}
@@ -130,8 +130,8 @@ export default function Projects() {
                   {/* Hover Explore Pill */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-950/80 text-white text-xs font-semibold backdrop-blur-md border border-white/20 shadow-xl transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                      <span>Xem kiến trúc & mã nguồn</span>
-                      <ArrowRight className="w-3.5 h-3.5 text-blue-400" />
+                      <span>Xem kiến trúc &amp; mã nguồn</span>
+                      <ArrowRight className="w-3.5 h-3.5 text-emerald-400" />
                     </span>
                   </div>
 
@@ -152,7 +152,7 @@ export default function Projects() {
                 {/* Card Content */}
                 <div className="p-6 sm:p-7 flex flex-col flex-1">
                   <Link href={`/projects/${project.slug}`}>
-                    <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
                       {project.title}
                     </h3>
                   </Link>
@@ -183,7 +183,7 @@ export default function Projects() {
                     <div className="flex items-center gap-2">
                       <Link
                         href={`/projects/${project.slug}`}
-                        className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold shadow-sm shadow-blue-500/20 transition-all cursor-pointer"
+                        className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold shadow-sm shadow-emerald-500/20 transition-all cursor-pointer"
                       >
                         <span>Chi tiết dự án</span>
                         <ArrowRight className="w-3.5 h-3.5" />
@@ -204,7 +204,7 @@ export default function Projects() {
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                          className="inline-flex items-center gap-1 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
                         >
                           <ExternalLink className="w-3.5 h-3.5" />
                           <span>Demo</span>
@@ -214,7 +214,7 @@ export default function Projects() {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                        className="inline-flex items-center gap-1 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
                       >
                         <GithubIcon className="w-3.5 h-3.5" />
                         <span>Code</span>

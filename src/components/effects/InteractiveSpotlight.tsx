@@ -16,18 +16,18 @@ export function InteractiveSpotlight() {
 
   return (
     <div className="fixed inset-0 pointer-events-none z-30 overflow-hidden transition-opacity duration-300">
-      {/* Dynamic Cursor Spotlight Gradient */}
+      {/* Dynamic Cursor Spotlight Gradient - Cyber Emerald */}
       <div
         className="absolute w-[600px] h-[600px] rounded-full blur-3xl opacity-20 dark:opacity-25 transition-transform duration-75 ease-out"
         style={{
           background:
-            "radial-gradient(circle, rgba(59, 130, 246, 0.45) 0%, rgba(99, 102, 241, 0.25) 40%, transparent 70%)",
+            "radial-gradient(circle, rgba(16, 185, 129, 0.42) 0%, rgba(20, 184, 166, 0.22) 40%, transparent 70%)",
           transform: `translate(${mousePosition.x - 300}px, ${mousePosition.y - 300}px)`,
         }}
       />
 
       {/* Subtle Ambient Background Tech Grid Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#3b82f608_1px,transparent_1px),linear-gradient(to_bottom,#3b82f608_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_20%,#000_70%,transparent_100%)] opacity-40 dark:opacity-60" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b9810a_1px,transparent_1px),linear-gradient(to_bottom,#10b9810a_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_20%,#000_70%,transparent_100%)] opacity-40 dark:opacity-60" />
     </div>
   );
 }

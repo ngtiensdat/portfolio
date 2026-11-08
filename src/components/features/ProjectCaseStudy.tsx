@@ -88,14 +88,14 @@ export default function ProjectCaseStudy({
           <nav className="flex items-center gap-2 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
             <Link
               href="/"
-              className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors"
             >
               Trang chủ
             </Link>
             <span>/</span>
             <Link
               href="/#projects"
-              className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors"
             >
               Dự án
             </Link>
@@ -119,13 +119,13 @@ export default function ProjectCaseStudy({
       <header className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <div className="relative rounded-3xl p-6 sm:p-10 lg:p-12 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800 shadow-xl overflow-hidden">
           {/* Background Decorative Gradients */}
-          <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-500/10 dark:bg-blue-500/20 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-cyan-500/10 dark:bg-cyan-500/20 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -top-24 -right-24 w-96 h-96 bg-emerald-500/10 dark:bg-emerald-500/20 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-teal-500/10 dark:bg-teal-500/20 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative z-10">
             {/* Top Badges */}
             <div className="flex flex-wrap items-center gap-2.5 mb-5">
-              <span className="px-3.5 py-1 rounded-full text-xs font-semibold bg-blue-100 dark:bg-blue-950/80 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800/60">
+              <span className="px-3.5 py-1 rounded-full text-xs font-semibold bg-emerald-100 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60">
                 {project.category}
               </span>
               {project.status && (
@@ -156,7 +156,7 @@ export default function ProjectCaseStudy({
             <div className="mt-8 pt-6 border-t border-slate-200/80 dark:border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-4">
               {project.role && (
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-xl bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 shrink-0">
+                  <div className="p-2 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 shrink-0">
                     <User className="w-4 h-4" />
                   </div>
                   <div>
@@ -226,7 +226,7 @@ export default function ProjectCaseStudy({
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow-md shadow-blue-500/25 transition-all"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-950 bg-emerald-400 hover:bg-emerald-300 shadow-md shadow-emerald-500/25 transition-all"
                 >
                   <ExternalLink className="w-4 h-4" />
                   <span>Trải nghiệm Live Demo</span>
@@ -272,7 +272,7 @@ export default function ProjectCaseStudy({
                 key={idx}
                 className="p-5 rounded-2xl bg-white dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 shadow-sm"
               >
-                <p className="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+                <p className="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
                   {stat.value}
                 </p>
                 <p className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white mt-1">
@@ -294,7 +294,7 @@ export default function ProjectCaseStudy({
         <div className="rounded-3xl p-6 sm:p-8 bg-white dark:bg-slate-900/90 border border-slate-200/80 dark:border-slate-800 shadow-xl">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
             <div>
-              <p className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+              <p className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
                 Thư viện hình ảnh thực tế & Sơ đồ kỹ thuật
               </p>
               <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mt-1">
@@ -314,7 +314,7 @@ export default function ProjectCaseStudy({
                     }}
                     className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
                       selectedGalleryCategory === cat
-                        ? "bg-blue-600 text-white shadow-sm"
+                        ? "bg-emerald-500 text-slate-950 font-bold shadow-sm"
                         : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
                     }`}
                   >
@@ -337,7 +337,7 @@ export default function ProjectCaseStudy({
             {/* Overlay Caption Bar */}
             <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent flex items-center justify-between gap-4 text-white">
               <div>
-                <p className="text-xs font-semibold text-blue-400">
+                <p className="text-xs font-semibold text-emerald-400">
                   {activeImage.category || "Minh họa"}
                 </p>
                 <p className="text-xs sm:text-sm font-medium mt-0.5 line-clamp-1">
@@ -363,7 +363,7 @@ export default function ProjectCaseStudy({
                   onClick={() => setSelectedGalleryIdx(idx)}
                   className={`relative aspect-[16/10] rounded-xl overflow-hidden border-2 transition-all cursor-pointer ${
                     activeImage.src === img.src
-                      ? "border-blue-600 ring-2 ring-blue-500/30 scale-102"
+                      ? "border-emerald-500 ring-2 ring-emerald-500/30 scale-102"
                       : "border-transparent opacity-70 hover:opacity-100"
                   }`}
                 >
@@ -416,7 +416,7 @@ export default function ProjectCaseStudy({
           {/* Detailed Overview */}
           <div className="lg:col-span-2 rounded-3xl p-6 sm:p-8 bg-white dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 shadow-sm flex flex-col justify-between">
             <div>
-              <div className="flex items-center gap-2.5 mb-4 text-blue-600 dark:text-blue-400">
+              <div className="flex items-center gap-2.5 mb-4 text-emerald-600 dark:text-emerald-400">
                 <Layers className="w-5 h-5" />
                 <h2 className="text-lg sm:text-xl font-bold uppercase tracking-wider text-slate-900 dark:text-white">
                   Tổng quan nghiệp vụ & Bối cảnh
@@ -429,7 +429,7 @@ export default function ProjectCaseStudy({
               {project.architectureOverview && (
                 <div className="mt-6 pt-6 border-t border-slate-100 dark:border-slate-800">
                   <h3 className="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-2 flex items-center gap-2">
-                    <Cpu className="w-4 h-4 text-cyan-500" />
+                    <Cpu className="w-4 h-4 text-teal-400" />
                     <span>Mô hình kiến trúc tổng thể</span>
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
@@ -478,11 +478,11 @@ export default function ProjectCaseStudy({
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
           <div className="rounded-3xl p-6 sm:p-8 bg-white dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 shadow-sm">
             <div className="flex items-center gap-3 mb-2">
-              <div className="p-2 rounded-xl bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
+              <div className="p-2 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
                 <FolderTree className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+                <p className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
                   Cấu trúc thư mục & Module mã nguồn
                 </p>
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
@@ -503,16 +503,16 @@ export default function ProjectCaseStudy({
                   <div>
                     <div className="flex items-center justify-between gap-3 mb-3">
                       <h3 className="font-bold text-sm sm:text-base text-slate-900 dark:text-white flex items-center gap-2">
-                        <Terminal className="w-4 h-4 text-blue-500" />
+                        <Terminal className="w-4 h-4 text-emerald-400" />
                         <span>{module.title}</span>
                       </h3>
                       {module.badge && (
-                        <span className="px-2.5 py-0.5 rounded-md text-[10px] font-semibold bg-blue-100 dark:bg-blue-950/80 text-blue-700 dark:text-blue-300">
+                        <span className="px-2.5 py-0.5 rounded-md text-[10px] font-semibold bg-emerald-100 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300">
                           {module.badge}
                         </span>
                       )}
                     </div>
-                    <code className="text-xs font-mono text-cyan-600 dark:text-cyan-400 bg-white dark:bg-slate-900 px-2.5 py-1 rounded-md border border-slate-200 dark:border-slate-800 inline-block mb-3">
+                    <code className="text-xs font-mono text-teal-600 dark:text-teal-400 bg-white dark:bg-slate-900 px-2.5 py-1 rounded-md border border-slate-200 dark:border-slate-800 inline-block mb-3">
                       {module.path}
                     </code>
                     <p className="text-xs text-slate-600 dark:text-slate-400 mb-4">
@@ -551,7 +551,7 @@ export default function ProjectCaseStudy({
       {project.deepDives && project.deepDives.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
           <div className="mb-8">
-            <p className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+            <p className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
               Giải pháp kỹ thuật chuyên sâu
             </p>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">
@@ -569,7 +569,7 @@ export default function ProjectCaseStudy({
                 className="rounded-3xl p-6 sm:p-8 bg-white dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 shadow-md"
               >
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-8 h-8 rounded-xl bg-blue-600 text-white font-bold flex items-center justify-center text-sm shadow-md shadow-blue-500/30">
+                  <div className="w-8 h-8 rounded-xl bg-emerald-500 text-slate-950 font-bold flex items-center justify-center text-sm shadow-md shadow-emerald-500/30">
                     0{idx + 1}
                   </div>
                   <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
@@ -589,8 +589,8 @@ export default function ProjectCaseStudy({
                   </div>
 
                   {/* Solution */}
-                  <div className="p-4 sm:p-5 rounded-2xl bg-blue-500/5 dark:bg-blue-500/10 border border-blue-500/20">
-                    <p className="text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400 mb-2">
+                  <div className="p-4 sm:p-5 rounded-2xl bg-emerald-500/5 dark:bg-emerald-500/10 border border-emerald-500/20">
+                    <p className="text-xs font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-2">
                       💡 Giải pháp kiến trúc & Triển khai
                     </p>
                     <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -668,7 +668,7 @@ export default function ProjectCaseStudy({
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
           <div className="rounded-3xl p-6 sm:p-8 bg-white dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 shadow-sm">
             <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2.5">
-              <Code2 className="w-5 h-5 text-blue-500" />
+              <Code2 className="w-5 h-5 text-emerald-400" />
               <span>Hệ sinh thái công nghệ sử dụng</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mb-6">
@@ -681,7 +681,7 @@ export default function ProjectCaseStudy({
                   key={cIdx}
                   className="p-5 rounded-2xl bg-slate-50 dark:bg-slate-950/60 border border-slate-200/70 dark:border-slate-800/70"
                 >
-                  <p className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-3">
+                  <p className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-3">
                     {cat.category}
                   </p>
                   <div className="flex flex-wrap gap-1.5">
@@ -706,13 +706,13 @@ export default function ProjectCaseStudy({
         <div className="pt-8 border-t border-slate-200 dark:border-slate-800 grid grid-cols-1 sm:grid-cols-2 gap-4">
           <Link
             href={`/projects/${prevProject.slug}`}
-            className="group p-5 rounded-2xl bg-white dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 hover:border-blue-500/50 transition-all shadow-sm flex items-center gap-4"
+            className="group p-5 rounded-2xl bg-white dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 hover:border-emerald-500/50 transition-all shadow-sm flex items-center gap-4"
           >
-            <div className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
+            <div className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 group-hover:bg-emerald-500 group-hover:text-slate-950 font-bold transition-colors shrink-0">
               <ArrowLeft className="w-5 h-5" />
             </div>
             <div className="min-w-0">
-              <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
                 Dự án trước
               </p>
               <p className="text-sm sm:text-base font-bold text-slate-900 dark:text-white truncate">
@@ -723,17 +723,17 @@ export default function ProjectCaseStudy({
 
           <Link
             href={`/projects/${nextProject.slug}`}
-            className="group p-5 rounded-2xl bg-white dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 hover:border-blue-500/50 transition-all shadow-sm flex items-center justify-between text-right gap-4"
+            className="group p-5 rounded-2xl bg-white dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 hover:border-emerald-500/50 transition-all shadow-sm flex items-center justify-between text-right gap-4"
           >
             <div className="min-w-0 flex-1">
-              <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
                 Dự án kế tiếp
               </p>
               <p className="text-sm sm:text-base font-bold text-slate-900 dark:text-white truncate">
                 {nextProject.title}
               </p>
             </div>
-            <div className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
+            <div className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 group-hover:bg-emerald-500 group-hover:text-slate-950 font-bold transition-colors shrink-0">
               <ArrowRight className="w-5 h-5" />
             </div>
           </Link>

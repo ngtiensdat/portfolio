@@ -73,7 +73,7 @@ async function ProjectContent({ params }: PageProps) {
 
 export default function ProjectDetailPage({ params }: PageProps) {
   return (
-    <main className="min-h-screen flex flex-col bg-slate-50 dark:bg-[#080c14] text-slate-900 dark:text-slate-100 transition-colors duration-300 relative overflow-x-hidden">
+    <main className="min-h-screen flex flex-col bg-slate-50 dark:bg-[#060e0a] text-slate-900 dark:text-slate-100 transition-colors duration-300 relative overflow-x-hidden">
       <ScrollProgress />
       <InteractiveSpotlight />
       <Navbar />
@@ -81,7 +81,7 @@ export default function ProjectDetailPage({ params }: PageProps) {
         <Suspense
           fallback={
             <div className="min-h-[70vh] flex flex-col items-center justify-center gap-3">
-              <div className="w-8 h-8 border-3 border-blue-500 border-t-transparent rounded-full animate-spin" />
+              <div className="w-8 h-8 border-3 border-emerald-500 border-t-transparent rounded-full animate-spin" />
               <p className="text-sm text-slate-500 dark:text-slate-400 font-mono">
                 Đang tải dữ liệu kiến trúc dự án...
               </p>

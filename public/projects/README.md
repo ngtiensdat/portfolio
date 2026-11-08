@@ -45,3 +45,4 @@ public/projects/
 3. Chép đè vào thư mục dự án tương ứng:
    - Nếu bạn giữ đuôi file giống ảnh mẫu (`.svg`), chỉ cần chép đè vào là xong.
    - Nếu bạn dùng đuôi ảnh khác (`.png`, `.jpg`), bạn chỉ cần cập nhật đường dẫn tương ứng trong `src/constants/portfolio.ts`.
+

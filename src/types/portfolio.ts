@@ -79,6 +79,9 @@ export interface CertificateItem {
   issuer: string;
   date: string;
   score?: string;
+  pdfUrl?: string;
+  category?: 'Coursera' | 'Language' | 'Training';
+  skills?: string[];
   description: string[];
 }
 

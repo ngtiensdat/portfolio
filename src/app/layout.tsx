@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://nguyentiendat.dev"),
   title: `${portfolioData.personal.name} | Web Developer Portfolio`,
   description: `Portfolio cá nhân của ${portfolioData.personal.name} - ${portfolioData.personal.title}. ${portfolioData.personal.subtitle}`,
   keywords: [
@@ -45,7 +46,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col font-sans selection:bg-blue-500 selection:text-white">
+      <body className="min-h-full flex flex-col font-sans selection:bg-emerald-500 selection:text-black">
         {children}
       </body>
     </html>
