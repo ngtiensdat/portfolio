@@ -658,6 +658,7 @@ export const CERTIFICATES_DATA: CertificateItem[] = [
     date: "2026",
     category: "Coursera",
     pdfUrl: "/degrees_coursera/Agile Project Management.pdf",
+    thumbnailUrl: "/degrees_coursera/thumbnails/cert-agile.png",
     skills: ["Agile Framework", "Scrum Master", "Sprint Planning", "Jira", "Team Leadership"],
     description: [
       "Quản trị dự án phần mềm theo phương pháp luận Agile và Scrum Framework chuẩn quốc tế.",
@@ -672,6 +673,7 @@ export const CERTIFICATES_DATA: CertificateItem[] = [
     date: "2026",
     category: "Coursera",
     pdfUrl: "/degrees_coursera/Architecting Solutions on AWS.pdf",
+    thumbnailUrl: "/degrees_coursera/thumbnails/cert-aws.png",
     skills: ["AWS Cloud Architecture", "High Availability", "S3 & RDS", "VPC & Security", "Scalability"],
     description: [
       "Thiết kế kiến trúc hệ thống đám mây phân tán, chịu lỗi (Fault-Tolerant) và mở rộng linh hoạt trên AWS.",
@@ -686,6 +688,7 @@ export const CERTIFICATES_DATA: CertificateItem[] = [
     date: "2026",
     category: "Coursera",
     pdfUrl: "/degrees_coursera/Master Full-Stack Web Development with Laravel & PHP.pdf",
+    thumbnailUrl: "/degrees_coursera/thumbnails/cert-laravel.png",
     skills: ["PHP 8", "Laravel Framework", "Eloquent ORM", "RESTful API", "MVC Architecture", "MySQL"],
     description: [
       "Phát triển ứng dụng web Full-Stack chuẩn mô hình MVC với ngôn ngữ PHP và Laravel Framework.",
@@ -700,6 +703,7 @@ export const CERTIFICATES_DATA: CertificateItem[] = [
     date: "2026",
     category: "Coursera",
     pdfUrl: "/degrees_coursera/Software Security for Web Applications.pdf",
+    thumbnailUrl: "/degrees_coursera/thumbnails/cert-security.png",
     skills: ["OWASP Top 10", "SQL Injection Defense", "XSS & CSRF Prevention", "Secure Auth", "Data Encryption"],
     description: [
       "Phân tích và khắc phục các lỗ hổng bảo mật ứng dụng web phổ biến theo tiêu chuẩn OWASP Top 10.",
@@ -714,6 +718,7 @@ export const CERTIFICATES_DATA: CertificateItem[] = [
     date: "12/2025",
     score: "580 Điểm",
     category: "Language",
+    thumbnailUrl: "/degrees_coursera/thumbnails/cert-toeic.svg",
     skills: ["Listening Comprehension", "Reading Comprehension", "Technical English"],
     description: [
       "Trình độ tiếng Anh Trung cấp (Intermediate) phục vụ giao tiếp công việc và đọc hiểu tài liệu kỹ thuật.",
@@ -727,6 +732,7 @@ export const CERTIFICATES_DATA: CertificateItem[] = [
     issuer: "Rikkei Education",
     date: "06/2026",
     category: "Training",
+    thumbnailUrl: "/degrees_coursera/thumbnails/cert-ojt.svg",
     skills: ["Enterprise Agile/Scrum", "Code Review", "Teamwork", "Problem Solving"],
     description: [
       "Tham gia chương trình đào tạo thực chiến (OJT) mô phỏng quy trình Agile–Scrum chuẩn doanh nghiệp dưới sự dẫn dắt của các Tech Lead.",

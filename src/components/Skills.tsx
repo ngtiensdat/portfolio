@@ -23,7 +23,7 @@ export default function Skills() {
       : portfolioData.skills.filter((c) => c.title === activeCategory);
 
   return (
-    <section id="skills" className="py-20 scroll-mt-24 relative">
+    <section id="skills" className="py-16 sm:py-20 scroll-mt-8 sm:scroll-mt-10 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">

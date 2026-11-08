@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  
+  <!-- Outer & Inner Borders -->
+  <rect x="25" y="25" width="750" height="550" fill="none" stroke="#10b981" stroke-width="4" rx="8"/>
+  <rect x="35" y="35" width="730" height="530" fill="none" stroke="#cbd5e1" stroke-width="1.5" rx="6" stroke-dasharray="6,4"/>
+
+  <!-- Corner Decor -->
+  <path d="M 25 65 L 65 25 M 775 65 L 735 25 M 25 535 L 65 575 M 775 535 L 735 575" stroke="#10b981" stroke-width="3"/>
+
+  <!-- Top Header Ribbon -->
+  <rect x="180" y="55" width="440" height="40" rx="8" fill="#0f172a"/>
+  <text x="400" y="80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="3">
+    EDUCATIONAL TESTING SERVICE
+  </text>
+
+  <!-- Title -->
+  <text x="400" y="145" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="900" fill="#0f172a" text-anchor="middle">
+    TOEIC® OFFICIAL SCORE CERTIFICATE
+  </text>
+  <text x="400" y="175" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600" fill="#64748b" text-anchor="middle" letter-spacing="1">
+    TEST OF ENGLISH FOR INTERNATIONAL COMMUNICATION
+  </text>
+
+  <!-- Recipient Box -->
+  <rect x="120" y="210" width="560" height="130" rx="12" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5"/>
+  <text x="400" y="240" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#047857" text-anchor="middle" letter-spacing="1">
+    THIS CERTIFIES THAT
+  </text>
+  <text x="400" y="280" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="26" font-weight="900" fill="#065f46" text-anchor="middle">
+    NGUYỄN TIẾN ĐẠT
+  </text>
+  <text x="400" y="315" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" fill="#334155" text-anchor="middle">
+    has successfully demonstrated English proficiency in Listening &amp; Reading
+  </text>
+
+  <!-- Score Grid -->
+  <g transform="translate(180, 365)">
+    <!-- Score Box -->
+    <rect x="0" y="0" width="440" height="100" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    
+    <text x="75" y="35" font-family="sans-serif" font-size="12" font-weight="bold" fill="#64748b" text-anchor="middle">LISTENING</text>
+    <text x="75" y="70" font-family="sans-serif" font-size="24" font-weight="900" fill="#0f172a" text-anchor="middle">315</text>
+    
+    <line x1="150" y1="15" x2="150" y2="85" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <text x="220" y="35" font-family="sans-serif" font-size="12" font-weight="bold" fill="#64748b" text-anchor="middle">READING</text>
+    <text x="220" y="70" font-family="sans-serif" font-size="24" font-weight="900" fill="#0f172a" text-anchor="middle">265</text>
+    
+    <line x1="290" y1="15" x2="290" y2="85" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <text x="365" y="35" font-family="sans-serif" font-size="12" font-weight="bold" fill="#059669" text-anchor="middle">TOTAL SCORE</text>
+    <text x="365" y="75" font-family="sans-serif" font-size="30" font-weight="900" fill="#10b981" text-anchor="middle">580</text>
+  </g>
+
+  <!-- Gold Stamp -->
+  <circle cx="110" cy="500" r="35" fill="url(#goldGrad)" opacity="0.9"/>
+  <circle cx="110" cy="500" r="30" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="3,3"/>
+  <text x="110" y="495" font-family="sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">ETS</text>
+  <text x="110" y="510" font-family="sans-serif" font-size="8" font-weight="bold" fill="#ffffff" text-anchor="middle">VERIFIED</text>
+
+  <!-- Footer Info -->
+  <text x="400" y="525" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">
+    Credential Verification • ETS International Testing Standard • Score: 580/990
+  </text>
+</svg>

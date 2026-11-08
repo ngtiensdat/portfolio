@@ -80,6 +80,7 @@ export interface CertificateItem {
   date: string;
   score?: string;
   pdfUrl?: string;
+  thumbnailUrl?: string;
   category?: 'Coursera' | 'Language' | 'Training';
   skills?: string[];
   description: string[];
