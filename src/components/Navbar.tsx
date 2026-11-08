@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { portfolioData } from "@/data/portfolioData";
 import { Moon, Sun, Menu, X, FileText, Search } from "lucide-react";
 import Link from "next/link";
+import { FlipAvatar } from "./effects/FlipAvatar";
 
 export default function Navbar() {
   const [mounted, setMounted] = useState(false);
@@ -70,11 +71,13 @@ export default function Navbar() {
             href="/"
             className="flex items-center gap-3 text-xl font-bold tracking-tight text-slate-900 dark:text-white group"
           >
-            <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-emerald-500/60 shadow-md shadow-emerald-500/25 group-hover:scale-105 transition-transform bg-amber-100 shrink-0">
-              <img
-                src="/logo.jpg"
-                alt="Nguyễn Tiến Đạt Logo"
-                className="w-full h-full object-cover"
+            <div className="relative w-10 h-10 rounded-full border-2 border-emerald-500/60 shadow-md shadow-emerald-500/25 group-hover:scale-105 transition-transform bg-slate-900 shrink-0">
+              <FlipAvatar
+                videoSrc="/videologo.mp4"
+                imageSrc="/portrait.jpg"
+                alt="Tiến Đạt Logo"
+                className="w-full h-full"
+                flipIntervalMs={3000}
               />
             </div>
             <span className="bg-gradient-to-r from-emerald-500 via-teal-400 to-cyan-400 bg-clip-text text-transparent font-extrabold">

@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { GithubIcon, FacebookIcon, MessengerIcon } from "./Icons";
 import THEME from "@/config/theme";
+import { FlipAvatar } from "./effects/FlipAvatar";
 
 export default function Contact() {
   const { personal } = portfolioData;
@@ -265,11 +266,13 @@ export default function Contact() {
               <div className="relative -mt-12 sm:-mt-14 mb-6">
                 <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
                   <div className="flex items-end gap-4">
-                    <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-4 border-white dark:border-[#0c1a14] shadow-xl shrink-0 bg-slate-900">
-                      <img
-                        src="/logo.jpg"
+                    <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-4 border-white dark:border-[#0c1a14] shadow-xl shrink-0 bg-slate-900 ring-2 ring-emerald-500/30">
+                      <FlipAvatar
+                        videoSrc="/videologo.mp4"
+                        imageSrc="/portrait.jpg"
                         alt="Nguyễn Tiến Đạt Avatar"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full"
+                        flipIntervalMs={3000}
                       />
                     </div>
                     <div className="pb-1">

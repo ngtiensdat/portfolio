@@ -46,17 +46,27 @@ export default function CVPage() {
       <article className="max-w-4xl mx-auto bg-white text-slate-900 shadow-xl rounded-2xl p-8 sm:p-12 print:shadow-none print:rounded-none print:p-6 print:max-w-none">
         {/* Header */}
         <header className="border-b-2 border-slate-900 pb-6 mb-6">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div>
-              <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">
-                {personal.name}
-              </h1>
-              <p className="text-lg font-bold text-emerald-700 mt-1">
-                {personal.title}
-              </p>
-              <p className="text-xs text-slate-500 mt-0.5">
-                Ngày sinh: {personal.birthDate}
-              </p>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+            <div className="flex items-center gap-5">
+              {/* Circular Portrait Photo on the left */}
+              <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-emerald-600 shadow-md shrink-0 bg-slate-100">
+                <img
+                  src="/portrait.jpg"
+                  alt={`Chân dung ${personal.name}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                  {personal.name}
+                </h1>
+                <p className="text-base sm:text-lg font-bold text-emerald-700 mt-1">
+                  {personal.title}
+                </p>
+                <p className="text-xs text-slate-500 mt-0.5">
+                  Ngày sinh: {personal.birthDate}
+                </p>
+              </div>
             </div>
 
             <div className="space-y-1.5 text-xs text-slate-700">

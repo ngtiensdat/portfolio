@@ -52,7 +52,7 @@ export default function About() {
             <div className="flex items-center gap-4 pb-2">
               <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-emerald-500/50 shadow-lg shrink-0 bg-amber-100">
                 <img
-                  src="/avatar.jpg"
+                  src="/portrait.jpg"
                   alt={personal.name}
                   className="w-full h-full object-cover"
                 />
