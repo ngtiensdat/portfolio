@@ -40,7 +40,7 @@ export default function Hero() {
 
             {/* Name with Hacker Scramble Effect */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
-              Xin chào, tôi là <br />
+              Xin chào, em là <br />
               <span className="bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-400 dark:from-emerald-400 dark:via-teal-300 dark:to-cyan-300 bg-clip-text text-transparent">
                 <ScrambleText text={personal.name} />
               </span>

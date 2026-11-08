@@ -80,37 +80,49 @@ export default function ProjectCaseStudy({
   };
 
   return (
-    <article className="pt-24 pb-20">
-      {/* Top Breadcrumb & Back Action */}
+    <article className="pt-24 pb-20 relative">
+      {/* Floating Always-Visible Back Button on the Left */}
+      <Link
+        href="/#projects"
+        aria-label="Quay lại danh mục dự án"
+        className="fixed bottom-6 left-6 z-40 inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border border-slate-300 dark:border-emerald-500/40 shadow-xl shadow-slate-900/10 dark:shadow-emerald-950/40 hover:border-emerald-500 hover:scale-105 active:scale-95 transition-all group cursor-pointer"
+      >
+        <ArrowLeft className="w-4 h-4 text-emerald-600 dark:text-emerald-400 group-hover:-translate-x-1 transition-transform" />
+        <span>Quay lại dự án</span>
+      </Link>
+
+      {/* Top Breadcrumb & Back Action - Positioned on the Left */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <nav className="flex items-center gap-2 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-            <Link
-              href="/"
-              className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors"
-            >
-              Trang chủ
-            </Link>
-            <span>/</span>
+          <div className="flex items-center gap-4">
             <Link
               href="/#projects"
-              className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800/80 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 transition-all shadow-xs"
             >
-              Dự án
+              <ArrowLeft className="w-4 h-4 text-emerald-500" />
+              <span>Quay lại</span>
             </Link>
-            <span>/</span>
-            <span className="text-slate-900 dark:text-white font-medium truncate max-w-[200px] sm:max-w-none">
-              {project.title}
-            </span>
-          </nav>
 
-          <Link
-            href="/#projects"
-            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800/80 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 transition-all shadow-sm"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            <span>Quay lại danh mục</span>
-          </Link>
+            <nav className="flex items-center gap-2 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+              <Link
+                href="/"
+                className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors"
+              >
+                Trang chủ
+              </Link>
+              <span>/</span>
+              <Link
+                href="/#projects"
+                className="hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors"
+              >
+                Dự án
+              </Link>
+              <span>/</span>
+              <span className="text-slate-900 dark:text-white font-medium truncate max-w-[200px] sm:max-w-none">
+                {project.title}
+              </span>
+            </nav>
+          </div>
         </div>
       </div>
 

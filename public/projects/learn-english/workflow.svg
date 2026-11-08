@@ -81,7 +81,7 @@
     <text x="15" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Chu kỳ: Mỗi 1000ms Server phát xung</text>
     <text x="15" y="75" font-family="monospace" font-size="11" fill="#4b5563">server.to(roomId).emit('timer_tick')</text>
     <text x="15" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#111827">• Học sinh gửi snapshot câu trả lời</text>
-    <text x="15" y="112" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#111827">✔ Học sinh đổi giờ máy tính = Vô hiệu</text>
+    <text x="15" y="112" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#111827">✔ Thời gian được quản lý tập trung từ máy chủ</text>
   </g>
 
   <!-- Arrow 5 -> 6 -->
@@ -91,11 +91,11 @@
   <g transform="translate(360, 310)">
     <rect width="250" height="120" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
     <rect width="250" height="30" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
-    <text x="125" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 6: HẾT GIỜ (FORCE SUBMIT)</text>
+    <text x="125" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 6: HẾT GIỜ (TỰ ĐỘNG THU BÀI)</text>
     <text x="15" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• remainingSeconds &lt;= 0</text>
     <text x="15" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Emit: 'force_submit_exam'</text>
     <text x="15" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#4b5563">• Khóa giao diện làm bài lập tức</text>
-    <text x="15" y="112" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#111827">✔ Thu bài tự động 100% thí sinh</text>
+    <text x="15" y="112" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#111827">✔ Tự động thu bài của thí sinh</text>
   </g>
 
   <!-- Arrow 6 -> 7 -->
@@ -115,7 +115,7 @@
   <!-- Security Note Box -->
   <g transform="translate(50, 470)">
     <rect width="1100" height="85" rx="8" fill="#fafafa" stroke="#111827" stroke-width="1.5" stroke-dasharray="4 4" />
-    <text x="25" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#111827">CƠ CHẾ BẢO MẬT PHÒNG THI &amp; CHỐNG TAI NẠN MẠNG (RECONNECT RESILIENCY):</text>
+    <text x="25" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#111827">CƠ CHẾ BẢO VỆ PHÒNG THI VÀ PHỤC HỒI KHI MẤT KẾT NỐI:</text>
     <text x="25" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#374151">• Nếu học sinh vô tình mất mạng hoặc reload trình duyệt, Client tự động handshake lại qua JWT Token và nhận lại đúng thời gian còn lại của phòng thi.</text>
     <text x="25" y="73" font-family="system-ui, sans-serif" font-size="12" fill="#4b5563">• Mọi đáp án đã bấm trước đó được lưu tạm trên Redis cache phía server nên không bị mất dữ liệu.</text>
   </g>
@@ -129,3 +129,4 @@
     <text x="700" y="15" font-family="system-ui, sans-serif" font-size="12" fill="#4b5563">Tốc độ chấm tự động: Tức thì (&lt; 0.1s)</text>
   </g>
 </svg>
+

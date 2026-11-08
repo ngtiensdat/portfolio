@@ -21,9 +21,9 @@ export const PERSONAL_DATA: PersonalInfo = {
     { label: "Chứng chỉ TOEIC", value: "580" },
   ],
   aboutText: [
-    "Tôi là Fresher Full-Stack Developer, sinh viên năm cuối chuyên ngành Lập trình Web - Khoa Hệ thống thông tin, Đại học Phenikaa.",
-    "Tôi đã trực tiếp tham gia phát triển 4 dự án phần mềm và web tương tác cao: từ hệ thống Full-Stack (Next.js, NestJS, Java Spring Boot, Oracle, Kafka, pgvector RAG AI) đến thiết kế giao diện Frontend thế hệ mới (Next.js 16, Tailwind CSS v4, 3D Tilt Parallax, Design System). Tôi có kinh nghiệm xây dựng RESTful API, hệ thống bảo mật & phân quyền RBAC, giao tiếp thời gian thực với WebSocket và tối ưu hiệu năng người dùng.",
-    "Bên cạnh kiến thức đại học, tôi chủ động hoàn thành 4 chứng chỉ chuyên sâu từ Coursera (Agile Project Management, AWS Solutions Architecture, Laravel & PHP, Web Security) và đạt chứng chỉ TOEIC 580. Mục tiêu của tôi là gia nhập đội ngũ phát triển sản phẩm thực tế để cống hiến và bứt phá năng lực."
+    "Em là Fresher Full-Stack Developer, sinh viên năm cuối chuyên ngành Lập trình Web - Khoa Hệ thống thông tin, Đại học Phenikaa.",
+    "Em đã trực tiếp tham gia phát triển 4 dự án phần mềm và web tương tác: từ hệ thống Full-Stack (Next.js, NestJS, Java Spring Boot, Oracle, Kafka, pgvector RAG AI) đến thiết kế giao diện Frontend hiện đại (Next.js 16, Tailwind CSS v4, 3D Tilt Parallax, Design System). Em có kinh nghiệm xây dựng RESTful API, hệ thống phân quyền RBAC, giao tiếp thời gian thực với WebSocket và tối ưu trải nghiệm người dùng.",
+    "Bên cạnh kiến thức đại học, em chủ động hoàn thành 4 chứng chỉ từ Coursera (Agile Project Management, AWS Solutions Architecture, Laravel & PHP, Web Security) và đạt chứng chỉ TOEIC 580. Mục tiêu của em là gia nhập đội ngũ phát triển sản phẩm thực tế để học hỏi, trau dồi kinh nghiệm và đóng góp vào sự phát triển chung của công ty."
   ],
 };
 
@@ -82,10 +82,10 @@ export const PROJECTS_DATA: Project[] = [
     role: "Lead Full-Stack Developer (Đồ án Tốt nghiệp CNTT ĐH Phenikaa - Điểm A+)",
     timeline: "01/2026 – 05/2026",
     organization: "Đại học Phenikaa (GVHD: TS. Phạm Ngọc Hưng)",
-    status: "Đã nghiệm thu / Đang chạy Live Demo",
+    status: "Đã hoàn thành / Đang chạy Live Demo",
     teamSize: "1 thành viên (Phân tích, thiết kế kiến trúc và lập trình trọn gói)",
-    description: "Mạng xã hội ẩm thực thông minh tích hợp trợ lý AI hỏi đáp (RAG) và tìm kiếm ngữ nghĩa món ăn.",
-    longDescription: "Dự án mạng xã hội ẩm thực kết hợp trí tuệ nhân tạo quy mô lớn. Client xây dựng giao diện hiện đại với Next.js App Router, Zustand và giao tiếp thời gian thực qua WebSocket. Server phát triển bằng NestJS kiến trúc module hóa phân tầng, bảo mật và phân quyền với Prisma ORM trên cơ sở dữ liệu quan hệ 39 bảng. Hệ thống tích hợp LangChain + OpenAI GPT-4 xây dựng trợ lý tư vấn món ăn thông minh theo mô hình RAG, cùng thuật toán Hybrid Search (kết hợp lọc từ khóa BM25 và Vector Similarity 1536 chiều bằng pgvector) để cá nhân hóa đề xuất theo sở thích, vị trí địa lý và ngân sách thực khách.",
+    description: "Mạng xã hội ẩm thực tích hợp trợ lý AI hỏi đáp (RAG) và tìm kiếm món ăn theo ngữ nghĩa.",
+    longDescription: "Dự án mạng xã hội ẩm thực kết hợp gợi ý món ăn thông minh. Client xây dựng giao diện hiện đại với Next.js App Router, Zustand và giao tiếp thời gian thực qua WebSocket. Server phát triển bằng NestJS kiến trúc module hóa phân tầng, bảo mật và phân quyền với Prisma ORM trên cơ sở dữ liệu quan hệ 39 bảng. Hệ thống tích hợp LangChain + OpenAI GPT-4 xây dựng trợ lý tư vấn món ăn thông minh theo mô hình RAG, cùng thuật toán Hybrid Search (kết hợp lọc từ khóa BM25 và Vector Similarity 1536 chiều bằng pgvector) để cá nhân hóa đề xuất theo sở thích, vị trí địa lý và ngân sách thực khách.",
     tags: ["NestJS", "Next.js", "TypeScript", "PostgreSQL", "Prisma ORM", "pgvector", "LangChain", "OpenAI GPT-4", "WebSocket", "Zustand", "Tailwind CSS"],
     features: [
       "Trợ lý AI Chat thông minh ứng dụng kiến trúc RAG với LangChain & OpenAI GPT-4",
@@ -214,7 +214,7 @@ Nếu người dùng hỏi món ngoài danh sách, hãy giải thích khéo léo
 }`
         },
         keyTakeaways: [
-          "Loại bỏ hoàn toàn thông tin bịa đặt nhờ ép buộc ngữ cảnh dữ liệu thực từ DB",
+          "Hạn chế tối đa thông tin sai lệch nhờ cung cấp ngữ cảnh dữ liệu thực tế từ cơ sở dữ liệu",
           "Tự động trích xuất thuộc tính món ăn để người dùng có thể nhấp vào xem nhà hàng ngay lập tức"
         ]
       }
@@ -224,22 +224,22 @@ Nếu người dùng hỏi món ngoài danh sách, hãy giải thích khéo léo
     id: "project-payment-hub",
     slug: "payment-hub",
     title: "Payment Hub Middleware",
-    subtitle: "Hệ thống trung gian thanh toán & Xử lý bất đồng bộ dữ liệu giao dịch quy mô lớn",
+    subtitle: "Hệ thống trung gian thanh toán & Xử lý bất đồng bộ dữ liệu giao dịch",
     category: "Full-stack",
     role: "Full-Stack Developer Intern (Lạc Long Quân Software)",
     timeline: "06/2026 – 10/2026",
     organization: "Lạc Long Quân Software",
-    status: "Đạt chuẩn nghiệm thu doanh nghiệp",
+    status: "Dự án thực tập doanh nghiệp (Đã hoàn thành)",
     teamSize: "Nhóm phát triển theo mô hình Scrum",
-    description: "Hệ thống trung gian thanh toán bảo mật cao với Spring Security, RBAC, Audit Log, MinIO và Kafka.",
-    longDescription: "Hệ thống middleware xử lý giao dịch thanh toán doanh nghiệp chịu tải cao. Frontend được xây dựng bằng Angular 17 theo cấu trúc Core-Shared-Features (CSF), bám sát bản thiết kế Figma và tích hợp Zod Schema kiểm duyệt form chặt chẽ. Backend phát triển trên nền tảng Java 17 và Spring Boot 3 với bảo mật nhiều lớp Spring Security & JWT HttpOnly Cookie, cơ chế phê duyệt 2 bước Maker-Checker, ghi vết thao tác người dùng (Audit Log) trong transaction độc lập, chuẩn hóa DTO/Entity với MapStruct, lưu trữ tệp MinIO S3 và luồng kiến trúc Event-Driven với Apache Kafka xử lý xuất tệp giao dịch trên 1.000.000 bản ghi.",
+    description: "Hệ thống trung gian thanh toán với Spring Security, RBAC, Audit Log, MinIO và Kafka.",
+    longDescription: "Hệ thống middleware xử lý giao dịch thanh toán doanh nghiệp. Frontend được xây dựng bằng Angular 17 theo cấu trúc Core-Shared-Features (CSF), bám sát bản thiết kế Figma và tích hợp Zod Schema kiểm duyệt form. Backend phát triển trên nền tảng Java 17 và Spring Boot 3 với bảo mật Spring Security & JWT HttpOnly Cookie, cơ chế phê duyệt 2 bước Maker-Checker, ghi vết thao tác người dùng (Audit Log) trong transaction độc lập, chuẩn hóa DTO/Entity với MapStruct, lưu trữ tệp MinIO S3 và kiến trúc Event-Driven với Apache Kafka xử lý xuất tệp giao dịch trên 1.000.000 bản ghi.",
     tags: ["Java Spring Boot 3", "Spring Security 6", "Angular 17", "Oracle DB", "PostgreSQL", "Apache Kafka", "MinIO S3", "Redis", "MapStruct", "Bucket4j"],
     features: [
-      "Hệ thống bảo mật và phân quyền RBAC nhiều tầng bằng Spring Security 6 & JWT HttpOnly Cookie",
+      "Phân quyền RBAC bằng Spring Security 6 & JWT HttpOnly Cookie",
       "Cơ chế phê duyệt 2 bước Maker-Checker kiểm soát rủi ro dữ liệu tài chính với Oracle Stored Procedures",
       "Kiến trúc Event-Driven xuất báo cáo 1.000.000+ bản ghi với Apache Kafka, MinIO S3 & SXSSF",
       "Tính năng Audit Log độc lập (PROPAGATION_REQUIRES_NEW) ghi vết IP Client và lịch sử thay đổi",
-      "Bảo vệ hệ thống khỏi tấn công tần suất cao bằng Bucket4j Rate Limiting và Caffeine Cache",
+      "Hạn chế tần suất request (Rate Limiting) với Bucket4j và Caffeine Cache",
       "Kiến trúc Frontend Angular 17 chuẩn Core-Shared-Features (CSF) tối ưu Lazy Loading",
       "Xử lý ngoại lệ toàn cục GlobalExceptionHandler và ánh xạ hiệu năng cao với MapStruct"
     ],
@@ -296,8 +296,8 @@ Nếu người dùng hỏi món ngoài danh sách, hãy giải thích khéo léo
     deepDives: [
       {
         title: "Kiến trúc Xuất 1.000.000+ Giao Dịch Bất Đồng Bộ (Kafka + SXSSF + MinIO)",
-        challenge: "Việc xuất 1 triệu bản ghi giao dịch qua HTTP trực tiếp truyền thống gây treo server, nghẽn luồng xử lý và chắc chắn dẫn đến lỗi Java Heap Space (Out Of Memory) hoặc Gateway Timeout (504).",
-        solution: "Tách rời hoàn toàn tiến trình tạo file thông qua Event-Driven Architecture: API Server trả kết quả ngay trong < 50ms sau khi ghi nhận job và bắn event vào Kafka. Worker Node thực hiện truy vấn Keyset Pagination (WHERE ID > :lastId), sử dụng Apache POI SXSSFWorkbook giới hạn 1000 dòng trong RAM (còn lại flush tạm ra disk), sau đó upload thẳng luồng byte lên MinIO S3 và tạo đường dẫn Pre-signed URL có chữ ký bảo mật giới hạn thời gian tải 15 phút.",
+        challenge: "Việc xuất 1 triệu bản ghi giao dịch qua HTTP trực tiếp truyền thống dễ dẫn đến nghẽn luồng xử lý hoặc quá thời gian phản hồi (504 Gateway Timeout).",
+        solution: "Tách rời tiến trình tạo file thông qua Event-Driven Architecture: API Server trả kết quả ngay trong < 50ms sau khi ghi nhận job và đẩy event vào Kafka. Worker Node thực hiện truy vấn Keyset Pagination (WHERE ID > :lastId), sử dụng Apache POI SXSSFWorkbook giữ 1000 dòng trong RAM (còn lại flush tạm ra disk), sau đó upload stream lên MinIO S3 và tạo đường dẫn Pre-signed URL có chữ ký bảo mật giới hạn thời gian tải 15 phút.",
         codeSnippet: {
           language: "java",
           filename: "backend/src/main/java/com/example/paymenthub/service/export/BigDataExportWorker.java",
@@ -340,15 +340,15 @@ public void handleExportJob(ExportJobMessage msg) {
 }`
         },
         keyTakeaways: [
-          "Loại bỏ 100% rủi ro OOM của JVM bất kể tệp xuất lớn tới hàng triệu dòng",
-          "Thời gian phản hồi người dùng ban đầu giảm từ hàng chục giây xuống dưới 50ms",
+          "Hạn chế nguy cơ tràn bộ nhớ (OutOfMemory) của JVM khi xử lý tệp xuất dung lượng lớn",
+          "Thời gian phản hồi ban đầu của API giảm xuống dưới 50ms",
           "Tự động giải phóng tài nguyên sau khi quá trình tải kết thúc"
         ]
       },
       {
         title: "Cơ chế Phê Duyệt 2 Bước Maker-Checker & Oracle Stored Procedures",
-        challenge: "Trong hệ thống tài chính, nhân viên khởi tạo (Maker) không được phép tự ý thay đổi trực tiếp cấu hình phí hoặc tài khoản đang hoạt động vì có nguy cơ gian lận hoặc sai lệch số liệu tức thời.",
-        solution: "Thiết kế cơ chế Maker-Checker chuẩn Ngân hàng: Khi Maker cập nhật bản ghi đã ACTIVE, dữ liệu thay đổi được serialize thành JSON lưu vào cột tạm NEW_DATA và trạng thái chuyển sang PENDING_UPDATE. Khi người kiểm soát (Checker) bấm Phê duyệt, hệ thống gọi Oracle Stored Procedure (PROC_APPROVE_COMPONENT) để validate, kiểm tra chống trùng lặp thời gian hiệu lực và ghi đè dữ liệu chính trong một transaction nguyên tử.",
+        challenge: "Trong hệ thống tài chính, nhân viên khởi tạo (Maker) không được phép tự ý thay đổi trực tiếp cấu hình phí hoặc tài khoản đang hoạt động để đảm bảo tính an toàn số liệu.",
+        solution: "Thiết kế cơ chế Maker-Checker: Khi Maker cập nhật bản ghi đã ACTIVE, dữ liệu thay đổi được serialize thành JSON lưu vào cột tạm NEW_DATA và trạng thái chuyển sang PENDING_UPDATE. Khi người kiểm soát (Checker) bấm Phê duyệt, hệ thống gọi Oracle Stored Procedure (PROC_APPROVE_COMPONENT) để validate, kiểm tra thời gian hiệu lực và cập nhật dữ liệu chính thức trong một transaction.",
         codeSnippet: {
           language: "java",
           filename: "backend/src/main/java/com/example/paymenthub/service/impl/ComponentServiceImpl.java",
@@ -379,9 +379,9 @@ public void approveComponent(Long id, String checkerUsername) {
 }`
         },
         keyTakeaways: [
-          "Bảo đảm tính toàn vẹn và tuân thủ tuyệt đối chuẩn mực an ninh kiểm toán tài chính",
-          "Dữ liệu gốc đang chạy không bao giờ bị gián đoạn hay ảnh hưởng khi đang chờ duyệt",
-          "Tự động ghi nhận vết kiểm toán (Audit Trail) cho mọi thao tác của Maker và Checker"
+          "Đảm bảo tính nhất quán dữ liệu và tuân thủ quy trình kiểm toán nghiệp vụ",
+          "Dữ liệu đang hoạt động không bị ảnh hưởng trong thời gian chờ duyệt",
+          "Tự động ghi vết kiểm toán (Audit Trail) cho mọi thao tác của Maker và Checker"
         ]
       }
     ]
@@ -405,7 +405,7 @@ public void approveComponent(Long id, String checkerUsername) {
       "Bộ chức năng thi thử trắc nghiệm chuẩn cấu trúc đề thi TOEIC / IELTS với trình nghe audio tích hợp",
       "Chấm điểm tự động tức thì (Instant Auto-Grading) và phân tích phổ điểm, chỉ ra kỹ năng cần cải thiện",
       "Phòng thi trực tuyến Real-time tương tác nhiều người tham gia đồng bộ qua WebSockets",
-      "Đồng hồ đếm ngược bảo mật từ phía Server ngăn chặn gian lận thay đổi giờ trên máy học sinh",
+      "Đồng hồ đếm ngược từ phía Server đảm bảo đồng bộ thời gian thi công bằng cho thí sinh",
       "Giao diện hiện đại, tối ưu trải nghiệm người dùng trên cả máy tính để bàn và điện thoại",
       "Đã triển khai phiên bản Live Demo thực tế hoạt động trơn tru trên Vercel"
     ],
@@ -456,9 +456,9 @@ public void approveComponent(Long id, String checkerUsername) {
     ],
     deepDives: [
       {
-        title: "Bộ đếm giờ trung tâm Server-Authoritative chống gian lận thi",
-        challenge: "Nếu sử dụng đồng hồ đếm ngược phía Client (JavaScript setInterval trong trình duyệt), học sinh có thể chỉnh sửa đồng hồ máy tính hoặc can thiệp biến script để kéo dài thời gian làm bài kiểm tra.",
-        solution: "Thiết kế bộ đếm thời gian Server-Authoritative trên NestJS WebSocket Gateway. Server lưu trữ thời điểm bắt đầu thi (startTime) và thời lượng (duration). Cứ mỗi giây Server broadcast xung thời gian còn lại (time_tick). Khi đồng hồ server về 0, hệ thống tự động khóa quyền nộp bài và kích hoạt tính năng nộp bài cưỡng bức (force submit) cho toàn bộ học sinh.",
+        title: "Đồng bộ thời gian thi từ máy chủ (Server-Authoritative Timer)",
+        challenge: "Nếu sử dụng đồng hồ đếm ngược phía Client (JavaScript setInterval trong trình duyệt), việc chênh lệch giờ giữa các thiết bị có thể ảnh hưởng đến tính công bằng của kỳ thi.",
+        solution: "Thiết kế bộ đếm thời gian Server-Authoritative trên NestJS WebSocket Gateway. Server lưu trữ thời điểm bắt đầu thi (startTime) và thời lượng (duration). Cứ mỗi giây Server broadcast xung thời gian còn lại (time_tick). Khi đồng hồ server về 0, hệ thống tự động khóa quyền nộp bài và thu bài tự động (force submit) cho toàn bộ học sinh.",
         codeSnippet: {
           language: "typescript",
           filename: "backend/src/modules/exam-room/exam-room.gateway.ts",
@@ -481,8 +481,8 @@ handleStartExamRoom(@MessageBody() data: { roomId: string }, @ConnectedSocket() 
 }`
         },
         keyTakeaways: [
-          "Bảo đảm 100% công bằng cho tất cả thí sinh tham gia kỳ thi trực tuyến",
-          "Tự động thu bài ngay cả khi học sinh cố tình mất kết nối hoặc không bấm nộp"
+          "Đảm bảo tính đồng bộ thời gian công bằng cho tất cả thí sinh tham gia kỳ thi trực tuyến",
+          "Tự động ghi nhận bài làm khi hết giờ thi ngay cả khi học sinh bị gián đoạn mạng"
         ]
       }
     ]
@@ -491,21 +491,21 @@ handleStartExamRoom(@MessageBody() data: { roomId: string }, @ConnectedSocket() 
     id: "project-portfolio",
     slug: "portfolio-frontend",
     title: "Interactive Developer Portfolio & Design System",
-    subtitle: "Nền tảng Portfolio thế hệ mới với Next.js 16, Tailwind CSS v4, 3D Parallax Tilt, Interactive Terminal & Cyber Emerald Theme",
+    subtitle: "Website Portfolio tương tác cá nhân với Next.js 16, TypeScript, Tailwind CSS, 3D Tilt và Terminal",
     category: "Frontend",
-    role: "Frontend & UI/UX Designer (Dự án cá nhân / Open Source)",
+    role: "Frontend Developer (Dự án cá nhân / Open Source)",
     timeline: "11/2026",
     organization: "Dự án cá nhân / Open Source",
     status: "Đang hoạt động (Production)",
-    teamSize: "1 thành viên (Thiết kế hệ thống Design System & Lập trình giao diện)",
-    description: "Trang web Portfolio cá nhân tương tác cao, thiết kế độc bản theo phong cách Cyber Emerald với hiệu ứng thẻ bài 3D Tilt Glare, Terminal giả lập shell và kiến trúc Case Study động.",
-    longDescription: "Dự án Portfolio thế hệ mới được xây dựng với mục tiêu thoát khỏi phong cách website thông thường, tạo điểm nhấn ấn tượng khó quên (Storytelling) đối với nhà tuyển dụng công nghệ. Sử dụng nền tảng Next.js 16 App Router và Tailwind CSS v4 mới nhất, kết hợp kiến trúc thành phần độc lập (CSF). Hệ thống tích hợp các hiệu ứng chuyên sâu: thẻ 3D Tilt Glare tính toán tọa độ chuột trong không gian 3 chiều bằng CSS Transform, nền Spotlight theo dõi con trỏ mượt mà, hiệu ứng giải mã ký tự Hacker (ScrambleText), console Linux giả lập với phím tắt nhanh và hiệu ứng pháo hoa khi nhận lệnh tuyển dụng 'sudo hire', hộp lệnh nhanh Command Palette (Ctrl+K), trang CV A4 chuẩn ATS in ấn một chạm và kiến trúc Case Study kỹ thuật chuyên sâu cho từng dự án.",
+    teamSize: "1 thành viên (Thiết kế hệ thống giao diện & Lập trình)",
+    description: "Trang web Portfolio cá nhân phong cách Cyber Emerald với hiệu ứng thẻ bài 3D Tilt, Terminal tương tác và trang Case Study chi tiết cho từng dự án.",
+    longDescription: "Dự án Portfolio được xây dựng với mong muốn mang lại trải nghiệm tương tác trực quan, giúp người xem dễ dàng tìm hiểu về các dự án và kỹ năng của em. Sử dụng nền tảng Next.js 16 App Router và Tailwind CSS v4, kết hợp các component độc lập. Hệ thống tích hợp các hiệu ứng thú vị như: thẻ 3D Tilt tính toán tọa độ chuột tự nhiên bằng CSS Transform, nền Spotlight theo dõi con trỏ mượt mà, hiệu ứng giải mã ký tự (ScrambleText), console Linux giả lập với phím tắt nhanh và hiệu ứng pháo hoa khi nhận lệnh 'sudo hire', hộp lệnh nhanh Command Palette (Ctrl+K), trang CV A4 in ấn một chạm và trang chi tiết kiến trúc kỹ thuật cho từng dự án.",
     tags: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS v4", "3D Tilt Parallax", "Terminal Emulation", "Design System", "Dark/Light Mode", "Turbopack", "Canvas Confetti"],
     features: [
-      "Hệ thống Design System độc bản mang phong cách Cyber Emerald cao cấp, tối ưu Dark/Light Mode tức thì",
-      "Hiệu ứng thẻ bài 3D Parallax Tilt & Glare tính toán góc nghiêng tự nhiên theo tọa độ chuột không dùng thư viện nặng",
-      "Interactive Terminal mô phỏng console Linux với lịch sử lệnh, phím tắt chip và hiệu ứng pháo hoa khi chạy lệnh 'sudo hire'",
-      "Hiệu ứng giải mã văn bản Hacker (ScrambleText Effect) tạo cảm giác công nghệ tương lai",
+      "Giao diện phong cách Cyber Emerald hiện đại, hỗ trợ Dark/Light Mode linh hoạt",
+      "Hiệu ứng thẻ bài 3D Tilt tính toán góc nghiêng tự nhiên theo tọa độ chuột không dùng thư viện nặng",
+      "Interactive Terminal mô phỏng shell cơ bản với lịch sử lệnh, phím tắt nhanh và hiệu ứng pháo hoa khi chạy lệnh 'sudo hire'",
+      "Hiệu ứng giải mã văn bản (ScrambleText Effect) sinh động",
       "Interactive Spotlight theo dõi chuột tạo chiều sâu thị giác khi di chuyển khắp trang web",
       "Hộp lệnh toàn cục Command Palette (Ctrl+K) tìm kiếm và chuyển trang nhanh chóng như macOS Spotlight",
       "Bản CV trực tuyến chuẩn A4 ATS tại /cv hỗ trợ xem và in ấn PDF một chạm phục vụ tuyển dụng",
@@ -561,9 +561,9 @@ handleStartExamRoom(@MessageBody() data: { roomId: string }, @ConnectedSocket() 
     ],
     deepDives: [
       {
-        title: "Tối ưu hóa hiệu năng hiệu ứng 3D Parallax Tilt không dùng thư viện ngoài",
-        challenge: "Nhiều trang web sử dụng các thư viện nặng (Three.js hoặc thư viện jQuery cũ) để làm hiệu ứng 3D dẫn đến kích thước bundle lớn (vài trăm KB), giật lag trên thiết bị di động và tụt FPS.",
-        solution: "Tự code component TiltCard bằng React Hooks và CSS 3D Transforms (perspective, rotateX, rotateY). Tọa độ chuột được chuẩn hóa từ tâm thẻ theo tỷ lệ [-1, 1], áp dụng GPU Hardware Acceleration (transform-gpu) giúp hiệu ứng đạt 60 FPS mượt mà với kích thước mã nguồn dưới 2KB.",
+        title: "Tự xây dựng hiệu ứng 3D Tilt mượt mà bằng CSS 3D Transforms",
+        challenge: "Thay vì dùng các thư viện 3D lớn gây tăng kích thước tải trang và dễ giật lag trên thiết bị di động...",
+        solution: "Tự viết component TiltCard bằng React Hooks và CSS 3D Transforms (perspective, rotateX, rotateY). Tọa độ chuột được chuẩn hóa từ tâm thẻ theo tỷ lệ [-1, 1], áp dụng tăng tốc phần cứng GPU (transform-gpu) giúp hiệu ứng đạt 60 FPS mượt mà với kích thước mã nguồn gọn nhẹ.",
         codeSnippet: {
           language: "typescript",
           filename: "src/components/effects/TiltCard.tsx",
@@ -587,9 +587,9 @@ const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
 };`
         },
         keyTakeaways: [
-          "Loại bỏ 100% thư viện 3D cồng kềnh, tiết kiệm băng thông tải trang",
-          "Tốc độ phản hồi tức thì 60 FPS nhờ CSS transform3d",
-          "Tự động vô hiệu hóa hiệu ứng trên màn hình cảm ứng để tiết kiệm pin"
+          "Không phụ thuộc thư viện 3D bên ngoài, tiết kiệm đáng kể dung lượng tải trang",
+          "Chuyển động 60 FPS mượt mà nhờ CSS transform3d",
+          "Tự động tối ưu trên thiết bị di động để tiết kiệm pin"
         ]
       }
     ]

@@ -12,7 +12,17 @@ export default function CVPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-100 dark:bg-slate-900 py-8 px-4 sm:px-6 print:bg-white print:p-0">
+    <div className="min-h-screen bg-slate-100 dark:bg-slate-900 py-8 px-4 sm:px-6 print:bg-white print:p-0 relative">
+      {/* Floating Always-Visible Back Button on the Left */}
+      <Link
+        href="/"
+        aria-label="Quay lại trang chủ"
+        className="fixed bottom-6 left-6 z-40 print:hidden inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border border-slate-300 dark:border-emerald-500/40 shadow-xl shadow-slate-900/10 dark:shadow-emerald-950/40 hover:border-emerald-500 hover:scale-105 active:scale-95 transition-all group cursor-pointer"
+      >
+        <ArrowLeft className="w-4 h-4 text-emerald-600 dark:text-emerald-400 group-hover:-translate-x-1 transition-transform" />
+        <span>Quay lại trang chủ</span>
+      </Link>
+
       {/* Top Action Bar (Hidden when printing) */}
       <div className="max-w-4xl mx-auto mb-6 flex items-center justify-between print:hidden">
         <Link

@@ -84,10 +84,10 @@
   <text x="760" y="382" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">Chấm điểm tự động &amp; Xếp hạng</text>
   <text x="760" y="398" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#4b5563" text-anchor="middle">(Realtime Leaderboard Broadcast)</text>
 
-  <!-- UC8: Cưỡng bức thu bài khi hết giờ (Include) -->
+  <!-- UC8: Tự động thu bài khi hết giờ (Include) -->
   <ellipse cx="760" cy="180" rx="135" ry="28" fill="#ffffff" stroke="#111827" stroke-width="1.8" stroke-dasharray="5 4" />
-  <text x="760" y="178" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">Thu bài cưỡng bức khi hết giờ</text>
-  <text x="760" y="194" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#4b5563" text-anchor="middle">(Chống gian lận thời gian)</text>
+  <text x="760" y="178" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">Tự động thu bài khi hết giờ</text>
+  <text x="760" y="194" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#4b5563" text-anchor="middle">(Đồng bộ thời gian máy chủ)</text>
 
   <!-- ==================== RIGHT ACTORS ==================== -->
   <!-- Actor 3: WebSocket Server Timekeeper -->

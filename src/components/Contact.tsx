@@ -44,7 +44,7 @@ export default function Contact() {
             Bắt đầu một dự án mới cùng nhau?
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-400">
-            Tôi luôn sẵn sàng đón nhận cơ hội việc làm, thảo luận kỹ thuật và kết nối trực tiếp qua Facebook &amp; Messenger!
+            Em luôn sẵn sàng đón nhận cơ hội việc làm, trao đổi kỹ thuật và kết nối trực tiếp qua Facebook &amp; Messenger!
           </p>
           <div className={THEME.classes.sectionDivider} />
         </div>

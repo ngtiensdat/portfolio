@@ -93,7 +93,7 @@
     <text x="170" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 5: LANGCHAIN CONTEXT INJECTION (RAG)</text>
     <text x="15" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Nhúng Top 5 món vào System Prompt làm ngữ cảnh thực</text>
     <text x="15" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Ràng buộc AI chỉ trả lời dựa trên kho dữ liệu thực tế</text>
-    <text x="15" y="95" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#4b5563">✔ Triệt tiêu hoàn toàn hiện tượng bịa đặt (Hallucination)</text>
+    <text x="15" y="95" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#4b5563">✔ Hạn chế tối đa hiện tượng ảo giác (Hallucination)</text>
   </g>
 
   <!-- Arrow 5 -> 6 -->
@@ -131,3 +131,4 @@
     <text x="820" y="15" font-family="system-ui, sans-serif" font-size="12" fill="#4b5563">Data Integrity: 39 bảng quan hệ PostgreSQL</text>
   </g>
 </svg>
+

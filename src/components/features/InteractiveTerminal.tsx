@@ -185,7 +185,7 @@ export function InteractiveTerminal() {
             </p>
             <div className="pt-1">
               <a
-                href="mailto:datga27@gmail.com?subject=Thư mời phỏng vấn - Fresher Full-Stack Developer&body=Chào Đạt, chúng tôi có cơ hội việc làm phù hợp muốn trao đổi cùng bạn."
+                href="mailto:datga27@gmail.com?subject=Thư mời phỏng vấn - Fresher Full-Stack Developer&body=Chào Đạt, bên mình có cơ hội việc làm phù hợp muốn trao đổi cùng em."
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-[11px] transition-colors"
               >
                 <Send className="w-3.5 h-3.5" />
