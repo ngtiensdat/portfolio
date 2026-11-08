@@ -34,19 +34,21 @@ export default function Contact() {
   return (
     <section id="contact" className="py-16 sm:py-20 scroll-mt-24 sm:scroll-mt-28 bg-slate-50/60 dark:bg-[#060e0a] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <p className={THEME.classes.sectionBadge}>
-            <Sparkles className="w-4 h-4" />
-            <span>Liên hệ &amp; Kết nối trực tiếp</span>
+        {/* Section Heading - Split Header (Editorial & Asymmetric) */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 border-b border-slate-200/80 dark:border-slate-800/80 pb-6 max-w-6xl mx-auto">
+          <div>
+            <div className="flex items-center gap-2 font-mono text-xs font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-2.5">
+              <span>06</span>
+              <span className="text-slate-400 dark:text-slate-600">//</span>
+              <span>Kênh liên hệ trực tiếp</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+              Kết nối &amp; Cơ hội hợp tác
+            </h2>
+          </div>
+          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-md md:text-right leading-relaxed font-normal">
+            Em luôn sẵn sàng trao đổi về vị trí công việc, học hỏi kỹ thuật và kết nối cùng anh/chị qua các kênh dưới đây.
           </p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-            Bắt đầu một dự án mới cùng nhau?
-          </h2>
-          <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-400">
-            Em luôn sẵn sàng đón nhận cơ hội việc làm, trao đổi kỹ thuật và kết nối trực tiếp qua các kênh liên hệ dưới đây!
-          </p>
-          <div className={THEME.classes.sectionDivider} />
         </div>
 
         {/* Centered Symmetrical 2-Column Grid */}

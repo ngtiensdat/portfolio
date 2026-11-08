@@ -7,15 +7,21 @@ export default function Experience() {
   return (
     <section id="experience" className="py-16 sm:py-20 scroll-mt-24 sm:scroll-mt-28 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-sm font-semibold tracking-wider uppercase text-emerald-600 dark:text-emerald-400 mb-2">
-            Hành trình phát triển
+        {/* Section Heading - Split Header (Editorial & Asymmetric) */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16 border-b border-slate-200/80 dark:border-slate-800/80 pb-6">
+          <div>
+            <div className="flex items-center gap-2 font-mono text-xs font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-2.5">
+              <span>04</span>
+              <span className="text-slate-400 dark:text-slate-600">//</span>
+              <span>Lộ trình học tập &amp; Trải nghiệm</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+              Học vấn &amp; Kinh nghiệm thực tế
+            </h2>
+          </div>
+          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-md md:text-right leading-relaxed font-normal">
+            Quá trình rèn luyện tại trường đại học kết hợp các đồ án phần mềm theo mô hình Agile/Scrum và chuẩn quy trình GitFlow.
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
-            Kinh nghiệm làm việc & Học vấn
-          </h2>
-          <div className="w-16 h-1 bg-gradient-to-r from-emerald-500 to-teal-400 mx-auto mt-4 rounded-full" />
         </div>
 
         {/* Timeline Container */}

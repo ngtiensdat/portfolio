@@ -33,15 +33,21 @@ export default function About() {
   return (
     <section id="about" className="py-16 sm:py-20 scroll-mt-24 sm:scroll-mt-28 bg-slate-50/60 dark:bg-slate-900/40 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-sm font-semibold tracking-wider uppercase text-emerald-600 dark:text-emerald-400 mb-2">
-            Giới thiệu bản thân
+        {/* Section Heading - Split Header (Editorial & Asymmetric) */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16 border-b border-slate-200/80 dark:border-slate-800/80 pb-6">
+          <div>
+            <div className="flex items-center gap-2 font-mono text-xs font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-2.5">
+              <span>01</span>
+              <span className="text-slate-400 dark:text-slate-600">//</span>
+              <span>Giới thiệu bản thân</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+              Đam mê kiến trúc &amp; Phát triển phần mềm
+            </h2>
+          </div>
+          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-md md:text-right leading-relaxed font-normal">
+            Sinh viên năm cuối ngành Lập trình Web tại ĐH Phenikaa. Tập trung thiết kế hệ thống sạch, API chuẩn mực và trải nghiệm thực tế.
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
-            Đam mê sáng tạo và phát triển sản phẩm
-          </h2>
-          <div className="w-16 h-1 bg-gradient-to-r from-emerald-500 to-teal-400 mx-auto mt-4 rounded-full" />
         </div>
 
         {/* Story & Stats Grid */}
@@ -112,8 +118,9 @@ export default function About() {
 
         {/* Core Values Cards with 3D Tilt */}
         <div className="mt-16 pt-12 border-t border-slate-200/60 dark:border-slate-800/60">
-          <h4 className="text-center text-lg font-semibold text-slate-800 dark:text-slate-200 mb-8">
-            Năng lực cốt lõi &amp; Giá trị mang lại cho đội ngũ
+          <h4 className="text-left text-lg font-bold text-slate-900 dark:text-slate-100 mb-8 flex items-center gap-2.5">
+            <span className="w-2 h-2 rounded-full bg-emerald-500" />
+            <span>Nền tảng kỹ thuật &amp; Phương pháp làm việc</span>
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {coreValues.map((val, idx) => {

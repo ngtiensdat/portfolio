@@ -33,31 +33,34 @@ export default function Projects() {
   return (
     <section id="projects" className="py-16 sm:py-20 scroll-mt-24 sm:scroll-mt-28 bg-slate-50/60 dark:bg-slate-900/40 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-10">
-          <p className="text-sm font-semibold tracking-wider uppercase text-emerald-600 dark:text-emerald-400 mb-2">
-            Sản phẩm tiêu biểu
+        {/* Section Heading - Split Header (Editorial & Asymmetric) */}
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8 border-b border-slate-200/80 dark:border-slate-800/80 pb-6">
+          <div>
+            <div className="flex items-center gap-2 font-mono text-xs font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-2.5">
+              <span>03</span>
+              <span className="text-slate-400 dark:text-slate-600">//</span>
+              <span>Dự án kỹ thuật thực tế</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+              Sản phẩm &amp; Sơ đồ luồng nghiệp vụ
+            </h2>
+          </div>
+          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-md lg:text-right leading-relaxed font-normal">
+            Hệ thống Full-Stack do em tự thiết kế CSDL, xây dựng REST API, xử lý nghiệp vụ thực tế và trực tiếp vẽ sơ đồ luồng kiến trúc.
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
-            Các dự án đã thực hiện
-          </h2>
-          <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-400">
-            Dưới đây là một số dự án thực tế chứng minh năng lực thiết kế, tư duy code và giải quyết vấn đề.
-          </p>
-          <div className="w-16 h-1 bg-gradient-to-r from-emerald-500 to-teal-400 mx-auto mt-4 rounded-full" />
         </div>
 
         {/* Filter Controls: Category Buttons + Live Search Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-12 max-w-4xl mx-auto">
+        <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 mb-10">
           {/* Category Tabs */}
-          <div className="flex flex-wrap items-center justify-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             {categories.map((cat) => (
               <button
                 type="button"
                 suppressHydrationWarning
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
+                className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                   selectedCategory === cat
                     ? "bg-emerald-600 text-white shadow-md shadow-emerald-500/20"
                     : "bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200/80 dark:border-slate-700/60 hover:bg-slate-100 dark:hover:bg-slate-700/80"

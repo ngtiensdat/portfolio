@@ -512,7 +512,7 @@ handleStartExamRoom(@MessageBody() data: { roomId: string }, @ConnectedSocket() 
       "Hệ thống trang Case Study động cho từng dự án với Lightbox phóng to sơ đồ kỹ thuật và copy code"
     ],
     image: "/projects/portfolio-frontend/workflow.svg",
-    liveUrl: "http://localhost:3000",
+    liveUrl: "https://portfolio-three-steel-b1y9kp2kvr.vercel.app/",
     githubUrl: "https://github.com/ngtiensdat/portfolio",
     featured: true,
     stats: [

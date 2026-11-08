@@ -51,30 +51,32 @@ export default function CertificatesShowcase() {
   return (
     <section id="certificates" className="py-16 sm:py-20 scroll-mt-24 sm:scroll-mt-28 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <p className={THEME.classes.sectionBadge}>
-            <Sparkles className="w-4 h-4" />
-            <span>Chứng chỉ chuyên môn &amp; Đào tạo</span>
+        {/* Section Heading - Split Header (Editorial & Asymmetric) */}
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8 border-b border-slate-200/80 dark:border-slate-800/80 pb-6">
+          <div>
+            <div className="flex items-center gap-2 font-mono text-xs font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-2.5">
+              <span>05</span>
+              <span className="text-slate-400 dark:text-slate-600">//</span>
+              <span>Đào tạo &amp; Chứng chỉ</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+              Chứng chỉ Quốc tế &amp; Ngoại ngữ
+            </h2>
+          </div>
+          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-md lg:text-right leading-relaxed font-normal">
+            Các khóa đào tạo chuyên sâu từ Coursera (AWS Cloud, Agile Scrum, An ninh web) và chứng chỉ TOEIC 580 nhằm phục vụ công việc.
           </p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-            Chứng chỉ Quốc tế &amp; Năng lực Chuyên môn
-          </h2>
-          <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-400">
-            Minh chứng năng lực học tập liên tục, kỹ năng kiến trúc đám mây AWS, phương pháp luận Agile và chuẩn an ninh bảo mật web.
-          </p>
-          <div className={THEME.classes.sectionDivider} />
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+        <div className="flex flex-wrap items-center gap-2 mb-10">
           {categories.map((cat) => (
             <button
               type="button"
               suppressHydrationWarning
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
+              className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                 selectedCategory === cat
                   ? "bg-emerald-600 text-white shadow-md shadow-emerald-500/20"
                   : "bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200/80 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800"
