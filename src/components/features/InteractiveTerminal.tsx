@@ -20,7 +20,7 @@ export function InteractiveTerminal() {
       output: (
         <div className="space-y-1 text-slate-300">
           <p className="text-emerald-400 font-bold">
-            ⚡ Chào mừng bạn đến với Terminal tương tác của Nguyễn Tiến Đạt!
+            ⚡ Chào mừng đến với Terminal tương tác của Nguyễn Tiến Đạt!
           </p>
           <p className="text-xs text-slate-400">
             Gõ lệnh vào bên dưới hoặc nhấp các phím tắt nhanh: <span className="text-emerald-400 font-semibold">[help]</span>, <span className="text-teal-400 font-semibold">[skills]</span>, <span className="text-amber-400 font-semibold">[projects]</span>, <span className="text-cyan-400 font-semibold">[certificates]</span>, <span className="text-rose-400 font-semibold">[sudo hire]</span>.
@@ -178,7 +178,7 @@ export function InteractiveTerminal() {
           <div className="p-3 rounded-xl bg-gradient-to-r from-emerald-950/80 to-teal-950/80 border border-emerald-500/60 text-xs text-emerald-200 space-y-1.5 animate-in fade-in">
             <p className="text-sm font-bold text-emerald-300 flex items-center gap-1.5">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              <span>[ACCESS GRANTED] Lệnh tuyển dụng thành công!</span>
+              <span>[ACCESS GRANTED] Cảm ơn anh chị ạ</span>
             </p>
             <p className="leading-relaxed">
               Cảm ơn anh chị! Em rất hào hứng được trao đổi về cơ hội việc làm cùng đội ngũ của anh chị ạ.
@@ -189,7 +189,7 @@ export function InteractiveTerminal() {
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-[11px] transition-colors"
               >
                 <Send className="w-3.5 h-3.5" />
-                <span>Gửi thư mời phỏng vấn ngay</span>
+                <span>Liên hệ ngay tại zalo 0337562201 ạ</span>
               </a>
             </div>
           </div>
