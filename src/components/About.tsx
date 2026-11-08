@@ -2,6 +2,7 @@
 
 import { portfolioData } from "@/data/portfolioData";
 import { Award, Code, Compass, HeartHandshake, CheckCircle2 } from "lucide-react";
+import { TiltCard } from "./effects/TiltCard";
 
 export default function About() {
   const { personal } = portfolioData;
@@ -91,25 +92,24 @@ export default function About() {
             </div>
           </div>
 
-          {/* Stats Column */}
+          {/* Stats Column with 3D Tilt Cards */}
           <div className="lg:col-span-5 grid grid-cols-2 gap-4">
             {personal.stats.map((stat, index) => (
-              <div
-                key={index}
-                className="p-6 rounded-2xl bg-white dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-md hover:border-blue-500/40 transition-all text-center group"
-              >
-                <div className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent group-hover:scale-105 transition-transform inline-block">
-                  {stat.value}
+              <TiltCard key={index} className="rounded-2xl" maxTilt={10}>
+                <div className="p-6 h-full rounded-2xl bg-white dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-xl hover:border-blue-500/40 transition-all text-center group">
+                  <div className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent group-hover:scale-105 transition-transform inline-block">
+                    {stat.value}
+                  </div>
+                  <div className="mt-2 text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">
+                    {stat.label}
+                  </div>
                 </div>
-                <div className="mt-2 text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">
-                  {stat.label}
-                </div>
-              </div>
+              </TiltCard>
             ))}
           </div>
         </div>
 
-        {/* Core Values Cards */}
+        {/* Core Values Cards with 3D Tilt */}
         <div className="mt-16 pt-12 border-t border-slate-200/60 dark:border-slate-800/60">
           <h4 className="text-center text-lg font-semibold text-slate-800 dark:text-slate-200 mb-8">
             Năng lực cốt lõi & Giá trị mang lại cho đội ngũ
@@ -118,20 +118,19 @@ export default function About() {
             {coreValues.map((val, idx) => {
               const IconComponent = val.icon;
               return (
-                <div
-                  key={idx}
-                  className="p-6 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-800 hover:border-blue-500/40 hover:-translate-y-1 transition-all shadow-xs"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4">
-                    <IconComponent className="w-6 h-6" />
+                <TiltCard key={idx} className="rounded-2xl" maxTilt={8}>
+                  <div className="p-6 h-full rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-800 hover:border-blue-500/40 hover:shadow-lg transition-all shadow-xs">
+                    <div className="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4">
+                      <IconComponent className="w-6 h-6" />
+                    </div>
+                    <h5 className="text-base font-semibold text-slate-900 dark:text-white mb-2">
+                      {val.title}
+                    </h5>
+                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                      {val.description}
+                    </p>
                   </div>
-                  <h5 className="text-base font-semibold text-slate-900 dark:text-white mb-2">
-                    {val.title}
-                  </h5>
-                  <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                    {val.description}
-                  </p>
-                </div>
+                </TiltCard>
               );
             })}
           </div>
