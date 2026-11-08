@@ -261,6 +261,9 @@ export function CommandPalette() {
           <input
             autoFocus
             type="text"
+            autoComplete="off"
+            spellCheck={false}
+            suppressHydrationWarning
             value={search}
             onChange={handleSearchChange}
             onKeyDown={handleInputKeyDown}

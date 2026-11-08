@@ -297,12 +297,16 @@ export function InteractiveTerminal() {
       {/* Terminal Input Line */}
       <form
         onSubmit={handleFormSubmit}
+        autoComplete="off"
         className="flex items-center gap-2 px-4 py-3 bg-slate-950 border-t border-slate-800/80"
       >
         <span className="text-emerald-400 font-bold">❯</span>
         <input
           ref={inputRef}
           type="text"
+          autoComplete="off"
+          spellCheck={false}
+          suppressHydrationWarning
           value={inputVal}
           onChange={(e) => setInputVal(e.target.value)}
           placeholder="Nhập lệnh (vd: help, skills, projects, sudo hire)..."
@@ -310,6 +314,7 @@ export function InteractiveTerminal() {
         />
         <button
           type="submit"
+          suppressHydrationWarning
           className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
         >
           <CornerDownLeft className="w-3.5 h-3.5" />
