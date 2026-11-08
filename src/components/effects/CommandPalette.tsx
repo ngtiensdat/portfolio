@@ -8,7 +8,6 @@ import {
   FileText,
   ExternalLink,
   Moon,
-  Sun,
   Sparkles,
   X,
   Code2,

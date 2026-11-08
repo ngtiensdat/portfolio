@@ -10,7 +10,6 @@ import {
   Code2,
   Layers,
   Cpu,
-  Database,
   CheckCircle2,
   FolderTree,
   Terminal,

@@ -5,7 +5,7 @@ import { Printer, ArrowLeft, Mail, Phone, MapPin, ExternalLink } from "lucide-re
 import Link from "next/link";
 
 export default function CVPage() {
-  const { personal, skills, experiences, projects, certificates } = PORTFOLIO_DATA;
+  const { personal, experiences, projects, certificates } = PORTFOLIO_DATA;
 
   const handlePrint = () => {
     window.print();
