@@ -96,7 +96,7 @@ export const PROJECTS_DATA: Project[] = [
       "Quản lý trạng thái Client hiệu năng cao bằng Zustand và xác thực Form với Zod",
       "Triển khai hoàn thiện Live Demo trên hạ tầng đám mây Vercel"
     ],
-    image: "/projects/food-ai/banner.png",
+    image: "/projects/food-ai/workflow.svg",
     liveUrl: "https://food-ai-frontend-azure.vercel.app/",
     githubUrl: "https://github.com/ngtiensdat/FOOD-AI",
     featured: true,
@@ -113,15 +113,13 @@ export const PROJECTS_DATA: Project[] = [
       { category: "Cơ sở dữ liệu & DevOps", skills: ["PostgreSQL 16", "Redis", "Vercel Cloud", "Docker"] },
     ],
     gallery: [
-      { src: "/projects/food-ai/banner.png", caption: "Giao diện trang chủ Feed ẩm thực mạng xã hội Food AI", category: "Giao diện" },
-      { src: "/projects/food-ai/chat-ai.jpg", caption: "Trợ lý AI tư vấn món ăn thông minh theo ngữ cảnh người dùng RAG", category: "Trợ lý AI" },
-      { src: "/projects/food-ai/architecture.jpg", caption: "Sơ đồ kiến trúc phân tầng & luồng dữ liệu 3 tầng (Client - Server - AI/DB)", category: "Kiến trúc hệ thống" },
+      { src: "/projects/food-ai/workflow.svg", caption: "Sơ đồ luồng xử lý: Thuật toán Hybrid Search & Trợ lý AI RAG thời gian thực", category: "Luồng xử lý" },
+      { src: "/projects/food-ai/usecase.svg", caption: "Sơ đồ Use Case phân hệ Thực khách, Nhà hàng, Quản trị viên & AI Engine", category: "Use Case" },
       { src: "/projects/food-ai/erd.jpg", caption: "Sơ đồ ERD 39 bảng cơ sở dữ liệu và mở rộng Vector Embeddings", category: "Cơ sở dữ liệu" },
       { src: "/projects/food-ai/hybrid-search.jpg", caption: "Mô hình tìm kiếm lai Hybrid Search kết hợp BM25 và Vector Similarity", category: "Thuật toán" },
       { src: "/projects/food-ai/vector-query.jpg", caption: "Quy trình truy vấn vector món ăn và tính khoảng cách Cosine trên pgvector", category: "Thuật toán" },
       { src: "/projects/food-ai/user-preferences.png", caption: "4 bước suy luận hồ sơ sở thích ẩm thực người dùng từ hành vi tương tác", category: "Thuật toán" },
-      { src: "/projects/food-ai/login.jpg", caption: "Giao diện đăng nhập & xác thực bảo mật JWT Token", category: "Bảo mật" },
-      { src: "/projects/food-ai/usecase.jpg", caption: "Sơ đồ Use Case tổng quát các phân hệ chức năng", category: "Phân tích thiết kế" }
+      { src: "/projects/food-ai/architecture.jpg", caption: "Sơ đồ kiến trúc phân tầng 3 lớp (Client - Server - AI/DB)", category: "Kiến trúc hệ thống" }
     ],
     architectureOverview: "Hệ thống xây dựng theo mô hình Client-Server phân tầng phân tách độc lập. Client (Next.js 14) giao tiếp với API Server (NestJS) qua RESTful API và WebSockets. Khi người dùng nhập truy vấn tìm kiếm món ăn hoặc trò chuyện với trợ lý AI, hệ thống chuyển đổi câu hỏi thành vector 1536 chiều qua mô hình text-embedding-3-small, sau đó truy vấn vào PostgreSQL pgvector để tính khoảng cách Cosine (Cosine Distance). Kết quả tìm kiếm ngữ nghĩa được kết hợp với bộ lọc từ khóa BM25, cự ly địa lý (Haversine formula) và ngân sách thực khách để đưa vào prompt ngữ cảnh cho OpenAI GPT-4 sinh lời tư vấn tối ưu nhất.",
     codeStructure: [
@@ -245,7 +243,7 @@ Nếu người dùng hỏi món ngoài danh sách, hãy giải thích khéo léo
       "Kiến trúc Frontend Angular 17 chuẩn Core-Shared-Features (CSF) tối ưu Lazy Loading",
       "Xử lý ngoại lệ toàn cục GlobalExceptionHandler và ánh xạ hiệu năng cao với MapStruct"
     ],
-    image: "/projects/payment-hub/banner.svg",
+    image: "/projects/payment-hub/workflow.svg",
     liveUrl: undefined,
     githubUrl: "https://github.com/ngtiensdat/PMH",
     featured: true,
@@ -262,12 +260,8 @@ Nếu người dùng hỏi món ngoài danh sách, hãy giải thích khéo léo
       { category: "Cơ sở dữ liệu & Security", skills: ["Oracle Database", "PostgreSQL", "Bucket4j", "Caffeine Cache", "HttpOnly Cookie"] },
     ],
     gallery: [
-      { src: "/projects/payment-hub/banner.svg", caption: "Hệ thống điều hành và xử lý trung gian thanh toán tài chính PMH", category: "Tổng quan" },
-      { src: "/projects/payment-hub/architecture.svg", caption: "Kiến trúc Event-Driven xuất 1.000.000+ bản ghi giao dịch (Kafka, MinIO, SXSSF Stream)", category: "Kiến trúc hệ thống" },
-      { src: "/projects/payment-hub/sequence-maker-checker.svg", caption: "Sơ đồ tuần tự quy trình kiểm soát rủi ro Maker-Checker & Oracle Stored Procedures", category: "Bảo mật & Quy trình" },
-      { src: "/projects/payment-hub/erd.svg", caption: "Sơ đồ ERD cơ sở dữ liệu: Cấu phần, Danh mục, Audit Log & Giao dịch", category: "Cơ sở dữ liệu" },
-      { src: "/projects/payment-hub/usecase.svg", caption: "Sơ đồ Use Case phân quyền Maker (Khởi tạo) vs Checker (Kiểm soát)", category: "Phân tích thiết kế" },
-      { src: "/projects/payment-hub/dashboard.svg", caption: "Giao diện bảng điều khiển quản trị tham số & theo dõi tiến trình xuất file", category: "Giao diện" },
+      { src: "/projects/payment-hub/workflow.svg", caption: "Sơ đồ luồng xử lý: Xuất 1.000.000+ giao dịch bất đồng bộ (Kafka, SXSSF Stream & MinIO S3)", category: "Luồng xử lý" },
+      { src: "/projects/payment-hub/usecase.svg", caption: "Sơ đồ Use Case phân quyền Maker (Khởi tạo) vs Checker (Kiểm soát 2 cấp)", category: "Use Case" },
     ],
     architectureOverview: "Payment Hub đóng vai trò middleware tài chính kết nối giữa các ứng dụng nghiệp vụ và các cổng thanh toán/ngân hàng. Hệ thống chuyển đổi toàn diện sang Event-Driven Architecture (EDA). Khi người dùng yêu cầu tác vụ nặng (như xuất báo cáo 1.000.000 dòng), API Server lưu tác vụ trạng thái PENDING và đẩy message vào Kafka topic 'export_jobs' rồi trả lời Client ngay trong < 50ms. Một Worker Node độc lập sẽ consume message từ Kafka, dùng Keyset Pagination để stream dữ liệu vào tệp Excel SXSSF, cập nhật % tiến độ realtime qua Redis Pub/Sub và WebSocket, tải tệp lên MinIO S3 và cấp Pre-signed URL cho Client tải an toàn.",
     codeStructure: [
@@ -415,7 +409,7 @@ public void approveComponent(Long id, String checkerUsername) {
       "Giao diện hiện đại, tối ưu trải nghiệm người dùng trên cả máy tính để bàn và điện thoại",
       "Đã triển khai phiên bản Live Demo thực tế hoạt động trơn tru trên Vercel"
     ],
-    image: "/projects/learn-english/banner.png",
+    image: "/projects/learn-english/workflow.svg",
     liveUrl: "https://learn-english-three-omega.vercel.app/",
     githubUrl: "https://github.com/ngtiensdat/LearnEnglish",
     featured: true,
@@ -431,12 +425,8 @@ public void approveComponent(Long id, String checkerUsername) {
       { category: "Dữ liệu & Triển khai", skills: ["PostgreSQL", "Prisma ORM", "Vercel Hosting", "Git / GitHub"] },
     ],
     gallery: [
-      { src: "/projects/learn-english/banner.png", caption: "Giao diện hệ thống luyện thi tiếng Anh trực tuyến Learn English", category: "Giao diện chính" },
-      { src: "/projects/learn-english/architecture.svg", caption: "Sơ đồ kiến trúc phòng thi WebSocket Server-Authoritative & Microservices", category: "Kiến trúc hệ thống" },
-      { src: "/projects/learn-english/usecase.svg", caption: "Sơ đồ Use Case phân quyền Giáo viên (Host) vs Học sinh (Student)", category: "Phân tích thiết kế" },
-      { src: "/projects/learn-english/erd.svg", caption: "Sơ đồ ERD thực thể quan hệ ngân hàng câu hỏi, đề thi và phòng thi", category: "Cơ sở dữ liệu" },
-      { src: "/projects/learn-english/realtime-room.svg", caption: "Giao diện phòng thi trực tuyến thời gian thực với đồng hồ đếm ngược máy chủ", category: "Phòng thi Real-time" },
-      { src: "/projects/learn-english/score-report.svg", caption: "Báo cáo phân tích phổ điểm thi TOEIC và đánh giá năng lực từng Part", category: "Thống kê" },
+      { src: "/projects/learn-english/workflow.svg", caption: "Sơ đồ luồng xử lý: Điều phối phòng thi Realtime Server-Authoritative qua WebSocket", category: "Luồng xử lý" },
+      { src: "/projects/learn-english/usecase.svg", caption: "Sơ đồ Use Case: Phân quyền Giáo viên (Host đề thi) vs Học sinh (Thí sinh)", category: "Use Case" },
     ],
     architectureOverview: "Kiến trúc hệ thống bao gồm Next.js phía Client và NestJS phía Server. Tính năng thi thử thông thường sử dụng REST API để lấy đề thi và nộp đáp án mã hóa. Đối với tính năng phòng thi trực tiếp nhiều người, hệ thống khởi tạo Room trên WebSocket Gateway. Server đóng vai trò trung tâm (Authority Timekeeper) quản lý bộ đếm thời gian, đảm bảo tất cả thí sinh vào thi và nộp bài cùng một thời điểm mà không phụ thuộc vào đồng hồ thiết bị của người dùng.",
     codeStructure: [
@@ -521,7 +511,7 @@ handleStartExamRoom(@MessageBody() data: { roomId: string }, @ConnectedSocket() 
       "Bản CV trực tuyến chuẩn A4 ATS tại /cv hỗ trợ xem và in ấn PDF một chạm phục vụ tuyển dụng",
       "Hệ thống trang Case Study động cho từng dự án với Lightbox phóng to sơ đồ kỹ thuật và copy code"
     ],
-    image: "/projects/portfolio-frontend/banner.svg",
+    image: "/projects/portfolio-frontend/workflow.svg",
     liveUrl: "http://localhost:3000",
     githubUrl: "https://github.com/ngtiensdat/portfolio",
     featured: true,
@@ -538,9 +528,8 @@ handleStartExamRoom(@MessageBody() data: { roomId: string }, @ConnectedSocket() 
       { category: "Triển khai & CI/CD", skills: ["Vercel Edge Network", "Git / GitHub", "Responsive Design", "Web Accessibility (a11y)"] },
     ],
     gallery: [
-      { src: "/projects/portfolio-frontend/banner.svg", caption: "Giao diện tổng quan hệ thống Portfolio & Design System phong cách Cyber Emerald", category: "Giao diện chính" },
-      { src: "/projects/portfolio-frontend/ui-components.svg", caption: "Kiến trúc các thành phần tương tác: 3D Tilt Glare, Terminal giả lập & Command Palette", category: "Design System" },
-      { src: "/projects/portfolio-frontend/architecture.svg", caption: "Sơ đồ kiến trúc Next.js 16 App Router, Suspense Streaming và quy trình biên dịch Turbopack", category: "Kiến trúc hệ thống" },
+      { src: "/projects/portfolio-frontend/workflow.svg", caption: "Sơ đồ luồng xử lý: Kiến trúc Next.js 16, Turbopack và Tối ưu hóa GPU 3D Parallax Tilt 60 FPS", category: "Luồng xử lý" },
+      { src: "/projects/portfolio-frontend/usecase.svg", caption: "Sơ đồ Use Case: Trải nghiệm tương tác Nhà tuyển dụng (HR/Tech Lead) & Lập trình viên", category: "Use Case" },
     ],
     architectureOverview: "Portfolio được xây dựng trên nền tảng Next.js 16 với Turbopack bundler. Phía giao diện ứng dụng kết hợp Tailwind CSS v4 theo phong cách Cyber Emerald tương phản cao. Các hiệu ứng đồ họa tương tác (3D Tilt Card, Mouse Spotlight, Interactive Terminal) được tối ưu hóa chạy trực tiếp trên GPU thông qua CSS 3D Transforms và requestAnimationFrame mà không phụ thuộc vào các thư viện 3D cồng kềnh, giúp trang web đạt chỉ số hiệu năng Lighthouse 100/100.",
     codeStructure: [

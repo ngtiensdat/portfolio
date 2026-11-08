@@ -1,48 +1,42 @@
-# 📁 THƯ MỤC HÌNH ẢNH DỰ ÁN (PORTFOLIO PROJECT ASSETS)
+# 📁 THƯ MỤC HÌNH ẢNH & SƠ ĐỒ KỸ THUẬT DỰ ÁN (PROJECT ASSETS)
 
-Thư mục này quản lý toàn bộ hình ảnh và sơ đồ kỹ thuật hiển thị trên trang chủ và trang chi tiết (Case Study) của từng dự án.
+Thư mục này quản lý toàn bộ sơ đồ kiến trúc kỹ thuật và Use Case hiển thị trên trang chủ và trang chi tiết (Case Study) của 4 dự án.
+
+> [!NOTE]
+> Toàn bộ sơ đồ được thiết kế theo phong cách tối giản công nghệ cao (**Nét đen nền trắng - Black & White Architectural Blueprint**) chuẩn UML & Workflow Pipeline, giúp giao diện không bị rối mắt và thể hiện rõ tư duy kỹ thuật của kỹ sư phần mềm.
 
 ---
 
-## 1. Cấu trúc thư mục theo dự án
+## 1. Cấu trúc thư mục theo 4 dự án
 
 ```text
 public/projects/
 ├── food-ai/                  # Dự án FOOD AI Social Network & RAG AI
-│   ├── banner.png            # [Ảnh thật] Ảnh bìa hiển thị tại trang chủ & Case study
-│   ├── chat-ai.jpg           # [Ảnh thật] Giao diện Chatbot AI RAG
-│   ├── architecture.jpg      # [Ảnh thật] Sơ đồ kiến trúc phân tầng 3 lớp
-│   ├── erd.jpg               # [Ảnh thật] Sơ đồ ERD 39 bảng cơ sở dữ liệu
-│   ├── usecase.jpg           # [Ảnh thật] Sơ đồ Use Case tổng quát
-│   ├── hybrid-search.jpg     # [Ảnh thật] Sơ đồ thuật toán tìm kiếm lai Hybrid Search
-│   ├── vector-query.jpg      # [Ảnh thật] Sơ đồ truy vấn vector embeddings pgvector
-│   ├── user-preferences.png  # [Ảnh thật] 4 bước suy luận sở thích người dùng
-│   └── login.jpg             # [Ảnh thật] Giao diện đăng nhập & JWT
+│   ├── workflow.svg          # [Blueprint B&W] Sơ đồ luồng xử lý: Hybrid Search & RAG Context
+│   ├── usecase.svg           # [Blueprint B&W] Sơ đồ Use Case phân hệ Thực khách & AI Engine
+│   ├── erd.jpg               # Sơ đồ ERD 39 bảng cơ sở dữ liệu và vector embeddings
+│   ├── hybrid-search.jpg     # Sơ đồ thuật toán tìm kiếm lai Hybrid Search
+│   ├── vector-query.jpg      # Sơ đồ truy vấn vector và khoảng cách Cosine
+│   ├── user-preferences.png  # Sơ đồ 4 bước suy luận sở thích ẩm thực
+│   └── architecture.jpg      # Sơ đồ kiến trúc phân tầng 3 lớp
 │
 ├── payment-hub/              # Dự án Payment Hub Middleware (1M+ Records)
-│   ├── banner.svg            # Ảnh bìa tổng quan hệ sinh thái thanh toán
-│   ├── architecture.svg      # Sơ đồ kiến trúc Event-Driven (Kafka, MinIO, SXSSF Stream)
-│   ├── sequence-maker-checker.svg # Sơ đồ luồng Maker-Checker & Oracle Stored Procedures
-│   ├── erd.svg               # Sơ đồ thực thể quan hệ (AuditLog, Category, Components, ExportJob)
-│   ├── usecase.svg           # Sơ đồ Use Case phân quyền Maker vs Checker
-│   └── dashboard.svg         # Giao diện bảng điều khiển quản trị tham số & xuất file
+│   ├── workflow.svg          # [Blueprint B&W] Sơ đồ luồng xử lý xuất 1M+ bất đồng bộ (Kafka + SXSSF + MinIO)
+│   └── usecase.svg           # [Blueprint B&W] Sơ đồ Use Case phân quyền Maker vs Checker
 │
-└── learn-english/            # Dự án Learn English Web & Real-Time Exam System
-    ├── banner.png            # [Ảnh thật] Ảnh bìa giao diện chính từ ứng dụng
-    ├── architecture.svg      # Sơ đồ kiến trúc WebSocket Sync & Server-Authoritative Timer
-    ├── usecase.svg           # Sơ đồ Use Case phân hệ Giáo viên (Host) vs Học sinh (Student)
-    ├── erd.svg               # Sơ đồ thực thể quan hệ (Exams, Questions, Rooms, Submissions)
-    ├── realtime-room.svg     # Giao diện phòng thi trực tuyến thời gian thực
-    └── score-report.svg      # Giao diện báo cáo phân tích phổ điểm TOEIC
+├── learn-english/            # Dự án Learn English Web & Real-Time Exam System
+│   ├── workflow.svg          # [Blueprint B&W] Sơ đồ luồng xử lý điều phối phòng thi Server-Authoritative
+│   └── usecase.svg           # [Blueprint B&W] Sơ đồ Use Case phân hệ Giáo viên vs Học sinh
+│
+└── portfolio-frontend/       # Dự án Interactive Portfolio & Design System
+    ├── workflow.svg          # [Blueprint B&W] Sơ đồ luồng xử lý hiệu năng Next.js 16, Turbopack & GPU 3D
+    └── usecase.svg           # [Blueprint B&W] Sơ đồ Use Case trải nghiệm Nhà tuyển dụng & Developer
 ```
 
 ---
 
-## 2. Cách thay thế ảnh mẫu bằng ảnh thật của bạn
-
-1. Bạn chỉ cần chụp ảnh màn hình hoặc xuất sơ đồ (định dạng `.png`, `.jpg` hoặc `.svg`).
-2. Đổi tên ảnh thành đúng tên tương ứng trong thư mục (ví dụ `usecase.png` hoặc `architecture.png`).
-3. Chép đè vào thư mục dự án tương ứng:
-   - Nếu bạn giữ đuôi file giống ảnh mẫu (`.svg`), chỉ cần chép đè vào là xong.
-   - Nếu bạn dùng đuôi ảnh khác (`.png`, `.jpg`), bạn chỉ cần cập nhật đường dẫn tương ứng trong `src/constants/portfolio.ts`.
-
+## 2. Tiêu chuẩn thiết kế sơ đồ (Nét đen nền trắng)
+- Tỷ lệ khung hình: **16:9** (`1200 x 675`) chuẩn HD hiển thị sắc nét trên cả màn hình lớn và điện thoại.
+- Màu nền: **Trắng tinh khiết** (`#ffffff`), không sử dụng ảnh mockup ảo gây phân tâm.
+- Đường nét: **Nét đen kỹ thuật** (`#111827`, nét 2px), phân định rõ ràng các tầng kiến trúc, luồng xử lý và actor.
+- Hoàn toàn tương thích và hiển thị rõ ràng trên cả Light mode lẫn Dark mode khi phóng to trong modal Lightbox.

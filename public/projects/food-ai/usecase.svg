@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#111827" />
+    </marker>
+    <marker id="arrow-dashed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#4b5563" />
+    </marker>
+  </defs>
+
+  <!-- Clean White Background -->
+  <rect width="1200" height="675" fill="#ffffff" />
+
+  <!-- Outer Border Frame -->
+  <rect x="20" y="20" width="1160" height="635" rx="12" fill="#ffffff" stroke="#111827" stroke-width="2" />
+
+  <!-- Header Title Bar -->
+  <rect x="20" y="20" width="1160" height="70" rx="12" fill="#f9fafb" stroke="#111827" stroke-width="2" />
+  <line x1="20" y1="90" x2="1180" y2="90" stroke="#111827" stroke-width="2" />
+  
+  <text x="50" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#111827" letter-spacing="0.5">SƠ ĐỒ USE CASE - HỆ THỐNG FOOD AI SOCIAL NETWORK</text>
+  <text x="50" y="74" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#4b5563">Phân hệ chức năng Thực khách, Chủ nhà hàng, Quản trị viên &amp; Trợ lý AI (RAG Recommender)</text>
+
+  <rect x="1000" y="38" width="150" height="34" rx="6" fill="#ffffff" stroke="#111827" stroke-width="1.5" />
+  <text x="1075" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">UML USE CASE</text>
+
+  <!-- ==================== LEFT ACTORS ==================== -->
+  <!-- Actor 1: Thực khách -->
+  <g transform="translate(90, 150)">
+    <!-- Stick Figure -->
+    <circle cx="40" cy="20" r="16" fill="#ffffff" stroke="#111827" stroke-width="2.5" />
+    <line x1="40" y1="36" x2="40" y2="85" stroke="#111827" stroke-width="2.5" />
+    <line x1="12" y1="52" x2="68" y2="52" stroke="#111827" stroke-width="2.5" />
+    <line x1="40" y1="85" x2="18" y2="125" stroke="#111827" stroke-width="2.5" />
+    <line x1="40" y1="85" x2="62" y2="125" stroke="#111827" stroke-width="2.5" />
+    <text x="40" y="152" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="800" fill="#111827" text-anchor="middle">THỰC KHÁCH</text>
+    <text x="40" y="172" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#4b5563" text-anchor="middle">(Người dùng / Foodie)</text>
+  </g>
+
+  <!-- Actor 2: Chủ nhà hàng -->
+  <g transform="translate(90, 400)">
+    <circle cx="40" cy="20" r="16" fill="#ffffff" stroke="#111827" stroke-width="2.5" />
+    <line x1="40" y1="36" x2="40" y2="85" stroke="#111827" stroke-width="2.5" />
+    <line x1="12" y1="52" x2="68" y2="52" stroke="#111827" stroke-width="2.5" />
+    <line x1="40" y1="85" x2="18" y2="125" stroke="#111827" stroke-width="2.5" />
+    <line x1="40" y1="85" x2="62" y2="125" stroke="#111827" stroke-width="2.5" />
+    <text x="40" y="152" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="800" fill="#111827" text-anchor="middle">CHỦ NHÀ HÀNG</text>
+    <text x="40" y="172" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#4b5563" text-anchor="middle">(Đối tác POS / Menu)</text>
+  </g>
+
+  <!-- ==================== SYSTEM BOUNDARY ==================== -->
+  <rect x="250" y="115" width="700" height="520" rx="16" fill="#fafafa" stroke="#111827" stroke-width="2" stroke-dasharray="8 6" />
+  <text x="600" y="145" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#374151" text-anchor="middle" letter-spacing="1">HỆ THỐNG ỨNG DỤNG FOOD AI</text>
+
+  <!-- ==================== USE CASES (OVALS) ==================== -->
+  <!-- UC1: Đăng bài & Review -->
+  <ellipse cx="440" cy="200" rx="130" ry="28" fill="#ffffff" stroke="#111827" stroke-width="2" />
+  <text x="440" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Đăng bài &amp; Review ẩm thực</text>
+
+  <!-- UC2: Tìm kiếm ngữ nghĩa (Semantic) -->
+  <ellipse cx="440" cy="280" rx="140" ry="30" fill="#ffffff" stroke="#111827" stroke-width="2" />
+  <text x="440" y="278" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Tìm kiếm món ăn ngữ nghĩa</text>
+  <text x="440" y="295" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#4b5563" text-anchor="middle">(Semantic &amp; Hybrid Search)</text>
+
+  <!-- UC3: Chat tư vấn AI (RAG) -->
+  <ellipse cx="440" cy="365" rx="140" ry="30" fill="#ffffff" stroke="#111827" stroke-width="2" />
+  <text x="440" y="363" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Chat hỏi đáp tư vấn thực đơn</text>
+  <text x="440" y="380" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#4b5563" text-anchor="middle">(Trợ lý AI RAG thời gian thực)</text>
+
+  <!-- UC4: Gợi ý đa tiêu chí -->
+  <ellipse cx="440" cy="450" rx="140" ry="30" fill="#ffffff" stroke="#111827" stroke-width="2" />
+  <text x="440" y="448" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Gợi ý món ăn cá nhân hóa</text>
+  <text x="440" y="465" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#4b5563" text-anchor="middle">(Khẩu vị + GPS + Ngân sách)</text>
+
+  <!-- UC5: Quản lý Menu nhà hàng -->
+  <ellipse cx="440" cy="540" rx="140" ry="30" fill="#ffffff" stroke="#111827" stroke-width="2" />
+  <text x="440" y="538" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Quản lý thực đơn &amp; Món ăn</text>
+  <text x="440" y="555" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#4b5563" text-anchor="middle">(Giá bán, hình ảnh &amp; phân loại)</text>
+
+  <!-- UC6: Tính Vector Embedding (Include) -->
+  <ellipse cx="750" cy="245" rx="130" ry="28" fill="#ffffff" stroke="#111827" stroke-width="1.8" stroke-dasharray="5 4" />
+  <text x="750" y="243" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">Tạo Vector Embeddings 1536D</text>
+  <text x="750" y="259" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#4b5563" text-anchor="middle">(OpenAI text-embedding-3)</text>
+
+  <!-- UC7: Cosine Vector Search & RAG Context (Include) -->
+  <ellipse cx="750" cy="345" rx="135" ry="30" fill="#ffffff" stroke="#111827" stroke-width="1.8" stroke-dasharray="5 4" />
+  <text x="750" y="342" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">Truy vấn pgvector &amp; Khớp Context</text>
+  <text x="750" y="358" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#4b5563" text-anchor="middle">(Ràng buộc dữ liệu 39 bảng DB)</text>
+
+  <!-- UC8: Quản trị hệ thống -->
+  <ellipse cx="750" cy="470" rx="130" ry="28" fill="#ffffff" stroke="#111827" stroke-width="2" />
+  <text x="750" y="468" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">Kiểm duyệt bài viết &amp; Báo cáo</text>
+  <text x="750" y="484" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#4b5563" text-anchor="middle">(Bảo mật nội dung cộng đồng)</text>
+
+  <!-- ==================== RIGHT ACTORS ==================== -->
+  <!-- Actor 3: Trợ lý AI (System Actor) -->
+  <g transform="translate(1010, 240)">
+    <rect x="0" y="0" width="80" height="70" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect x="15" y="15" width="50" height="40" rx="4" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <circle cx="30" cy="32" r="4" fill="#111827" />
+    <circle cx="50" cy="32" r="4" fill="#111827" />
+    <line x1="26" y1="44" x2="54" y2="44" stroke="#111827" stroke-width="2" />
+    <text x="40" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#111827" text-anchor="middle">&lt;&lt;System&gt;&gt;</text>
+    <text x="40" y="115" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="800" fill="#111827" text-anchor="middle">AI &amp; RAG ENGINE</text>
+    <text x="40" y="132" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#4b5563" text-anchor="middle">(LangChain + GPT-4)</text>
+  </g>
+
+  <!-- Actor 4: Quản trị viên -->
+  <g transform="translate(1030, 440)">
+    <circle cx="40" cy="20" r="16" fill="#ffffff" stroke="#111827" stroke-width="2.5" />
+    <line x1="40" y1="36" x2="40" y2="85" stroke="#111827" stroke-width="2.5" />
+    <line x1="12" y1="52" x2="68" y2="52" stroke="#111827" stroke-width="2.5" />
+    <line x1="40" y1="85" x2="18" y2="125" stroke="#111827" stroke-width="2.5" />
+    <line x1="40" y1="85" x2="62" y2="125" stroke="#111827" stroke-width="2.5" />
+    <text x="40" y="152" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="800" fill="#111827" text-anchor="middle">ADMIN</text>
+    <text x="40" y="172" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#4b5563" text-anchor="middle">(Quản trị viên)</text>
+  </g>
+
+  <!-- ==================== CONNECTORS ==================== -->
+  <!-- Thực khách to UC1, UC2, UC3, UC4 -->
+  <line x1="170" y1="205" x2="310" y2="200" stroke="#111827" stroke-width="1.8" />
+  <line x1="170" y1="220" x2="305" y2="275" stroke="#111827" stroke-width="1.8" />
+  <line x1="170" y1="235" x2="310" y2="355" stroke="#111827" stroke-width="1.8" />
+  <line x1="170" y1="250" x2="315" y2="435" stroke="#111827" stroke-width="1.8" />
+
+  <!-- Chủ nhà hàng to UC1, UC5 -->
+  <line x1="170" y1="460" x2="340" y2="225" stroke="#111827" stroke-width="1.5" stroke-dasharray="2 2" />
+  <line x1="170" y1="480" x2="305" y2="535" stroke="#111827" stroke-width="1.8" />
+
+  <!-- Includes between Use Cases -->
+  <!-- UC2 to UC6 (include) -->
+  <line x1="575" y1="270" x2="630" y2="255" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow-dashed)" />
+  <text x="595" y="250" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#4b5563">&lt;&lt;include&gt;&gt;</text>
+
+  <!-- UC3 to UC7 (include) -->
+  <line x1="580" y1="365" x2="620" y2="355" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow-dashed)" />
+  <text x="590" y="350" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#4b5563">&lt;&lt;include&gt;&gt;</text>
+
+  <!-- Right actors to UC -->
+  <line x1="1010" y1="280" x2="880" y2="255" stroke="#111827" stroke-width="1.8" />
+  <line x1="1010" y1="310" x2="885" y2="345" stroke="#111827" stroke-width="1.8" />
+  <line x1="1030" y1="510" x2="880" y2="480" stroke="#111827" stroke-width="1.8" />
+
+</svg>

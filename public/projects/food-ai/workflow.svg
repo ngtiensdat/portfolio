@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#111827" />
+    </marker>
+  </defs>
+
+  <!-- Clean White Background -->
+  <rect width="1200" height="675" fill="#ffffff" />
+
+  <!-- Outer Border Frame -->
+  <rect x="20" y="20" width="1160" height="635" rx="12" fill="#ffffff" stroke="#111827" stroke-width="2" />
+
+  <!-- Header Title Bar -->
+  <rect x="20" y="20" width="1160" height="70" rx="12" fill="#f9fafb" stroke="#111827" stroke-width="2" />
+  <line x1="20" y1="90" x2="1180" y2="90" stroke="#111827" stroke-width="2" />
+
+  <text x="50" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#111827">SƠ ĐỒ LUỒNG XỬ LÝ - THUẬT TOÁN HYBRID SEARCH &amp; AI RAG</text>
+  <text x="50" y="74" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#4b5563">Quy trình truy vấn ngữ nghĩa pgvector, xếp hạng đa tiêu chí và tiêm ngữ cảnh GPT-4 (Dự án FOOD AI)</text>
+
+  <rect x="1000" y="38" width="150" height="34" rx="6" fill="#ffffff" stroke="#111827" stroke-width="1.5" />
+  <text x="1075" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">WORKFLOW PIPELINE</text>
+
+  <!-- STEP 1: USER INPUT -->
+  <g transform="translate(50, 120)">
+    <rect width="200" height="110" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect width="200" height="30" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <text x="100" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 1: TRUY VẤN TỪ KHÁCH</text>
+    <text x="15" y="55" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#111827">• Khách nhập yêu cầu:</text>
+    <text x="20" y="75" font-family="monospace" font-size="11" fill="#4b5563">"Món mát, gần đây &lt; 50k"</text>
+    <text x="15" y="98" font-family="system-ui, sans-serif" font-size="11" fill="#111827">• Tọa độ GPS + User Profile</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="250" y1="175" x2="310" y2="175" stroke="#111827" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- STEP 2: API GATEWAY -->
+  <g transform="translate(310, 120)">
+    <rect width="220" height="110" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect width="220" height="30" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <text x="110" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 2: NESTJS API GATEWAY</text>
+    <text x="15" y="55" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#111827">• Validate JWT &amp; DTO (Zod)</text>
+    <text x="15" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Trích xuất ngữ cảnh truy vấn</text>
+    <text x="15" y="98" font-family="system-ui, sans-serif" font-size="11" fill="#4b5563">• Phân nhánh xử lý song song</text>
+  </g>
+
+  <!-- Split Arrow 2 -> Parallel branches -->
+  <path d="M 530 175 L 570 175 L 570 180 L 610 180" stroke="#111827" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <path d="M 570 175 L 570 310 L 610 310" stroke="#111827" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+  <!-- STEP 3A: VECTOR SIMILARITY (Branch A) -->
+  <g transform="translate(610, 125)">
+    <rect width="260" height="105" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect width="260" height="28" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <text x="130" y="19" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">NHÁNH A: VECTOR EMBEDDINGS</text>
+    <text x="15" y="48" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• OpenAI text-embedding-3-small</text>
+    <text x="15" y="68" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• PostgreSQL pgvector (1536 chiều)</text>
+    <text x="15" y="88" font-family="monospace" font-size="11" fill="#4b5563">ORDER BY embedding &lt;=&gt; q ASC</text>
+  </g>
+
+  <!-- STEP 3B: ATTRIBUTES & GPS (Branch B) -->
+  <g transform="translate(610, 260)">
+    <rect width="260" height="105" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect width="260" height="28" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <text x="130" y="19" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">NHÁNH B: CỰ LY &amp; NGÂN SÁCH</text>
+    <text x="15" y="48" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Haversine GPS: d = dist(u, r)</text>
+    <text x="15" y="68" font-family="monospace" font-size="11" fill="#4b5563">S_dist = max(0.5, exp(-0.07*d))</text>
+    <text x="15" y="88" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Bộ lọc ngân sách người dùng</text>
+  </g>
+
+  <!-- Connect Branches to Step 4 -->
+  <path d="M 870 175 L 920 175 L 920 235 L 950 235" stroke="#111827" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <path d="M 870 310 L 920 310 L 920 255 L 950 255" stroke="#111827" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+  <!-- STEP 4: HYBRID RE-RANKING -->
+  <g transform="translate(950, 180)">
+    <rect width="200" height="130" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect width="200" height="30" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <text x="100" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 4: HYBRID RANKING</text>
+    <text x="10" y="55" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#111827">Công thức chấm điểm:</text>
+    <text x="10" y="75" font-family="monospace" font-size="10" fill="#111827">0.45*Vec + 0.25*Pref +</text>
+    <text x="10" y="93" font-family="monospace" font-size="10" fill="#111827">0.20*Dist + 0.10*Budget</text>
+    <text x="10" y="115" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#4b5563">➔ Trích xuất Top 5 món tối ưu</text>
+  </g>
+
+  <!-- Connect Step 4 down to Step 5 -->
+  <path d="M 1050 310 L 1050 430 L 1010 430" stroke="#111827" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+  <!-- STEP 5: LANGCHAIN RAG INJECTION -->
+  <g transform="translate(670, 395)">
+    <rect width="340" height="110" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect width="340" height="30" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <text x="170" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 5: LANGCHAIN CONTEXT INJECTION (RAG)</text>
+    <text x="15" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Nhúng Top 5 món vào System Prompt làm ngữ cảnh thực</text>
+    <text x="15" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Ràng buộc AI chỉ trả lời dựa trên kho dữ liệu thực tế</text>
+    <text x="15" y="95" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#4b5563">✔ Triệt tiêu hoàn toàn hiện tượng bịa đặt (Hallucination)</text>
+  </g>
+
+  <!-- Arrow 5 -> 6 -->
+  <line x1="670" y1="450" x2="610" y2="450" stroke="#111827" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- STEP 6: GPT-4 MODEL -->
+  <g transform="translate(360, 395)">
+    <rect width="250" height="110" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect width="250" height="30" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <text x="125" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 6: OPENAI GPT-4 GENERATION</text>
+    <text x="15" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Sinh câu trả lời tư vấn ẩm thực</text>
+    <text x="15" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Kèm lý giải dinh dưỡng &amp; giá tiền</text>
+    <text x="15" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#4b5563">• Format JSON thẻ món ăn tương tác</text>
+  </g>
+
+  <!-- Arrow 6 -> 7 -->
+  <line x1="360" y1="450" x2="280" y2="450" stroke="#111827" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- STEP 7: CLIENT DISPLAY -->
+  <g transform="translate(50, 395)">
+    <rect width="230" height="110" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect width="230" height="30" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <text x="115" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 7: CLIENT HIỂN THỊ (NEXT.JS)</text>
+    <text x="15" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Streaming văn bản từng từ (SSE)</text>
+    <text x="15" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Thẻ bài món ăn có nút Đặt bàn</text>
+    <text x="15" y="95" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#4b5563">✔ Độ trễ phản hồi: &lt; 1.2s</text>
+  </g>
+
+  <!-- Footer Technical Indicators -->
+  <line x1="50" y1="565" x2="1150" y2="565" stroke="#e5e7eb" stroke-width="1.5" />
+  <g transform="translate(50, 585)">
+    <text x="0" y="15" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#111827">CÁC CHỈ SỐ KỸ THUẬT QUAN TRỌNG:</text>
+    <text x="250" y="15" font-family="system-ui, sans-serif" font-size="12" fill="#4b5563">pgvector Index: HNSW (m=16, ef=64)</text>
+    <text x="560" y="15" font-family="system-ui, sans-serif" font-size="12" fill="#4b5563">Cosine Search Latency: ~38ms</text>
+    <text x="820" y="15" font-family="system-ui, sans-serif" font-size="12" fill="#4b5563">Data Integrity: 39 bảng quan hệ PostgreSQL</text>
+  </g>
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#111827" />
+    </marker>
+  </defs>
+
+  <!-- Clean White Background -->
+  <rect width="1200" height="675" fill="#ffffff" />
+
+  <!-- Outer Border Frame -->
+  <rect x="20" y="20" width="1160" height="635" rx="12" fill="#ffffff" stroke="#111827" stroke-width="2" />
+
+  <!-- Header Title Bar -->
+  <rect x="20" y="20" width="1160" height="70" rx="12" fill="#f9fafb" stroke="#111827" stroke-width="2" />
+  <line x1="20" y1="90" x2="1180" y2="90" stroke="#111827" stroke-width="2" />
+
+  <text x="50" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#111827">SƠ ĐỒ LUỒNG XỬ LÝ - XUẤT 1.000.000+ BẢN GHI (EVENT-DRIVEN ARCHITECTURE)</text>
+  <text x="50" y="74" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#4b5563">Quy trình xử lý bất đồng bộ kết hợp Apache Kafka, SXSSF Streaming và MinIO Object Storage</text>
+
+  <rect x="1000" y="38" width="150" height="34" rx="6" fill="#ffffff" stroke="#111827" stroke-width="1.5" />
+  <text x="1075" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">WORKFLOW PIPELINE</text>
+
+  <!-- STEP 1: USER REQUEST -->
+  <g transform="translate(50, 120)">
+    <rect width="210" height="110" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect width="210" height="30" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <text x="105" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 1: CLIENT GỬI YÊU CẦU</text>
+    <text x="15" y="55" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#111827">• Người dùng bấm: Xuất Excel</text>
+    <text x="15" y="75" font-family="system-ui, sans-serif" font-size="11" fill="#4b5563">• Quy mô: 1.000.000+ giao dịch</text>
+    <text x="15" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#111827">• Gửi kèm bộ lọc thời gian &amp; loại</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="260" y1="175" x2="330" y2="175" stroke="#111827" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- STEP 2: SPRING BOOT CONTROLLER -->
+  <g transform="translate(330, 120)">
+    <rect width="240" height="110" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect width="240" height="30" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <text x="120" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 2: API SERVER (SPRING BOOT)</text>
+    <text x="15" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Xác thực Token &amp; Rate Limit</text>
+    <text x="15" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Tạo Job ID, lưu DB (PENDING)</text>
+    <text x="15" y="95" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#111827">• Phản hồi Client ngay trong &lt; 50ms</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="570" y1="175" x2="640" y2="175" stroke="#111827" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- STEP 3: KAFKA MESSAGE BROKER -->
+  <g transform="translate(640, 120)">
+    <rect width="220" height="110" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect width="220" height="30" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <text x="110" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 3: APACHE KAFKA</text>
+    <text x="15" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Topic: export_jobs</text>
+    <text x="15" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Đệm hàng đợi chống nghẽn CPU</text>
+    <text x="15" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#4b5563">• Phân phối tải cho Worker Nodes</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <line x1="860" y1="175" x2="930" y2="175" stroke="#111827" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- STEP 4: WORKER NODE CONSUME -->
+  <g transform="translate(930, 120)">
+    <rect width="220" height="110" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect width="220" height="30" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <text x="110" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 4: EXPORT WORKER</text>
+    <text x="15" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• @KafkaListener tiêu thụ job</text>
+    <text x="15" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Khởi tạo luồng nền độc lập</text>
+    <text x="15" y="95" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#4b5563">✔ Không ảnh hưởng API chính</text>
+  </g>
+
+  <!-- Arrow 4 down to Step 5 -->
+  <path d="M 1040 230 L 1040 370 L 980 370" stroke="#111827" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+  <!-- STEP 5: KEYSET PAGINATION & SXSSF -->
+  <g transform="translate(680, 310)">
+    <rect width="300" height="120" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect width="300" height="30" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <text x="150" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 5: KEYSET &amp; SXSSF STREAMING</text>
+    <text x="15" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Keyset Pagination: WHERE id &gt; :lastId</text>
+    <text x="15" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Batch: 1000 dòng/lần</text>
+    <text x="15" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#111827">• SXSSFWorkbook: Chỉ giữ 1000 dòng RAM</text>
+    <text x="15" y="112" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#4b5563">✔ Triệt tiêu 100% lỗi OutOfMemory (OOM)</text>
+  </g>
+
+  <!-- Arrow 5 -> 6 (and parallel progress notification) -->
+  <line x1="680" y1="370" x2="610" y2="370" stroke="#111827" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- STEP 6: MINIO S3 UPLOAD -->
+  <g transform="translate(350, 310)">
+    <rect width="260" height="120" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect width="260" height="30" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <text x="130" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 6: MINIO OBJECT STORAGE</text>
+    <text x="15" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Upload trực tiếp byte stream</text>
+    <text x="15" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Sinh Presigned URL tải an toàn</text>
+    <text x="15" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#4b5563">• URL có chữ ký, hết hạn sau 15p</text>
+    <text x="15" y="112" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#111827">✔ Cập nhật Job: COMPLETED</text>
+  </g>
+
+  <!-- Arrow 6 -> 7 -->
+  <line x1="350" y1="370" x2="280" y2="370" stroke="#111827" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- STEP 7: WEBSOCKET NOTIFICATION & DOWNLOAD -->
+  <g transform="translate(50, 310)">
+    <rect width="230" height="120" rx="8" fill="#ffffff" stroke="#111827" stroke-width="2" />
+    <rect width="230" height="30" rx="8" fill="#f3f4f6" stroke="#111827" stroke-width="1.5" />
+    <text x="115" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle">BƯỚC 7: WEBSOCKET &amp; DOWNLOAD</text>
+    <text x="15" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• Redis Pub/Sub broadcast tiến độ</text>
+    <text x="15" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#111827">• UI cập nhật thanh % realtime</text>
+    <text x="15" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#111827">• Nhận URL &amp; kích hoạt tải file</text>
+    <text x="15" y="112" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#4b5563">✔ Người dùng không cần F5 trình duyệt</text>
+  </g>
+
+  <!-- Parallel Branch: Audit Log Tracker -->
+  <g transform="translate(50, 470)">
+    <rect width="1100" height="85" rx="8" fill="#fafafa" stroke="#111827" stroke-width="1.5" stroke-dasharray="4 4" />
+    <text x="25" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#111827">ĐỒNG THỜI: HỆ THỐNG AUDIT LOG ĐỘC LẬP (PROPAGATION_REQUIRES_NEW)</text>
+    <text x="25" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#374151">• Ghi vết toàn bộ hành vi: Ai xuất dữ liệu? Thời gian nào? IP máy Client? Bộ lọc áp dụng là gì?</text>
+    <text x="25" y="73" font-family="system-ui, sans-serif" font-size="12" fill="#4b5563">• Transaction Audit Log cam kết luôn được commit độc lập, ngay cả khi tác vụ xuất xảy ra sự cố gián đoạn mạng.</text>
+  </g>
+
+  <!-- Footer Technical Indicators -->
+  <line x1="50" y1="585" x2="1150" y2="585" stroke="#e5e7eb" stroke-width="1.5" />
+  <g transform="translate(50, 605)">
+    <text x="0" y="15" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#111827">CHỈ SỐ THỰC TẾ:</text>
+    <text x="140" y="15" font-family="system-ui, sans-serif" font-size="12" fill="#4b5563">Thời gian phản hồi API: &lt; 50ms</text>
+    <text x="390" y="15" font-family="system-ui, sans-serif" font-size="12" fill="#4b5563">Bộ nhớ RAM tối đa tiêu hao: &lt; 256MB</text>
+    <text x="700" y="15" font-family="system-ui, sans-serif" font-size="12" fill="#4b5563">Tốc độ stream dữ liệu: ~25.000 dòng/giây</text>
+  </g>
+</svg>
