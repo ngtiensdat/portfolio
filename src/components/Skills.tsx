@@ -8,7 +8,7 @@ import { TiltCard } from "./effects/TiltCard";
 export default function Skills() {
   const [activeCategory, setActiveCategory] = useState<string>("Tất cả");
 
-  const categoryIcons: Record<string, any> = {
+  const categoryIcons: Record<string, React.ComponentType<{ className?: string }>> = {
     "Sử dụng thường xuyên": Zap,
     "Đã dùng trong dự án thực tế": Code2,
     "Cơ sở hạ tầng & Nền tảng": Server,

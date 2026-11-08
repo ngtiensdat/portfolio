@@ -9,8 +9,9 @@ export const PERSONAL_DATA: PersonalInfo = {
   email: "datga27@gmail.com",
   phone: "0337562201",
   birthDate: "22/01/2004",
-  github: "https://github.com",
-  linkedin: "https://linkedin.com",
+  github: "https://github.com/ngtiensdat",
+  facebook: "https://www.facebook.com/ngtiensdat",
+  linkedin: "https://www.facebook.com/ngtiensdat",
   twitter: "https://twitter.com",
   resumeUrl: "#resume",
   stats: [
@@ -97,7 +98,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     image: "/projects/food-ai/banner.png",
     liveUrl: "https://food-ai-frontend-azure.vercel.app/",
-    githubUrl: "https://github.com/datga27/food-ai-social-network",
+    githubUrl: "https://github.com/ngtiensdat/FOOD-AI",
     featured: true,
     stats: [
       { label: "Cơ sở dữ liệu", value: "39 Bảng", hint: "Thiết kế chuẩn 3NF trên PostgreSQL" },
@@ -246,7 +247,7 @@ Nếu người dùng hỏi món ngoài danh sách, hãy giải thích khéo léo
     ],
     image: "/projects/payment-hub/banner.svg",
     liveUrl: undefined,
-    githubUrl: "https://github.com/datga27/payment-hub-middleware",
+    githubUrl: "https://github.com/ngtiensdat/PMH",
     featured: true,
     stats: [
       { label: "Xuất dữ liệu", value: "1.000.000+", hint: "Bản ghi Excel SXSSF không gây OOM JVM" },
@@ -416,7 +417,7 @@ public void approveComponent(Long id, String checkerUsername) {
     ],
     image: "/projects/learn-english/banner.png",
     liveUrl: "https://learn-english-three-omega.vercel.app/",
-    githubUrl: "https://github.com/datga27/learn-english-web",
+    githubUrl: "https://github.com/ngtiensdat/LearnEnglish",
     featured: true,
     stats: [
       { label: "Độ trễ thi trực tuyến", value: "< 30ms", hint: "WebSocket Room Synchronization" },
@@ -522,7 +523,7 @@ handleStartExamRoom(@MessageBody() data: { roomId: string }, @ConnectedSocket() 
     ],
     image: "/projects/portfolio-frontend/banner.svg",
     liveUrl: "http://localhost:3000",
-    githubUrl: "https://github.com/datga27/portfolio",
+    githubUrl: "https://github.com/ngtiensdat/portfolio",
     featured: true,
     stats: [
       { label: "Tốc độ biên dịch", value: "< 900ms", hint: "Next.js 16 Turbopack Engine" },

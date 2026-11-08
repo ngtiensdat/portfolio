@@ -95,8 +95,9 @@ export interface PersonalInfo {
   phone: string;
   birthDate: string;
   github: string;
-  linkedin: string;
-  twitter: string;
+  facebook: string;
+  linkedin?: string;
+  twitter?: string;
   resumeUrl: string;
   stats: { label: string; value: string }[];
   aboutText: string[];

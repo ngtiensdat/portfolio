@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import Link from "next/link";
 import confetti from "canvas-confetti";
 import { Terminal, Send, Sparkles, CornerDownLeft, RotateCcw } from "lucide-react";
 
@@ -102,9 +103,9 @@ export function InteractiveTerminal() {
             <div>
               <p className="font-semibold text-emerald-300">1. FOOD AI Social Network (AI RAG, Next.js, NestJS)</p>
               <div className="flex gap-3 text-[11px] mt-0.5">
-                <a href="/projects/food-ai" className="text-teal-400 hover:underline">
+                <Link href="/projects/food-ai" className="text-teal-400 hover:underline">
                   📄 Xem Case Study & Code
-                </a>
+                </Link>
                 <a href="https://food-ai-frontend-azure.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline">
                   🔗 Live Demo
                 </a>
@@ -113,17 +114,17 @@ export function InteractiveTerminal() {
             <div>
               <p className="font-semibold text-emerald-300">2. Payment Hub Middleware (Spring Boot, RBAC, Kafka, MinIO)</p>
               <div className="text-[11px] mt-0.5">
-                <a href="/projects/payment-hub" className="text-teal-400 hover:underline">
+                <Link href="/projects/payment-hub" className="text-teal-400 hover:underline">
                   📄 Xem Case Study (Xuất 1M+ Records, Maker-Checker)
-                </a>
+                </Link>
               </div>
             </div>
             <div>
               <p className="font-semibold text-emerald-300">3. Learn English Web (TOEIC/IELTS, Realtime WebSocket)</p>
               <div className="flex gap-3 text-[11px] mt-0.5">
-                <a href="/projects/learn-english" className="text-teal-400 hover:underline">
+                <Link href="/projects/learn-english" className="text-teal-400 hover:underline">
                   📄 Xem Case Study & Code
-                </a>
+                </Link>
                 <a href="https://learn-english-three-omega.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline">
                   🔗 Live Demo
                 </a>
@@ -132,9 +133,9 @@ export function InteractiveTerminal() {
             <div>
               <p className="font-semibold text-emerald-300">4. Interactive Portfolio (Next.js 16, 3D Parallax, Terminal)</p>
               <div className="text-[11px] mt-0.5">
-                <a href="/projects/portfolio-frontend" className="text-teal-400 hover:underline">
+                <Link href="/projects/portfolio-frontend" className="text-teal-400 hover:underline">
                   📄 Xem Case Study (Frontend Design & Tech Stack)
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -162,6 +163,8 @@ export function InteractiveTerminal() {
             <p className="text-emerald-400 font-bold">Thông tin liên lạc:</p>
             <p>• SĐT: <a href="tel:0337562201" className="text-emerald-400 hover:underline">0337562201</a></p>
             <p>• Email: <a href="mailto:datga27@gmail.com" className="text-emerald-400 hover:underline">datga27@gmail.com</a></p>
+            <p>• Facebook: <a href="https://www.facebook.com/ngtiensdat" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline">facebook.com/ngtiensdat</a></p>
+            <p>• GitHub: <a href="https://github.com/ngtiensdat" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline">github.com/ngtiensdat</a></p>
             <p>• Địa chỉ: Hoàng Liệt, Hoàng Mai, Hà Nội</p>
           </div>
         );

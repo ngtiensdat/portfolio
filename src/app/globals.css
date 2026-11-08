@@ -5,11 +5,21 @@
 :root {
   --background: #f8fafc;
   --foreground: #091711;
+  --surface: #ffffff;
+  --surface-muted: #f1f5f9;
+  --border-theme: rgba(226, 232, 240, 0.8);
+  --emerald-primary: #10b981;
+  --emerald-glow: rgba(16, 185, 129, 0.35);
 }
 
 .dark {
   --background: #060e0a;
   --foreground: #ecfdf5;
+  --surface: #0c1a14;
+  --surface-muted: #12251d;
+  --border-theme: rgba(16, 185, 129, 0.2);
+  --emerald-primary: #10b981;
+  --emerald-glow: rgba(16, 185, 129, 0.45);
 }
 
 html {
@@ -22,6 +32,42 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   transition: background-color 0.25s ease, color 0.25s ease;
   overflow-x: hidden;
+}
+
+/* Centralized Theme Utility Classes */
+.theme-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border-theme);
+  border-radius: 1.5rem;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.theme-card:hover {
+  border-color: rgba(16, 185, 129, 0.45);
+  box-shadow: 0 10px 30px -10px var(--emerald-glow);
+}
+
+.theme-glow-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-glow-card::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(circle, var(--emerald-glow) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 9999px;
+}
+
+.theme-text-gradient {
+  background: linear-gradient(135deg, #34d399 0%, #2dd4bf 50%, #6ee7b7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Custom scrollbar with emerald accents */

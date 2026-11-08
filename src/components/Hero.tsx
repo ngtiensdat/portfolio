@@ -2,7 +2,7 @@
 
 import { portfolioData } from "@/data/portfolioData";
 import { ArrowDown, Mail, Sparkles, Send } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "./Icons";
+import { GithubIcon, FacebookIcon } from "./Icons";
 import { ScrambleText } from "./effects/ScrambleText";
 import { InteractiveTerminal } from "./features/InteractiveTerminal";
 
@@ -87,13 +87,13 @@ export default function Hero() {
                 <GithubIcon className="w-5 h-5" />
               </a>
               <a
-                href={personal.linkedin}
+                href={personal.facebook || "https://www.facebook.com/ngtiensdat"}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="LinkedIn"
+                aria-label="Facebook"
                 className="p-3 rounded-xl border border-slate-200 dark:border-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all hover:scale-105 shadow-2xs"
               >
-                <LinkedinIcon className="w-5 h-5" />
+                <FacebookIcon className="w-5 h-5" />
               </a>
               <a
                 href={`mailto:${personal.email}`}

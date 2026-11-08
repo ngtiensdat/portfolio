@@ -177,6 +177,20 @@ export function CommandPalette() {
       perform: () => handleCopy("datga27@gmail.com", "email"),
     },
     {
+      id: "open-facebook",
+      label: "Mở Facebook cá nhân: facebook.com/ngtiensdat",
+      category: "Liên hệ",
+      icon: <ExternalLink className="w-4 h-4 text-emerald-400" />,
+      perform: () => window.open("https://www.facebook.com/ngtiensdat", "_blank"),
+    },
+    {
+      id: "open-github",
+      label: "Mở GitHub: github.com/ngtiensdat",
+      category: "Liên hệ",
+      icon: <ExternalLink className="w-4 h-4 text-emerald-400" />,
+      perform: () => window.open("https://github.com/ngtiensdat", "_blank"),
+    },
+    {
       id: "action-confetti",
       label: "Bắn pháo hoa ăn mừng! (Confetti)",
       category: "Hành động",

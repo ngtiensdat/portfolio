@@ -62,6 +62,15 @@ export default function CVPage() {
                 <MapPin className="w-3.5 h-3.5 text-slate-500" />
                 <span>{personal.location}</span>
               </p>
+              <p className="flex items-center gap-2 text-[11px]">
+                <a href={personal.github} target="_blank" rel="noopener noreferrer" className="text-emerald-700 font-semibold hover:underline">
+                  github.com/ngtiensdat
+                </a>
+                <span>•</span>
+                <a href={personal.facebook} target="_blank" rel="noopener noreferrer" className="text-emerald-700 font-semibold hover:underline">
+                  facebook.com/ngtiensdat
+                </a>
+              </p>
             </div>
           </div>
 
