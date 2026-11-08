@@ -95,7 +95,7 @@ export const PROJECTS_DATA: Project[] = [
       "Quản lý trạng thái Client hiệu năng cao bằng Zustand và xác thực Form với Zod",
       "Triển khai hoàn thiện Live Demo trên hạ tầng đám mây Vercel"
     ],
-    image: "/projects/food-ai-banner.png",
+    image: "/projects/food-ai/banner.png",
     liveUrl: "https://food-ai-frontend-azure.vercel.app/",
     githubUrl: "https://github.com/datga27/food-ai-social-network",
     featured: true,
@@ -112,15 +112,15 @@ export const PROJECTS_DATA: Project[] = [
       { category: "Cơ sở dữ liệu & DevOps", skills: ["PostgreSQL 16", "Redis", "Vercel Cloud", "Docker"] },
     ],
     gallery: [
-      { src: "/projects/food-ai-banner.png", caption: "Giao diện trang chủ Feed ẩm thực mạng xã hội Food AI", category: "Giao diện" },
-      { src: "/projects/food-ai-chat.jpg", caption: "Trợ lý AI tư vấn món ăn thông minh theo ngữ cảnh người dùng RAG", category: "Trợ lý AI" },
-      { src: "/projects/food-ai-arch.jpg", caption: "Sơ đồ kiến trúc phân tầng & luồng dữ liệu 3 tầng (Client - Server - AI/DB)", category: "Kiến trúc hệ thống" },
-      { src: "/projects/food-ai-erd.jpg", caption: "Sơ đồ ERD 39 bảng cơ sở dữ liệu và mở rộng Vector Embeddings", category: "Cơ sở dữ liệu" },
-      { src: "/projects/food-ai-hybrid-search.jpg", caption: "Mô hình tìm kiếm lai Hybrid Search kết hợp BM25 và Vector Similarity", category: "Thuật toán" },
-      { src: "/projects/food-ai-vector-query.jpg", caption: "Quy trình truy vấn vector món ăn và tính khoảng cách Cosine trên pgvector", category: "Thuật toán" },
-      { src: "/projects/food-ai-user-pref.png", caption: "4 bước suy luận hồ sơ sở thích ẩm thực người dùng từ hành vi tương tác", category: "Thuật toán" },
-      { src: "/projects/food-ai-login.jpg", caption: "Giao diện đăng nhập & xác thực bảo mật JWT Token", category: "Bảo mật" },
-      { src: "/projects/food-ai-usecase.jpg", caption: "Sơ đồ Use Case tổng quát các phân hệ chức năng", category: "Phân tích thiết kế" }
+      { src: "/projects/food-ai/banner.png", caption: "Giao diện trang chủ Feed ẩm thực mạng xã hội Food AI", category: "Giao diện" },
+      { src: "/projects/food-ai/chat-ai.jpg", caption: "Trợ lý AI tư vấn món ăn thông minh theo ngữ cảnh người dùng RAG", category: "Trợ lý AI" },
+      { src: "/projects/food-ai/architecture.jpg", caption: "Sơ đồ kiến trúc phân tầng & luồng dữ liệu 3 tầng (Client - Server - AI/DB)", category: "Kiến trúc hệ thống" },
+      { src: "/projects/food-ai/erd.jpg", caption: "Sơ đồ ERD 39 bảng cơ sở dữ liệu và mở rộng Vector Embeddings", category: "Cơ sở dữ liệu" },
+      { src: "/projects/food-ai/hybrid-search.jpg", caption: "Mô hình tìm kiếm lai Hybrid Search kết hợp BM25 và Vector Similarity", category: "Thuật toán" },
+      { src: "/projects/food-ai/vector-query.jpg", caption: "Quy trình truy vấn vector món ăn và tính khoảng cách Cosine trên pgvector", category: "Thuật toán" },
+      { src: "/projects/food-ai/user-preferences.png", caption: "4 bước suy luận hồ sơ sở thích ẩm thực người dùng từ hành vi tương tác", category: "Thuật toán" },
+      { src: "/projects/food-ai/login.jpg", caption: "Giao diện đăng nhập & xác thực bảo mật JWT Token", category: "Bảo mật" },
+      { src: "/projects/food-ai/usecase.jpg", caption: "Sơ đồ Use Case tổng quát các phân hệ chức năng", category: "Phân tích thiết kế" }
     ],
     architectureOverview: "Hệ thống xây dựng theo mô hình Client-Server phân tầng phân tách độc lập. Client (Next.js 14) giao tiếp với API Server (NestJS) qua RESTful API và WebSockets. Khi người dùng nhập truy vấn tìm kiếm món ăn hoặc trò chuyện với trợ lý AI, hệ thống chuyển đổi câu hỏi thành vector 1536 chiều qua mô hình text-embedding-3-small, sau đó truy vấn vào PostgreSQL pgvector để tính khoảng cách Cosine (Cosine Distance). Kết quả tìm kiếm ngữ nghĩa được kết hợp với bộ lọc từ khóa BM25, cự ly địa lý (Haversine formula) và ngân sách thực khách để đưa vào prompt ngữ cảnh cho OpenAI GPT-4 sinh lời tư vấn tối ưu nhất.",
     codeStructure: [
@@ -244,7 +244,7 @@ Nếu người dùng hỏi món ngoài danh sách, hãy giải thích khéo léo
       "Kiến trúc Frontend Angular 17 chuẩn Core-Shared-Features (CSF) tối ưu Lazy Loading",
       "Xử lý ngoại lệ toàn cục GlobalExceptionHandler và ánh xạ hiệu năng cao với MapStruct"
     ],
-    image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80",
+    image: "/projects/payment-hub/banner.svg",
     liveUrl: undefined,
     githubUrl: "https://github.com/datga27/payment-hub-middleware",
     featured: true,
@@ -261,9 +261,12 @@ Nếu người dùng hỏi món ngoài danh sách, hãy giải thích khéo léo
       { category: "Cơ sở dữ liệu & Security", skills: ["Oracle Database", "PostgreSQL", "Bucket4j", "Caffeine Cache", "HttpOnly Cookie"] },
     ],
     gallery: [
-      { src: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80", caption: "Hệ thống điều hành và xử lý trung gian thanh toán tài chính PMH", category: "Tổng quan" },
-      { src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80", caption: "Mô hình xử lý dữ liệu giao dịch quy mô lớn hàng triệu bản ghi", category: "Big Data" },
-      { src: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80", caption: "Quy trình kiểm soát rủi ro Maker-Checker & Audit Log đa lớp", category: "Bảo mật ngân hàng" },
+      { src: "/projects/payment-hub/banner.svg", caption: "Hệ thống điều hành và xử lý trung gian thanh toán tài chính PMH", category: "Tổng quan" },
+      { src: "/projects/payment-hub/architecture.svg", caption: "Kiến trúc Event-Driven xuất 1.000.000+ bản ghi giao dịch (Kafka, MinIO, SXSSF Stream)", category: "Kiến trúc hệ thống" },
+      { src: "/projects/payment-hub/sequence-maker-checker.svg", caption: "Sơ đồ tuần tự quy trình kiểm soát rủi ro Maker-Checker & Oracle Stored Procedures", category: "Bảo mật & Quy trình" },
+      { src: "/projects/payment-hub/erd.svg", caption: "Sơ đồ ERD cơ sở dữ liệu: Cấu phần, Danh mục, Audit Log & Giao dịch", category: "Cơ sở dữ liệu" },
+      { src: "/projects/payment-hub/usecase.svg", caption: "Sơ đồ Use Case phân quyền Maker (Khởi tạo) vs Checker (Kiểm soát)", category: "Phân tích thiết kế" },
+      { src: "/projects/payment-hub/dashboard.svg", caption: "Giao diện bảng điều khiển quản trị tham số & theo dõi tiến trình xuất file", category: "Giao diện" },
     ],
     architectureOverview: "Payment Hub đóng vai trò middleware tài chính kết nối giữa các ứng dụng nghiệp vụ và các cổng thanh toán/ngân hàng. Hệ thống chuyển đổi toàn diện sang Event-Driven Architecture (EDA). Khi người dùng yêu cầu tác vụ nặng (như xuất báo cáo 1.000.000 dòng), API Server lưu tác vụ trạng thái PENDING và đẩy message vào Kafka topic 'export_jobs' rồi trả lời Client ngay trong < 50ms. Một Worker Node độc lập sẽ consume message từ Kafka, dùng Keyset Pagination để stream dữ liệu vào tệp Excel SXSSF, cập nhật % tiến độ realtime qua Redis Pub/Sub và WebSocket, tải tệp lên MinIO S3 và cấp Pre-signed URL cho Client tải an toàn.",
     codeStructure: [
@@ -411,7 +414,7 @@ public void approveComponent(Long id, String checkerUsername) {
       "Giao diện hiện đại, tối ưu trải nghiệm người dùng trên cả máy tính để bàn và điện thoại",
       "Đã triển khai phiên bản Live Demo thực tế hoạt động trơn tru trên Vercel"
     ],
-    image: "/projects/learn-english-banner.png",
+    image: "/projects/learn-english/banner.png",
     liveUrl: "https://learn-english-three-omega.vercel.app/",
     githubUrl: "https://github.com/datga27/learn-english-web",
     featured: true,
@@ -427,9 +430,12 @@ public void approveComponent(Long id, String checkerUsername) {
       { category: "Dữ liệu & Triển khai", skills: ["PostgreSQL", "Prisma ORM", "Vercel Hosting", "Git / GitHub"] },
     ],
     gallery: [
-      { src: "/projects/learn-english-banner.png", caption: "Giao diện hệ thống luyện thi tiếng Anh trực tuyến Learn English", category: "Giao diện chính" },
-      { src: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=80", caption: "Không gian làm bài kiểm tra trắc nghiệm tập trung chuẩn TOEIC", category: "Phòng thi" },
-      { src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80", caption: "Phân tích kết quả học tập và theo dõi tiến độ từng kỹ năng", category: "Thống kê" },
+      { src: "/projects/learn-english/banner.png", caption: "Giao diện hệ thống luyện thi tiếng Anh trực tuyến Learn English", category: "Giao diện chính" },
+      { src: "/projects/learn-english/architecture.svg", caption: "Sơ đồ kiến trúc phòng thi WebSocket Server-Authoritative & Microservices", category: "Kiến trúc hệ thống" },
+      { src: "/projects/learn-english/usecase.svg", caption: "Sơ đồ Use Case phân quyền Giáo viên (Host) vs Học sinh (Student)", category: "Phân tích thiết kế" },
+      { src: "/projects/learn-english/erd.svg", caption: "Sơ đồ ERD thực thể quan hệ ngân hàng câu hỏi, đề thi và phòng thi", category: "Cơ sở dữ liệu" },
+      { src: "/projects/learn-english/realtime-room.svg", caption: "Giao diện phòng thi trực tuyến thời gian thực với đồng hồ đếm ngược máy chủ", category: "Phòng thi Real-time" },
+      { src: "/projects/learn-english/score-report.svg", caption: "Báo cáo phân tích phổ điểm thi TOEIC và đánh giá năng lực từng Part", category: "Thống kê" },
     ],
     architectureOverview: "Kiến trúc hệ thống bao gồm Next.js phía Client và NestJS phía Server. Tính năng thi thử thông thường sử dụng REST API để lấy đề thi và nộp đáp án mã hóa. Đối với tính năng phòng thi trực tiếp nhiều người, hệ thống khởi tạo Room trên WebSocket Gateway. Server đóng vai trò trung tâm (Authority Timekeeper) quản lý bộ đếm thời gian, đảm bảo tất cả thí sinh vào thi và nộp bài cùng một thời điểm mà không phụ thuộc vào đồng hồ thiết bị của người dùng.",
     codeStructure: [

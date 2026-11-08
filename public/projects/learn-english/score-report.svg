@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" /><stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" /><stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)" />
+  <rect width="1200" height="675" fill="url(#grid)" />
+
+  <!-- Header -->
+  <rect x="40" y="30" width="1120" height="70" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+  <text x="75" y="72" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#facc15">📊</text>
+  <text x="110" y="60" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#f8fafc">BÁO CÁO PHÂN TÍCH ĐIỂM THI TOEIC - LEARN ENGLISH WEB</text>
+  <text x="110" y="82" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Hệ thống chấm điểm tự động chuẩn hóa thang 990 &amp; biểu đồ radar đánh giá điểm yếu từng Part</text>
+  <rect x="910" y="47" width="230" height="36" rx="10" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="1" />
+  <text x="1025" y="70" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#fbbf24" text-anchor="middle">📌 [ẢNH MẪU - THAY THẾ]</text>
+
+  <!-- Big Score Card -->
+  <rect x="60" y="140" width="340" height="420" rx="20" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="2" />
+  <text x="230" y="180" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#60a5fa" text-anchor="middle">TỔNG ĐIỂM ĐẠT ĐƯỢC</text>
+  <circle cx="230" cy="275" r="75" fill="#0f172a" stroke="#2563eb" stroke-width="8" stroke-dasharray="400 100" />
+  <text x="230" y="275" font-family="system-ui, sans-serif" font-size="44" font-weight="extrabold" fill="#ffffff" text-anchor="middle">850</text>
+  <text x="230" y="305" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">/ 990 Điểm</text>
+
+  <g transform="translate(90, 385)">
+    <rect width="280" height="60" rx="12" fill="#0f172a" stroke="#334155" />
+    <text x="20" y="28" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Listening (Nghe hiểu):</text>
+    <text x="20" y="48" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#38bdf8">440 / 495</text>
+    <rect x="180" y="28" width="80" height="8" rx="4" fill="#334155" />
+    <rect x="180" y="28" width="70" height="8" rx="4" fill="#38bdf8" />
+  </g>
+
+  <g transform="translate(90, 465)">
+    <rect width="280" height="60" rx="12" fill="#0f172a" stroke="#334155" />
+    <text x="20" y="28" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Reading (Đọc hiểu):</text>
+    <text x="20" y="48" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#a855f7">410 / 495</text>
+    <rect x="180" y="28" width="80" height="8" rx="4" fill="#334155" />
+    <rect x="180" y="28" width="62" height="8" rx="4" fill="#a855f7" />
+  </g>
+
+  <!-- Right Side: Detailed Skills Analysis -->
+  <rect x="430" y="140" width="710" height="420" rx="20" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+  <text x="460" y="180" font-family="system-ui, sans-serif" font-size="17" font-weight="bold" fill="#f8fafc">PHÂN TÍCH TỶ LỆ CHÍNH XÁC THEO TỪNG PART</text>
+
+  <g transform="translate(460, 215)">
+    <text x="0" y="16" font-family="monospace" font-size="13" fill="#e2e8f0">Part 1: Photographs</text>
+    <rect x="230" y="5" width="370" height="14" rx="7" fill="#1e293b" />
+    <rect x="230" y="5" width="340" height="14" rx="7" fill="#10b981" />
+    <text x="620" y="17" font-family="monospace" font-size="12" font-weight="bold" fill="#34d399">92%</text>
+  </g>
+  <g transform="translate(460, 260)">
+    <text x="0" y="16" font-family="monospace" font-size="13" fill="#e2e8f0">Part 2: Question - Response</text>
+    <rect x="230" y="5" width="370" height="14" rx="7" fill="#1e293b" />
+    <rect x="230" y="5" width="320" height="14" rx="7" fill="#10b981" />
+    <text x="620" y="17" font-family="monospace" font-size="12" font-weight="bold" fill="#34d399">88%</text>
+  </g>
+  <g transform="translate(460, 305)">
+    <text x="0" y="16" font-family="monospace" font-size="13" fill="#e2e8f0">Part 3: Short Conversations</text>
+    <rect x="230" y="5" width="370" height="14" rx="7" fill="#1e293b" />
+    <rect x="230" y="5" width="300" height="14" rx="7" fill="#3b82f6" />
+    <text x="620" y="17" font-family="monospace" font-size="12" font-weight="bold" fill="#60a5fa">82%</text>
+  </g>
+  <g transform="translate(460, 350)">
+    <text x="0" y="16" font-family="monospace" font-size="13" fill="#e2e8f0">Part 4: Short Talks</text>
+    <rect x="230" y="5" width="370" height="14" rx="7" fill="#1e293b" />
+    <rect x="230" y="5" width="280" height="14" rx="7" fill="#3b82f6" />
+    <text x="620" y="17" font-family="monospace" font-size="12" font-weight="bold" fill="#60a5fa">76%</text>
+  </g>
+  <g transform="translate(460, 395)">
+    <text x="0" y="16" font-family="monospace" font-size="13" fill="#e2e8f0">Part 5: Incomplete Sentences</text>
+    <rect x="230" y="5" width="370" height="14" rx="7" fill="#1e293b" />
+    <rect x="230" y="5" width="310" height="14" rx="7" fill="#10b981" />
+    <text x="620" y="17" font-family="monospace" font-size="12" font-weight="bold" fill="#34d399">84%</text>
+  </g>
+  <g transform="translate(460, 440)">
+    <text x="0" y="16" font-family="monospace" font-size="13" fill="#e2e8f0">Part 6: Text Completion</text>
+    <rect x="230" y="5" width="370" height="14" rx="7" fill="#1e293b" />
+    <rect x="230" y="5" width="260" height="14" rx="7" fill="#f59e0b" />
+    <text x="620" y="17" font-family="monospace" font-size="12" font-weight="bold" fill="#fbbf24">70%</text>
+  </g>
+  <g transform="translate(460, 485)">
+    <text x="0" y="16" font-family="monospace" font-size="13" fill="#e2e8f0">Part 7: Reading Comprehension</text>
+    <rect x="230" y="5" width="370" height="14" rx="7" fill="#1e293b" />
+    <rect x="230" y="5" width="250" height="14" rx="7" fill="#f59e0b" />
+    <text x="620" y="17" font-family="monospace" font-size="12" font-weight="bold" fill="#fbbf24">68%</text>
+  </g>
+
+  <!-- Bottom File Replacement Guide -->
+  <rect x="40" y="595" width="1120" height="50" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="60" y="626" font-family="monospace" font-size="13" fill="#38bdf8">💡 Để thay bằng ảnh thật của bạn:</text>
+  <text x="320" y="626" font-family="monospace" font-size="13" fill="#e2e8f0">Chép file ảnh của bạn đè lên đường dẫn: </text>
+  <text x="645" y="626" font-family="monospace" font-size="13" font-weight="bold" fill="#facc15">e:\portfolio\public\projects\learn-english\score-report.svg (hoặc .png)</text>
+</svg>

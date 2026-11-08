@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" /><stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" /><stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)" />
+  <rect width="1200" height="675" fill="url(#grid)" />
+
+  <!-- Header -->
+  <rect x="40" y="30" width="1120" height="70" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+  <text x="75" y="72" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#3b82f6">🎯</text>
+  <text x="110" y="60" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#f8fafc">SƠ ĐỒ USE CASE HỆ THỐNG - PAYMENT HUB (PMH)</text>
+  <text x="110" y="82" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Phân quyền chức năng Maker (Khởi tạo), Checker (Kiểm soát) và Quản trị viên hệ thống</text>
+  <rect x="910" y="47" width="230" height="36" rx="10" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="1" />
+  <text x="1025" y="70" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#fbbf24" text-anchor="middle">📌 [ẢNH MẪU - THAY THẾ]</text>
+
+  <!-- Left Actor: Maker -->
+  <rect x="60" y="140" width="220" height="420" rx="20" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.5" />
+  <circle cx="170" cy="195" r="30" fill="#3b82f6" fill-opacity="0.2" stroke="#60a5fa" stroke-width="2" />
+  <circle cx="170" cy="185" r="12" fill="#60a5fa" />
+  <path d="M 150 215 Q 170 200 190 215" stroke="#60a5fa" stroke-width="3" fill="none" />
+  <text x="170" y="250" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">MAKER</text>
+  <text x="170" y="272" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">(Nhân viên khởi tạo)</text>
+
+  <g transform="translate(80, 310)">
+    <rect width="180" height="35" rx="8" fill="#1e293b" stroke="#475569" />
+    <text x="90" y="22" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">Thêm mới Cấu phần / Tham số</text>
+  </g>
+  <g transform="translate(80, 360)">
+    <rect width="180" height="35" rx="8" fill="#1e293b" stroke="#475569" />
+    <text x="90" y="22" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">Chỉnh sửa tham số (Lưu tạm)</text>
+  </g>
+  <g transform="translate(80, 410)">
+    <rect width="180" height="35" rx="8" fill="#1e293b" stroke="#475569" />
+    <text x="90" y="22" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">Yêu cầu xuất 1M+ báo cáo</text>
+  </g>
+
+  <!-- Center System Boundary -->
+  <rect x="330" y="130" width="540" height="440" rx="20" fill="#0f172a" fill-opacity="0.8" stroke="#334155" stroke-dasharray="6 6" stroke-width="2" />
+  <text x="600" y="165" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#64748b" text-anchor="middle">PAYMENT HUB MIDDLEWARE SYSTEM</text>
+
+  <!-- Ellipses -->
+  <g transform="translate(370, 190)">
+    <ellipse cx="110" cy="30" rx="105" ry="26" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="110" y="35" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc" text-anchor="middle">UC01: Khởi tạo cấu phần thanh toán</text>
+  </g>
+  <g transform="translate(620, 190)">
+    <ellipse cx="110" cy="30" rx="105" ry="26" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="110" y="35" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc" text-anchor="middle">UC02: Phê duyệt / Từ chối (Checker)</text>
+  </g>
+  <g transform="translate(370, 280)">
+    <ellipse cx="110" cy="30" rx="105" ry="26" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="110" y="35" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc" text-anchor="middle">UC03: Quản lý danh mục theo nhóm</text>
+  </g>
+  <g transform="translate(620, 280)">
+    <ellipse cx="110" cy="30" rx="105" ry="26" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="110" y="35" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc" text-anchor="middle">UC04: Xuất báo cáo giao dịch (Kafka)</text>
+  </g>
+  <g transform="translate(495, 370)">
+    <ellipse cx="110" cy="30" rx="105" ry="26" fill="#1e293b" stroke="#ec4899" stroke-width="1.5"/>
+    <text x="110" y="35" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc" text-anchor="middle">UC05: Tra cứu Audit Log kiểm toán</text>
+  </g>
+  <g transform="translate(495, 455)">
+    <ellipse cx="110" cy="30" rx="105" ry="26" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="110" y="35" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc" text-anchor="middle">UC06: Đồng bộ dữ liệu Core Banking</text>
+  </g>
+
+  <!-- Connectors -->
+  <line x1="280" y1="220" x2="370" y2="220" stroke="#3b82f6" stroke-width="1.5" />
+  <line x1="280" y1="310" x2="370" y2="310" stroke="#3b82f6" stroke-width="1.5" />
+  <line x1="280" y1="430" x2="620" y2="310" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <line x1="920" y1="220" x2="830" y2="220" stroke="#a855f7" stroke-width="1.5" />
+  <line x1="920" y1="310" x2="830" y2="310" stroke="#10b981" stroke-width="1.5" />
+  <line x1="920" y1="400" x2="715" y2="400" stroke="#ec4899" stroke-width="1.5" />
+
+  <!-- Right Actor: Checker -->
+  <rect x="920" y="140" width="220" height="420" rx="20" fill="url(#cardGrad)" stroke="#a855f7" stroke-width="1.5" />
+  <circle cx="1030" cy="195" r="30" fill="#a855f7" fill-opacity="0.2" stroke="#c084fc" stroke-width="2" />
+  <circle cx="1030" cy="185" r="12" fill="#c084fc" />
+  <path d="M 1010 215 Q 1030 200 1050 215" stroke="#c084fc" stroke-width="3" fill="none" />
+  <text x="1030" y="250" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">CHECKER</text>
+  <text x="1030" y="272" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">(Người kiểm soát)</text>
+
+  <g transform="translate(940, 310)">
+    <rect width="180" height="35" rx="8" fill="#1e293b" stroke="#475569" />
+    <text x="90" y="22" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">Xem dữ liệu chờ duyệt</text>
+  </g>
+  <g transform="translate(940, 360)">
+    <rect width="180" height="35" rx="8" fill="#1e293b" stroke="#475569" />
+    <text x="90" y="22" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">So sánh NEW_DATA vs OLD</text>
+  </g>
+  <g transform="translate(940, 410)">
+    <rect width="180" height="35" rx="8" fill="#1e293b" stroke="#475569" />
+    <text x="90" y="22" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">Thực thi Stored Procedure</text>
+  </g>
+
+  <!-- Bottom File Replacement Guide -->
+  <rect x="40" y="595" width="1120" height="50" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="60" y="626" font-family="monospace" font-size="13" fill="#38bdf8">💡 Để thay bằng ảnh thật của bạn:</text>
+  <text x="320" y="626" font-family="monospace" font-size="13" fill="#e2e8f0">Chép file ảnh của bạn đè lên đường dẫn: </text>
+  <text x="645" y="626" font-family="monospace" font-size="13" font-weight="bold" fill="#facc15">e:\portfolio\public\projects\payment-hub\usecase.svg (hoặc .png)</text>
+</svg>

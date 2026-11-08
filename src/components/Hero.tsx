@@ -62,7 +62,7 @@ export default function Hero() {
                 href="#projects"
                 className="inline-flex items-center gap-2 px-6 py-3.5 text-sm sm:text-base font-semibold text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 rounded-xl shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5 transition-all"
               >
-                <span>Xem 3 dự án thực chiến</span>
+                <span>Xem dự án</span>
                 <ArrowDown className="w-4 h-4" />
               </a>
 

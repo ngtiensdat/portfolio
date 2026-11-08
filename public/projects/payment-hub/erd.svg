@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" /><stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" /><stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)" />
+  <rect width="1200" height="675" fill="url(#grid)" />
+
+  <!-- Header -->
+  <rect x="40" y="30" width="1120" height="70" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+  <text x="75" y="72" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#f59e0b">🗄️</text>
+  <text x="110" y="60" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#f8fafc">SƠ ĐỒ THỰC THỂ QUAN HỆ (ERD) - PAYMENT HUB MIDDLEWARE</text>
+  <text x="110" y="82" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Bảng Cấu phần xử lý, Danh mục nhóm, Nhật ký kiểm toán AuditLog và Giao dịch triệu dòng</text>
+  <rect x="910" y="47" width="230" height="36" rx="10" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="1" />
+  <text x="1025" y="70" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#fbbf24" text-anchor="middle">📌 [ẢNH MẪU - THAY THẾ]</text>
+
+  <!-- Table 1: PMH_COMPONENTS -->
+  <g transform="translate(60, 140)">
+    <rect width="250" height="200" rx="12" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect width="250" height="36" rx="12" fill="#1e293b"/>
+    <text x="20" y="24" font-family="monospace" font-size="13" font-weight="bold" fill="#60a5fa">PMH_COMPONENTS</text>
+    <text x="20" y="60" font-family="monospace" font-size="11" fill="#e2e8f0">🔑 ID (NUMBER - PK)</text>
+    <text x="20" y="85" font-family="monospace" font-size="11" fill="#e2e8f0">📄 CODE (VARCHAR2)</text>
+    <text x="20" y="110" font-family="monospace" font-size="11" fill="#e2e8f0">🏷️ NAME (VARCHAR2)</text>
+    <text x="20" y="135" font-family="monospace" font-size="11" fill="#facc15">📦 NEW_DATA (CLOB/JSON)</text>
+    <text x="20" y="160" font-family="monospace" font-size="11" fill="#34d399">🟢 STATUS (ACTIVE/PENDING)</text>
+    <text x="20" y="185" font-family="monospace" font-size="11" fill="#94a3b8">🛡️ CREATED_BY / DATE</text>
+  </g>
+
+  <!-- Table 2: PMH_GROUP_CATEGORY -->
+  <g transform="translate(360, 140)">
+    <rect width="250" height="200" rx="12" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5"/>
+    <rect width="250" height="36" rx="12" fill="#1e293b"/>
+    <text x="20" y="24" font-family="monospace" font-size="13" font-weight="bold" fill="#38bdf8">PMH_GROUP_CATEGORY</text>
+    <text x="20" y="60" font-family="monospace" font-size="11" fill="#e2e8f0">🔑 ID (NUMBER - PK)</text>
+    <text x="20" y="85" font-family="monospace" font-size="11" fill="#e2e8f0">🔗 GROUP_CODE (VARCHAR2)</text>
+    <text x="20" y="110" font-family="monospace" font-size="11" fill="#e2e8f0">📅 EFFECTIVE_START_DATE</text>
+    <text x="20" y="135" font-family="monospace" font-size="11" fill="#e2e8f0">📅 EFFECTIVE_END_DATE</text>
+    <text x="20" y="160" font-family="monospace" font-size="11" fill="#facc15">📦 NEW_DATA (CLOB/JSON)</text>
+    <text x="20" y="185" font-family="monospace" font-size="11" fill="#34d399">🟢 APPROVAL_STATUS</text>
+  </g>
+
+  <!-- Table 3: PMH_AUDIT_LOG -->
+  <g transform="translate(660, 140)">
+    <rect width="240" height="200" rx="12" fill="#0f172a" stroke="#a855f7" stroke-width="1.5"/>
+    <rect width="240" height="36" rx="12" fill="#1e293b"/>
+    <text x="20" y="24" font-family="monospace" font-size="13" font-weight="bold" fill="#c084fc">PMH_AUDIT_LOG</text>
+    <text x="20" y="60" font-family="monospace" font-size="11" fill="#e2e8f0">🔑 ID (NUMBER - PK)</text>
+    <text x="20" y="85" font-family="monospace" font-size="11" fill="#e2e8f0">⚡ ACTION (CREATE/APPROVE)</text>
+    <text x="20" y="110" font-family="monospace" font-size="11" fill="#e2e8f0">📋 TABLE_NAME (VARCHAR2)</text>
+    <text x="20" y="135" font-family="monospace" font-size="11" fill="#e2e8f0">👤 USERNAME (VARCHAR2)</text>
+    <text x="20" y="160" font-family="monospace" font-size="11" fill="#38bdf8">🌐 CLIENT_IP (IP v4/v6)</text>
+    <text x="20" y="185" font-family="monospace" font-size="11" fill="#94a3b8">🕒 ACTION_TIME</text>
+  </g>
+
+  <!-- Table 4: TRANSACTION_LOG -->
+  <g transform="translate(930, 140)">
+    <rect width="220" height="200" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+    <rect width="220" height="36" rx="12" fill="#1e293b"/>
+    <text x="20" y="24" font-family="monospace" font-size="13" font-weight="bold" fill="#34d399">TRANSACTION_LOG</text>
+    <text x="20" y="60" font-family="monospace" font-size="11" fill="#e2e8f0">🔑 ID (BIGINT - PK)</text>
+    <text x="20" y="85" font-family="monospace" font-size="11" fill="#e2e8f0">🔖 TRANSACTION_CODE</text>
+    <text x="20" y="110" font-family="monospace" font-size="11" fill="#e2e8f0">💳 ACCOUNT_NO</text>
+    <text x="20" y="135" font-family="monospace" font-size="11" fill="#facc15">💰 AMOUNT (NUMBER)</text>
+    <text x="20" y="160" font-family="monospace" font-size="11" fill="#34d399">🟢 STATUS (SUCCESS/FAIL)</text>
+    <text x="20" y="185" font-family="monospace" font-size="11" fill="#94a3b8">🕒 CREATED_AT</text>
+  </g>
+
+  <!-- Table 5: EXPORT_JOB (EDA) -->
+  <g transform="translate(360, 380)">
+    <rect width="480" height="180" rx="12" fill="#0f172a" stroke="#ec4899" stroke-width="1.5"/>
+    <rect width="480" height="36" rx="12" fill="#1e293b"/>
+    <text x="20" y="24" font-family="monospace" font-size="13" font-weight="bold" fill="#f472b6">EXPORT_JOB (Event-Driven Task Queue)</text>
+    <text x="20" y="65" font-family="monospace" font-size="11" fill="#e2e8f0">🔑 JOB_ID (UUID - PK) • USER_ID (REQUESTER)</text>
+    <text x="20" y="95" font-family="monospace" font-size="11" fill="#e2e8f0">📊 STATUS (PENDING -> PROCESSING -> COMPLETED / FAILED)</text>
+    <text x="20" y="125" font-family="monospace" font-size="11" fill="#38bdf8">📈 PROGRESS_PERCENT (0 - 100% cập nhật qua Redis PubSub)</text>
+    <text x="20" y="155" font-family="monospace" font-size="11" fill="#facc15">🔗 EXPORT_URL (MinIO S3 Pre-signed URL giới hạn 15 phút)</text>
+  </g>
+
+  <!-- Replacement Bar -->
+  <rect x="40" y="595" width="1120" height="50" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="60" y="626" font-family="monospace" font-size="13" fill="#38bdf8">💡 Để thay bằng ảnh thật của bạn:</text>
+  <text x="320" y="626" font-family="monospace" font-size="13" fill="#e2e8f0">Chép file ảnh của bạn đè lên đường dẫn: </text>
+  <text x="645" y="626" font-family="monospace" font-size="13" font-weight="bold" fill="#facc15">e:\portfolio\public\projects\payment-hub\erd.svg (hoặc .png)</text>
+</svg>

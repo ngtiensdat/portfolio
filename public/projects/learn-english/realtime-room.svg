@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" /><stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" /><stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)" />
+  <rect width="1200" height="675" fill="url(#grid)" />
+
+  <!-- Header -->
+  <rect x="40" y="30" width="1120" height="70" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+  <text x="75" y="72" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#ec4899">⚡</text>
+  <text x="110" y="60" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#f8fafc">GIAO DIỆN PHÒNG THI ONLINE REALTIME - LEARN ENGLISH</text>
+  <text x="110" y="82" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Bộ đếm thời gian đếm ngược máy chủ, phát audio đồng bộ và danh sách thí sinh trực tiếp</text>
+  <rect x="910" y="47" width="230" height="36" rx="10" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="1" />
+  <text x="1025" y="70" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#fbbf24" text-anchor="middle">📌 [ẢNH MẪU - THAY THẾ]</text>
+
+  <!-- Left Main Exam View: Question & Audio -->
+  <rect x="60" y="130" width="760" height="440" rx="20" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+  
+  <!-- Exam Info Bar -->
+  <rect x="85" y="155" width="710" height="50" rx="12" fill="#0f172a" />
+  <text x="110" y="186" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#f8fafc">ĐỀ THI TOEIC MINI-TEST 01 (Part 1 - 4)</text>
+  <rect x="630" y="165" width="145" height="30" rx="8" fill="#ef4444" fill-opacity="0.2" stroke="#ef4444" />
+  <text x="702" y="185" font-family="monospace" font-size="13" font-weight="bold" fill="#f87171" text-anchor="middle">⏱️ 44:28 còn lại</text>
+
+  <!-- Audio Player Mock -->
+  <rect x="85" y="225" width="710" height="55" rx="12" fill="#1e293b" stroke="#475569" stroke-width="1" />
+  <circle cx="120" cy="252" r="16" fill="#3b82f6" />
+  <polygon points="115,244 115,260 128,252" fill="#ffffff" />
+  <line x1="160" y1="252" x2="650" y2="252" stroke="#475569" stroke-width="4" stroke-linecap="round" />
+  <line x1="160" y1="252" x2="380" y2="252" stroke="#3b82f6" stroke-width="4" stroke-linecap="round" />
+  <circle cx="380" cy="252" r="7" fill="#60a5fa" />
+  <text x="730" y="257" font-family="monospace" font-size="12" fill="#94a3b8" text-anchor="middle">01:15 / 02:45</text>
+
+  <!-- Question Content -->
+  <rect x="85" y="300" width="710" height="245" rx="12" fill="#0f172a" />
+  <text x="110" y="335" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#38bdf8">Câu 12: Listen to the audio and choose the best response:</text>
+  
+  <g transform="translate(110, 360)">
+    <rect width="660" height="35" rx="8" fill="#1e293b" stroke="#334155" />
+    <text x="20" y="22" font-family="system-ui, sans-serif" font-size="13" fill="#cbd5e1">A. Yes, the meeting was postponed until 3:00 PM.</text>
+  </g>
+  <g transform="translate(110, 405)">
+    <rect width="660" height="35" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+    <text x="20" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#34d399">B. I have already sent the quarterly financial report. (Đã chọn)</text>
+  </g>
+  <g transform="translate(110, 450)">
+    <rect width="660" height="35" rx="8" fill="#1e293b" stroke="#334155" />
+    <text x="20" y="22" font-family="system-ui, sans-serif" font-size="13" fill="#cbd5e1">C. No, she is at the main entrance desk.</text>
+  </g>
+  <g transform="translate(110, 495)">
+    <rect width="660" height="35" rx="8" fill="#1e293b" stroke="#334155" />
+    <text x="20" y="22" font-family="system-ui, sans-serif" font-size="13" fill="#cbd5e1">D. In the second floor conference hall.</text>
+  </g>
+
+  <!-- Right Sidebar: Live Room Candidates -->
+  <rect x="850" y="130" width="290" height="440" rx="20" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+  <text x="995" y="170" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#f8fafc" text-anchor="middle">PHÒNG THI: #ENG-9824</text>
+  <rect x="875" y="190" width="240" height="30" rx="8" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1"/>
+  <text x="995" y="210" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#34d399" text-anchor="middle">🟢 14 Thí sinh trực tuyến</text>
+
+  <!-- Candidate list -->
+  <g transform="translate(875, 235)">
+    <rect width="240" height="45" rx="10" fill="#0f172a" stroke="#334155" />
+    <circle cx="25" cy="22" r="12" fill="#3b82f6" />
+    <text x="25" y="27" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">Đ</text>
+    <text x="48" y="21" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">Nguyễn Tiến Đạt (Bạn)</text>
+    <text x="48" y="37" font-family="system-ui, sans-serif" font-size="10" fill="#34d399">Đang trả lời câu 12/50</text>
+  </g>
+  <g transform="translate(875, 290)">
+    <rect width="240" height="45" rx="10" fill="#0f172a" stroke="#334155" />
+    <circle cx="25" cy="22" r="12" fill="#ec4899" />
+    <text x="25" y="27" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">H</text>
+    <text x="48" y="21" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">Trần Minh Hoàng</text>
+    <text x="48" y="37" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Đang trả lời câu 10/50</text>
+  </g>
+  <g transform="translate(875, 345)">
+    <rect width="240" height="45" rx="10" fill="#0f172a" stroke="#334155" />
+    <circle cx="25" cy="22" r="12" fill="#8b5cf6" />
+    <text x="25" y="27" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">L</text>
+    <text x="48" y="21" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">Lê Thuỳ Linh</text>
+    <text x="48" y="37" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Đang trả lời câu 14/50</text>
+  </g>
+  <g transform="translate(875, 400)">
+    <rect width="240" height="45" rx="10" fill="#0f172a" stroke="#334155" />
+    <circle cx="25" cy="22" r="12" fill="#f59e0b" />
+    <text x="25" y="27" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">V</text>
+    <text x="48" y="21" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">Phạm Quang Vinh</text>
+    <text x="48" y="37" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Đang trả lời câu 09/50</text>
+  </g>
+
+  <!-- Submit CTA button -->
+  <rect x="875" y="475" width="240" height="45" rx="12" fill="#2563eb" />
+  <text x="995" y="503" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">NỘP BÀI SỚM</text>
+
+  <!-- Bottom File Replacement Guide -->
+  <rect x="40" y="595" width="1120" height="50" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="60" y="626" font-family="monospace" font-size="13" fill="#38bdf8">💡 Để thay bằng ảnh thật của bạn:</text>
+  <text x="320" y="626" font-family="monospace" font-size="13" fill="#e2e8f0">Chép file ảnh của bạn đè lên đường dẫn: </text>
+  <text x="645" y="626" font-family="monospace" font-size="13" font-weight="bold" fill="#facc15">e:\portfolio\public\projects\learn-english\realtime-room.svg (hoặc .png)</text>
+</svg>
