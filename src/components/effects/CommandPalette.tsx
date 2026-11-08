@@ -6,7 +6,6 @@ import confetti from "canvas-confetti";
 import {
   Search,
   FileText,
-  Copy,
   ExternalLink,
   Moon,
   Sun,
@@ -138,7 +137,7 @@ export function CommandPalette() {
       category: "Điều hướng",
       icon: <User className="w-4 h-4 text-slate-400" />,
       perform: () => {
-        window.location.hash = "#about";
+        router.push("/#about");
         setIsOpen(false);
       },
     },
@@ -148,7 +147,7 @@ export function CommandPalette() {
       category: "Điều hướng",
       icon: <Code2 className="w-4 h-4 text-slate-400" />,
       perform: () => {
-        window.location.hash = "#projects";
+        router.push("/#projects");
         setIsOpen(false);
       },
     },
@@ -158,7 +157,7 @@ export function CommandPalette() {
       category: "Điều hướng",
       icon: <FileText className="w-4 h-4 text-emerald-400" />,
       perform: () => {
-        window.location.hash = "#certificates";
+        router.push("/#certificates");
         setIsOpen(false);
       },
     },
@@ -227,9 +226,10 @@ export function CommandPalette() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen]);
 
-  useEffect(() => {
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearch(e.target.value);
     setSelectedIndex(0);
-  }, [search]);
+  };
 
   // Keyboard navigation inside list
   const handleInputKeyDown = (e: React.KeyboardEvent) => {
@@ -263,7 +263,7 @@ export function CommandPalette() {
             autoFocus
             type="text"
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={handleSearchChange}
             onKeyDown={handleInputKeyDown}
             placeholder="Tìm kiếm dự án, liên hệ, hoặc gõ lệnh... (↑ ↓ Enter)"
             className="flex-1 bg-transparent text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none font-medium"
