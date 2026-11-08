@@ -14,7 +14,7 @@ import {
   ShieldCheck,
   Clock,
 } from "lucide-react";
-import { GithubIcon, FacebookIcon, MessengerIcon } from "./Icons";
+import { GithubIcon, FacebookIcon } from "./Icons";
 import THEME from "@/config/theme";
 import { FlipAvatar } from "./effects/FlipAvatar";
 
@@ -23,7 +23,6 @@ export default function Contact() {
   const [copiedItem, setCopiedItem] = useState<string | null>(null);
 
   const facebookUrl = personal.facebook || "https://www.facebook.com/ngtiensdat";
-  const messengerUrl = "https://m.me/ngtiensdat";
   const githubUrl = personal.github || "https://github.com/ngtiensdat";
 
   const handleCopy = (text: string, label: string) => {
@@ -45,7 +44,7 @@ export default function Contact() {
             Bắt đầu một dự án mới cùng nhau?
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-400">
-            Em luôn sẵn sàng đón nhận cơ hội việc làm, trao đổi kỹ thuật và kết nối trực tiếp qua Facebook &amp; Messenger!
+            Em luôn sẵn sàng đón nhận cơ hội việc làm, trao đổi kỹ thuật và kết nối trực tiếp qua các kênh liên hệ dưới đây!
           </p>
           <div className={THEME.classes.sectionDivider} />
         </div>
@@ -272,43 +271,28 @@ export default function Contact() {
             <div className="px-6 sm:px-8 pb-8 pt-0 flex-1 flex flex-col justify-between">
               {/* Avatar + Main Details */}
               <div className="relative -mt-12 sm:-mt-14 mb-6">
-                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-                  <div className="flex items-end gap-4">
-                    <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-4 border-white dark:border-[#0c1a14] shadow-xl shrink-0 bg-slate-900 ring-2 ring-emerald-500/30">
-                      <FlipAvatar
-                        videoSrc="/videologo.mp4"
-                        imageSrc="/portrait.jpg"
-                        alt="Nguyễn Tiến Đạt Avatar"
-                        className="w-full h-full"
-                        flipIntervalMs={3000}
-                      />
-                    </div>
-                    <div className="pb-1">
-                      <div className="flex items-center gap-2">
-                        <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
-                          {personal.name}
-                        </h3>
-                        <span title="Tài khoản chính thức" className="inline-flex">
-                          <ShieldCheck className="w-5 h-5 text-blue-500 shrink-0" />
-                        </span>
-                      </div>
-                      <p className="text-xs sm:text-sm font-semibold text-blue-600 dark:text-blue-400">
-                        @ngtiensdat
-                      </p>
-                    </div>
+                <div className="flex items-end gap-4">
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-4 border-white dark:border-[#0c1a14] shadow-xl shrink-0 bg-slate-900 ring-2 ring-emerald-500/30">
+                    <FlipAvatar
+                      videoSrc="/videologo.mp4"
+                      imageSrc="/portrait.jpg"
+                      alt="Nguyễn Tiến Đạt Avatar"
+                      className="w-full h-full"
+                      flipIntervalMs={3000}
+                    />
                   </div>
-
-                  {/* Top Messenger Quick Button */}
-                  <div className="flex gap-2">
-                    <a
-                      href={messengerUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={THEME.classes.btnMessenger}
-                    >
-                      <MessengerIcon className="w-4 h-4" />
-                      <span>Nhắn tin qua Messenger</span>
-                    </a>
+                  <div className="pb-1">
+                    <div className="flex items-center gap-2">
+                      <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
+                        {personal.name}
+                      </h3>
+                      <span title="Tài khoản chính thức" className="inline-flex">
+                        <ShieldCheck className="w-5 h-5 text-blue-500 shrink-0" />
+                      </span>
+                    </div>
+                    <p className="text-xs sm:text-sm font-semibold text-blue-600 dark:text-blue-400">
+                      @ngtiensdat
+                    </p>
                   </div>
                 </div>
 

@@ -3,7 +3,7 @@ import { PersonalInfo, SkillCategory, Project, ExperienceItem, CertificateItem }
 export const PERSONAL_DATA: PersonalInfo = {
   name: "Nguyễn Tiến Đạt",
   title: "Fresher Full-Stack Developer",
-  subtitle: "Sinh viên năm cuối CNTT đam mê xây dựng hệ thống web toàn diện với Next.js, NestJS, Java Spring Boot & tích hợp AI.",
+  subtitle: "Dạ, em xin chân thành cảm ơn anh chị đã dành thời gian xem qua portfolio của em ạ.",
   status: "🟢 Sẵn sàng cống hiến",
   location: "Hà Nội",
   email: "datga27@gmail.com",
@@ -21,7 +21,7 @@ export const PERSONAL_DATA: PersonalInfo = {
     { label: "Chứng chỉ TOEIC", value: "580" },
   ],
   aboutText: [
-    "Em là Fresher Full-Stack Developer, sinh viên năm cuối chuyên ngành Lập trình Web - Khoa Hệ thống thông tin, Đại học Phenikaa.",
+    "Em hiện là sinh viên năm cuối đang làm đồ án chuyên ngành Lập trình Web - Khoa Hệ thống thông tin, Đại học Phenikaa.",
     "Em đã trực tiếp tham gia phát triển 4 dự án phần mềm và web tương tác: từ hệ thống Full-Stack (Next.js, NestJS, Java Spring Boot, Oracle, Kafka, pgvector RAG AI) đến thiết kế giao diện Frontend hiện đại (Next.js 16, Tailwind CSS v4, 3D Tilt Parallax, Design System). Em có kinh nghiệm xây dựng RESTful API, hệ thống phân quyền RBAC, giao tiếp thời gian thực với WebSocket và tối ưu trải nghiệm người dùng.",
     "Bên cạnh kiến thức đại học, em chủ động hoàn thành 4 chứng chỉ từ Coursera (Agile Project Management, AWS Solutions Architecture, Laravel & PHP, Web Security) và đạt chứng chỉ TOEIC 580. Mục tiêu của em là gia nhập đội ngũ phát triển sản phẩm thực tế để học hỏi, trau dồi kinh nghiệm và đóng góp vào sự phát triển chung của công ty."
   ],
