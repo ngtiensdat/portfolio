@@ -8,6 +8,7 @@ interface FlipAvatarProps {
   alt?: string;
   className?: string; // size & border classes, e.g. "w-10 h-10 rounded-full"
   flipIntervalMs?: number; // default 3000ms (3 seconds)
+  imagePosition?: string; // e.g. "center 20%", "center top" để căn chỉnh dọc ảnh chân dung
 }
 
 export function FlipAvatar({
@@ -16,6 +17,7 @@ export function FlipAvatar({
   alt = "Nguyễn Tiến Đạt",
   className = "w-10 h-10 rounded-full",
   flipIntervalMs = 3000,
+  imagePosition = "center 20%",
 }: FlipAvatarProps) {
   const [isFlipped, setIsFlipped] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -91,6 +93,7 @@ export function FlipAvatar({
             src={imageSrc}
             alt={alt}
             className="w-full h-full object-cover scale-105"
+            style={{ objectPosition: imagePosition }}
             loading="eager"
           />
         </div>

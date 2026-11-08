@@ -54,6 +54,7 @@ export default function CVPage() {
                   src="/portrait.jpg"
                   alt={`Chân dung ${personal.name}`}
                   className="w-full h-full object-cover"
+                  style={{ objectPosition: "center 20%" }}
                 />
               </div>
               <div>

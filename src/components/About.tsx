@@ -55,6 +55,7 @@ export default function About() {
                   src="/portrait.jpg"
                   alt={personal.name}
                   className="w-full h-full object-cover"
+                  style={{ objectPosition: "center 20%" }}
                 />
               </div>
               <div>
