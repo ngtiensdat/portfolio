@@ -2,19 +2,15 @@
 
 import { useState, useEffect } from "react";
 import { portfolioData } from "@/data/portfolioData";
-import { Moon, Sun, Menu, X, FileText, BookOpen } from "lucide-react";
+import { Moon, Sun, Menu, X, FileText } from "lucide-react";
+import Link from "next/link";
 
-interface NavbarProps {
-  onToggleDeskMode?: () => void;
-}
-
-export default function Navbar({ onToggleDeskMode }: NavbarProps) {
+export default function Navbar() {
   const [theme, setTheme] = useState<"light" | "dark">("dark");
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    // Check initial theme preference
     const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
@@ -65,8 +61,8 @@ export default function Navbar({ onToggleDeskMode }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo with uploaded avatar image */}
-          <a
-            href="#"
+          <Link
+            href="/"
             className="flex items-center gap-3 text-xl font-bold tracking-tight text-slate-900 dark:text-white group"
           >
             <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-blue-500/50 shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform bg-amber-100 shrink-0">
@@ -82,7 +78,7 @@ export default function Navbar({ onToggleDeskMode }: NavbarProps) {
             <span className="text-xs px-2 py-0.5 rounded-full font-medium bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800">
               Dev
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Nav Links */}
           <nav className="hidden md:flex items-center gap-1 lg:gap-2">
@@ -97,19 +93,8 @@ export default function Navbar({ onToggleDeskMode }: NavbarProps) {
             ))}
           </nav>
 
-          {/* Actions: Desk 3D Mode + Theme Toggle + CV Button */}
+          {/* Actions: Theme Toggle + CV Button */}
           <div className="hidden md:flex items-center gap-3">
-            {onToggleDeskMode && (
-              <button
-                onClick={onToggleDeskMode}
-                className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-bold text-amber-900 dark:text-amber-200 bg-amber-100/80 dark:bg-amber-950/60 hover:bg-amber-200 dark:hover:bg-amber-900 border border-amber-300 dark:border-amber-700/60 rounded-xl shadow-xs transition-all hover:scale-105 cursor-pointer animate-pulse"
-                title="Mở trải nghiệm 3D cuốn sách trên bàn làm việc"
-              >
-                <BookOpen className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-                <span>Góc bàn 3D</span>
-              </button>
-            )}
-
             <button
               onClick={toggleTheme}
               aria-label="Toggle theme"
@@ -122,27 +107,17 @@ export default function Navbar({ onToggleDeskMode }: NavbarProps) {
               )}
             </button>
 
-            <a
-              href={portfolioData.personal.resumeUrl}
+            <Link
+              href="/cv"
               className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 rounded-xl shadow-md shadow-blue-500/20 hover:shadow-blue-500/35 transition-all hover:-translate-y-0.5"
             >
               <FileText className="w-4 h-4" />
-              <span>Tải CV</span>
-            </a>
+              <span>Xem / Tải CV</span>
+            </Link>
           </div>
 
           {/* Mobile menu trigger */}
           <div className="flex md:hidden items-center gap-2">
-            {onToggleDeskMode && (
-              <button
-                onClick={onToggleDeskMode}
-                className="p-2 rounded-lg bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-700 text-xs font-bold flex items-center gap-1"
-              >
-                <BookOpen className="w-3.5 h-3.5" />
-                <span>3D</span>
-              </button>
-            )}
-
             <button
               onClick={toggleTheme}
               aria-label="Toggle theme"
@@ -179,14 +154,14 @@ export default function Navbar({ onToggleDeskMode }: NavbarProps) {
               </a>
             ))}
             <div className="pt-2 border-t border-slate-200 dark:border-slate-800">
-              <a
-                href={portfolioData.personal.resumeUrl}
+              <Link
+                href="/cv"
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center gap-2 w-full py-2.5 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl"
               >
                 <FileText className="w-4 h-4" />
-                <span>Tải CV của tôi</span>
-              </a>
+                <span>Xem & In CV (PDF)</span>
+              </Link>
             </div>
           </div>
         )}
