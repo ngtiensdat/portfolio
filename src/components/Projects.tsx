@@ -45,9 +45,7 @@ export default function Projects() {
               Sản phẩm &amp; Sơ đồ luồng nghiệp vụ
             </h2>
           </div>
-          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-md lg:text-right leading-relaxed font-normal">
-            Hệ thống Full-Stack do em tự thiết kế CSDL, xây dựng REST API, xử lý nghiệp vụ thực tế và trực tiếp vẽ sơ đồ luồng kiến trúc.
-          </p>
+
         </div>
 
         {/* Filter Controls: Category Buttons + Live Search Bar */}
@@ -60,11 +58,10 @@ export default function Projects() {
                 suppressHydrationWarning
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
-                  selectedCategory === cat
+                className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${selectedCategory === cat
                     ? "bg-emerald-600 text-white shadow-md shadow-emerald-500/20"
                     : "bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200/80 dark:border-slate-700/60 hover:bg-slate-100 dark:hover:bg-slate-700/80"
-                }`}
+                  }`}
               >
                 {cat}
               </button>

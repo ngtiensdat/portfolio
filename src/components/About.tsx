@@ -45,9 +45,7 @@ export default function About() {
               Đam mê kiến trúc &amp; Phát triển phần mềm
             </h2>
           </div>
-          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-md md:text-right leading-relaxed font-normal">
-            Sinh viên năm cuối ngành Lập trình Web tại ĐH Phenikaa. Tập trung thiết kế hệ thống sạch, API chuẩn mực và trải nghiệm thực tế.
-          </p>
+
         </div>
 
         {/* Story & Stats Grid */}

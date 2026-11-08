@@ -63,9 +63,7 @@ export default function CertificatesShowcase() {
               Chứng chỉ Quốc tế &amp; Ngoại ngữ
             </h2>
           </div>
-          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-md lg:text-right leading-relaxed font-normal">
-            Các khóa đào tạo chuyên sâu từ Coursera (AWS Cloud, Agile Scrum, An ninh web) và chứng chỉ TOEIC 580 nhằm phục vụ công việc.
-          </p>
+
         </div>
 
         {/* Filter Tabs */}
@@ -76,11 +74,10 @@ export default function CertificatesShowcase() {
               suppressHydrationWarning
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
-                selectedCategory === cat
+              className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${selectedCategory === cat
                   ? "bg-emerald-600 text-white shadow-md shadow-emerald-500/20"
                   : "bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200/80 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800"
-              }`}
+                }`}
             >
               {categoryLabels[cat] || cat}
             </button>

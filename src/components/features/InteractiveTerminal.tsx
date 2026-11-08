@@ -239,7 +239,7 @@ export function InteractiveTerminal() {
 
         <div className="flex items-center gap-1.5 text-xs text-slate-400 font-medium">
           <Terminal className="w-3.5 h-3.5 text-emerald-400" />
-          <span>dat@phenikaa-box: ~ (zsh)</span>
+          <span>Thông tin Nguyễn Tiến Đạt</span>
         </div>
 
         <button
@@ -285,8 +285,8 @@ export function InteractiveTerminal() {
               executeCommand(cmd);
             }}
             className={`px-2 py-0.5 rounded text-[10px] font-bold transition-all cursor-pointer ${cmd === "sudo hire"
-                ? "bg-rose-950/70 hover:bg-rose-900 text-rose-300 border border-rose-700/60 shadow-xs"
-                : "bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700"
+              ? "bg-rose-950/70 hover:bg-rose-900 text-rose-300 border border-rose-700/60 shadow-xs"
+              : "bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700"
               }`}
           >
             {cmd}

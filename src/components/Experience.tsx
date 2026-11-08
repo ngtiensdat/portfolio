@@ -19,9 +19,7 @@ export default function Experience() {
               Học vấn &amp; Kinh nghiệm thực tế
             </h2>
           </div>
-          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-md md:text-right leading-relaxed font-normal">
-            Quá trình rèn luyện tại trường đại học kết hợp các đồ án phần mềm theo mô hình Agile/Scrum và chuẩn quy trình GitFlow.
-          </p>
+
         </div>
 
         {/* Timeline Container */}
