@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect } from "react";
+import Link from "next/link";
 import { Project } from "@/data/portfolioData";
-import { X, ExternalLink, CheckCircle2 } from "lucide-react";
+import { X, ExternalLink, CheckCircle2, ArrowRight } from "lucide-react";
 import { GithubIcon } from "./Icons";
 
 interface ProjectModalProps {
@@ -111,26 +112,34 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         </div>
 
         {/* Action Buttons */}
-        <div className="flex flex-wrap items-center gap-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+        <div className="flex flex-wrap items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+          <Link
+            href={`/projects/${project.slug}`}
+            onClick={onClose}
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow-md shadow-blue-500/20 transition-all cursor-pointer"
+          >
+            <span>Trang phân tích chi tiết & Mã nguồn</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
           {project.liveUrl && (
             <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow-md shadow-blue-500/20 transition-all"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
             >
               <ExternalLink className="w-4 h-4" />
-              <span>Xem Live Demo</span>
+              <span>Live Demo</span>
             </a>
           )}
           <a
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
           >
             <GithubIcon className="w-4 h-4" />
-            <span>Mã nguồn GitHub</span>
+            <span>GitHub</span>
           </a>
         </div>
       </div>

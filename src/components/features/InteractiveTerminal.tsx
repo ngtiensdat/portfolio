@@ -97,22 +97,36 @@ export function InteractiveTerminal() {
       case "projects":
         output = (
           <div className="space-y-2 text-xs text-slate-300">
-            <p className="text-cyan-400 font-bold">3 Dự án thực chiến nổi bật:</p>
+            <p className="text-cyan-400 font-bold">3 Dự án thực chiến nổi bật (bấm để xem kiến trúc & code):</p>
             <div>
               <p className="font-semibold text-amber-300">1. FOOD AI Social Network (AI RAG, Next.js, NestJS)</p>
-              <a href="https://food-ai-frontend-azure.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-                🔗 https://food-ai-frontend-azure.vercel.app/
-              </a>
+              <div className="flex gap-3 text-[11px] mt-0.5">
+                <a href="/projects/food-ai" className="text-cyan-400 hover:underline">
+                  📄 Xem Case Study & Code
+                </a>
+                <a href="https://food-ai-frontend-azure.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                  🔗 Live Demo
+                </a>
+              </div>
             </div>
             <div>
               <p className="font-semibold text-amber-300">2. Payment Hub Middleware (Spring Boot, RBAC, Kafka, MinIO)</p>
-              <p className="text-slate-400">Kiến trúc bảo mật thanh toán & audit log phân tán.</p>
+              <div className="text-[11px] mt-0.5">
+                <a href="/projects/payment-hub" className="text-cyan-400 hover:underline">
+                  📄 Xem Case Study (Xuất 1M+ Records, Maker-Checker)
+                </a>
+              </div>
             </div>
             <div>
               <p className="font-semibold text-amber-300">3. Learn English Web (TOEIC/IELTS, Realtime WebSocket)</p>
-              <a href="https://learn-english-three-omega.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-                🔗 https://learn-english-three-omega.vercel.app/
-              </a>
+              <div className="flex gap-3 text-[11px] mt-0.5">
+                <a href="/projects/learn-english" className="text-cyan-400 hover:underline">
+                  📄 Xem Case Study & Code
+                </a>
+                <a href="https://learn-english-three-omega.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                  🔗 Live Demo
+                </a>
+              </div>
             </div>
           </div>
         );

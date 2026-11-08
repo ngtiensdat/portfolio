@@ -68,15 +68,45 @@ export function CommandPalette() {
 
   const actions: ActionItem[] = [
     {
+      id: "case-food-ai",
+      label: "Chi tiết kỹ thuật & Code: FOOD AI Social Network",
+      category: "Dự án",
+      icon: <Code2 className="w-4 h-4 text-cyan-500" />,
+      perform: () => {
+        router.push("/projects/food-ai");
+        setIsOpen(false);
+      },
+    },
+    {
+      id: "case-payment-hub",
+      label: "Chi tiết kỹ thuật & Code: Payment Hub Middleware (1M+ Records, Kafka)",
+      category: "Dự án",
+      icon: <Code2 className="w-4 h-4 text-indigo-500" />,
+      perform: () => {
+        router.push("/projects/payment-hub");
+        setIsOpen(false);
+      },
+    },
+    {
+      id: "case-learn-english",
+      label: "Chi tiết kỹ thuật & Code: Learn English Web (Real-Time Rooms)",
+      category: "Dự án",
+      icon: <Code2 className="w-4 h-4 text-emerald-500" />,
+      perform: () => {
+        router.push("/projects/learn-english");
+        setIsOpen(false);
+      },
+    },
+    {
       id: "proj-food-ai",
-      label: "Mở dự án: FOOD AI Social Network (Demo)",
+      label: "Mở Live Demo: FOOD AI Social Network",
       category: "Dự án",
       icon: <ExternalLink className="w-4 h-4 text-blue-500" />,
       perform: () => window.open("https://food-ai-frontend-azure.vercel.app/", "_blank"),
     },
     {
       id: "proj-learn-english",
-      label: "Mở dự án: Learn English Web (Demo)",
+      label: "Mở Live Demo: Learn English Web",
       category: "Dự án",
       icon: <ExternalLink className="w-4 h-4 text-blue-500" />,
       perform: () => window.open("https://learn-english-three-omega.vercel.app/", "_blank"),

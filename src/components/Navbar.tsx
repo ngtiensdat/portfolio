@@ -47,11 +47,11 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { name: "Giới thiệu", href: "#about" },
-    { name: "Kỹ năng", href: "#skills" },
-    { name: "Dự án", href: "#projects" },
-    { name: "Kinh nghiệm", href: "#experience" },
-    { name: "Liên hệ", href: "#contact" },
+    { name: "Giới thiệu", href: "/#about" },
+    { name: "Kỹ năng", href: "/#skills" },
+    { name: "Dự án", href: "/#projects" },
+    { name: "Kinh nghiệm", href: "/#experience" },
+    { name: "Liên hệ", href: "/#contact" },
   ];
 
   return (
